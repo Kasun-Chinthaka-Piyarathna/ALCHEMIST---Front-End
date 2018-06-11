@@ -1,15 +1,10 @@
-package alchemist.fit.uom.alchemists.Fragments;
+package alchemist.fit.uom.alchemists.activities;
 
 import android.app.ProgressDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.view.WindowManager;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -24,77 +19,79 @@ import alchemist.fit.uom.alchemists.FileUploadInfo;
 import alchemist.fit.uom.alchemists.R;
 import alchemist.fit.uom.alchemists.RecyclerViewAdapter;
 
-public class NewsFeedFragment extends Fragment {
+public class DisplayImagesActivity extends AppCompatActivity {
+
     // Creating DatabaseReference.
     DatabaseReference databaseReference;
+
     // Creating RecyclerView.
     RecyclerView recyclerView;
+
     // Creating RecyclerView.Adapter.
-    RecyclerView.Adapter adapter;
+    RecyclerView.Adapter adapter ;
+
     // Creating Progress dialog
     ProgressDialog progressDialog;
-    // Root Database Name for Firebase Database.
-    private static final String Database_Path = "All_Image_Uploads_Database";
+
     // Creating List of FileUploadInfo class.
     List<FileUploadInfo> list = new ArrayList<>();
 
-    public static NewsFeedFragment newInstance() {
-        NewsFeedFragment fragment = new NewsFeedFragment();
-        return fragment;
-    }
 
     @Override
-    public void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (android.os.Build.VERSION.SDK_INT >= 21) {
-            Window window = getActivity().getWindow();
-            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-            window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
-            window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
-        }
-    }
+        setContentView(R.layout.activity_display_images);
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        View fragment_news_feed = inflater.inflate(R.layout.fragment_news_feed, container, false);
         // Assign id to RecyclerView.
-        recyclerView = fragment_news_feed.findViewById(R.id.recyclerView);
+        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
+
         // Setting RecyclerView size true.
         recyclerView.setHasFixedSize(true);
+
         // Setting RecyclerView layout as LinearLayout.
-        recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(DisplayImagesActivity.this));
+
         // Assign activity this to progress dialog.
-        progressDialog = new ProgressDialog(getActivity());
+        progressDialog = new ProgressDialog(DisplayImagesActivity.this);
+
         // Setting up message in Progress dialog.
         progressDialog.setMessage("Loading Images From Firebase.");
+
         // Showing progress dialog.
         progressDialog.show();
+
         // Setting up Firebase image upload folder path in databaseReference.
         // The path is already defined in MainActivity.
-        databaseReference = FirebaseDatabase.getInstance().getReference(Database_Path);
+        databaseReference = FirebaseDatabase.getInstance().getReference(MainActivity.Database_Path);
+
         // Adding Add Value Event Listener to databaseReference.
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-                    /* */
 
-                    /* */
+                for (DataSnapshot postSnapshot : snapshot.getChildren()) {
+
                     FileUploadInfo fileUploadInfo = postSnapshot.getValue(FileUploadInfo.class);
+
                     list.add(fileUploadInfo);
                 }
-                adapter = new RecyclerViewAdapter(getActivity(), list);
+
+                adapter = new RecyclerViewAdapter(getApplicationContext(), list);
+
                 recyclerView.setAdapter(adapter);
+
                 // Hiding the progress dialog.
                 progressDialog.dismiss();
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError) {
+
                 // Hiding the progress dialog.
                 progressDialog.dismiss();
+
             }
         });
-        return fragment_news_feed;
+
     }
 }

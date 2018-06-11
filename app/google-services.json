@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "96995573604",
+    "firebase_url": "https://smart-period-146509.firebaseio.com",
+    "project_id": "smart-period-146509",
+    "storage_bucket": "smart-period-146509.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:96995573604:android:11b843a1ad9819b2",
+        "android_client_info": {
+          "package_name": "alchemist.fit.uom.alchemists"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "96995573604-bfuj3lt0qd4be38c56rgicn97kt9h746.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "96995573604-bfuj3lt0qd4be38c56rgicn97kt9h746.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBq5Zq8aC7ZutcKQbkDPC67UvK1SJatd2k"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
