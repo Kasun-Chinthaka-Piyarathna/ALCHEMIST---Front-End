@@ -31,12 +31,11 @@ public class NewsFeedFragment extends Fragment {
     RecyclerView recyclerView;
     // Creating RecyclerView.Adapter.
     RecyclerView.Adapter adapter;
-    // Creating Progress dialog
-    ProgressDialog progressDialog;
     // Root Database Name for Firebase Database.
     private static final String Database_Path = "All_Image_Uploads_Database";
     // Creating List of FileUploadInfo class.
     List<FileUploadInfo> list = new ArrayList<>();
+    private ProgressDialog progressDialog;
 
     public static NewsFeedFragment newInstance() {
         NewsFeedFragment fragment = new NewsFeedFragment();
@@ -53,6 +52,14 @@ public class NewsFeedFragment extends Fragment {
             window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
         }
     }
+    private void showProgressDialog() {
+        progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setMessage("Alchemists"); // Setting Message
+        progressDialog.setTitle("Please wait until news feed is loaded!"); // Setting Title
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
+        progressDialog.show(); // Display Progress Dialog
+        progressDialog.setCancelable(false);
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -65,11 +72,7 @@ public class NewsFeedFragment extends Fragment {
         // Setting RecyclerView layout as LinearLayout.
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         // Assign activity this to progress dialog.
-        progressDialog = new ProgressDialog(getActivity());
-        // Setting up message in Progress dialog.
-        progressDialog.setMessage("Loading Images From Firebase.");
-        // Showing progress dialog.
-        progressDialog.show();
+        showProgressDialog();
         // Setting up Firebase image upload folder path in databaseReference.
         // The path is already defined in MainActivity.
         databaseReference = FirebaseDatabase.getInstance().getReference(Database_Path);

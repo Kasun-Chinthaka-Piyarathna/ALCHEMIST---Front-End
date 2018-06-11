@@ -13,11 +13,13 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import alchemist.fit.uom.alchemists.R;
+import alchemist.fit.uom.alchemists.database.AlchemistsDataSource;
 
 public class LoginActivity extends AppCompatActivity {
 
     private EditText loginEmailEditText, loginPasswordEditText;
     private String loginEmailText, loginPasswordText;
+    private AlchemistsDataSource alchemistsDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,6 +31,8 @@ public class LoginActivity extends AppCompatActivity {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
         }
+        alchemistsDataSource = new AlchemistsDataSource(this);
+        alchemistsDataSource.open();
     }
 
     public void logining(View view) {
@@ -44,10 +48,22 @@ public class LoginActivity extends AppCompatActivity {
             loginPasswordEditText.setError("Field Required!");
         } else {
             if (isEmailValid(loginEmailText)) {
-                finish();
-                Toast.makeText(this, "Welcome to YoDogg!", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(this, TabContentActivity.class);
-                startActivity(intent);
+
+                String[] authenticateDetails = alchemistsDataSource.getAllDataFromUserDetails(loginEmailText);
+                if(!(authenticateDetails[0].equals("NO EXIST"))) {
+                    if (authenticateDetails[4].equals(loginPasswordText)) {
+                        finish();
+                        Toast.makeText(this, "Welcome to Alchemist!", Toast.LENGTH_SHORT).show();
+                        Intent intent = new Intent(this, TabContentActivity.class);
+                        startActivity(intent);
+                    }
+                    else {
+                        Toast.makeText(this, "Invalid Authentication. Please try it again!", Toast.LENGTH_SHORT).show();
+                    }
+                }
+                else {
+                    Toast.makeText(this, "Seems You dont have an account. Please sign up !", Toast.LENGTH_SHORT).show();
+                }
             } else {
                 Toast.makeText(this, "Email Invalid!", Toast.LENGTH_SHORT).show();
                 loginEmailEditText.setText("");

@@ -14,6 +14,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import alchemist.fit.uom.alchemists.R;
+import alchemist.fit.uom.alchemists.database.AlchemistsDataSource;
 
 public class JoinActivity extends AppCompatActivity {
     private TextView email;
@@ -23,6 +24,7 @@ public class JoinActivity extends AppCompatActivity {
     private String passwordText;
     private String confirmPasswordText;
     public static String passEmail;
+    private AlchemistsDataSource alchemistsDataSource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,8 @@ public class JoinActivity extends AppCompatActivity {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
         }
+        alchemistsDataSource = new AlchemistsDataSource(this);
+        alchemistsDataSource.open();
         Bundle bundle = getIntent().getExtras();
         passEmail = bundle.getString("passingEmail");
         email = findViewById(R.id.email);
@@ -56,6 +60,7 @@ public class JoinActivity extends AppCompatActivity {
         } else {
             if (isEmailValid(emailText)) {
                 if (passwordText.equals(confirmPasswordText)) {
+                    alchemistsDataSource.insertDataUserDetails("Jhon Doe",null,null,emailText,passwordText);
                     finish();
                     Intent intent = new Intent(JoinActivity.this, TabContentActivity.class);
                     startActivity(intent);

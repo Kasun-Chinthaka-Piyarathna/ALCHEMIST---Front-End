@@ -42,13 +42,13 @@ public class ProfileFragment extends Fragment {
     private Button makePhotoToReport;
     private Button makeVideoToReport;
     private int Image_Request_Code = 7;
-    private   Uri FilePathUri;
+    private Uri FilePathUri;
     // Creating DatabaseReference.
     private DatabaseReference databaseReference;
     // Creating RecyclerView.
     private RecyclerView recyclerView;
     // Creating RecyclerView.Adapter.
-    private RecyclerView.Adapter adapter ;
+    private RecyclerView.Adapter adapter;
     // Creating Progress dialog
     private ProgressDialog progressDialog;
     // Root Database Name for Firebase Database.
@@ -70,6 +70,15 @@ public class ProfileFragment extends Fragment {
             window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS);
             window.setStatusBarColor(this.getResources().getColor(R.color.status_bar_color));
         }
+    }
+
+    private void showProgressDialog() {
+        progressDialog = new ProgressDialog(getActivity());
+        progressDialog.setMessage("Alchemists"); // Setting Message
+        progressDialog.setTitle("Please wait until profile is loaded!"); // Setting Title
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
+        progressDialog.show(); // Display Progress Dialog
+        progressDialog.setCancelable(false);
     }
 
     @Override
@@ -114,11 +123,7 @@ public class ProfileFragment extends Fragment {
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         // Assign activity this to progress dialog.
-        progressDialog = new ProgressDialog(getActivity());
-        // Setting up message in Progress dialog.
-        progressDialog.setMessage("Loading your profile");
-        // Showing progress dialog.
-        progressDialog.show();
+        showProgressDialog();
         // Setting up Firebase image upload folder path in databaseReference.
         // The path is already defined in MainActivity.
         databaseReference = FirebaseDatabase.getInstance().getReference(Database_Path);
@@ -136,6 +141,7 @@ public class ProfileFragment extends Fragment {
                 progressDialog.dismiss();
 
             }
+
             @Override
             public void onCancelled(DatabaseError databaseError) {
                 // Hiding the progress dialog.
@@ -158,11 +164,10 @@ public class ProfileFragment extends Fragment {
 //
 //                // After selecting image change choose button above text.
 //                ChooseButton.setText("Image Selected");
-                Intent intent = new Intent(getActivity(),ReportMakeActivity.class);
-                intent.putExtra("urlOfSelectedImage",FilePathUri.toString());
+                Intent intent = new Intent(getActivity(), ReportMakeActivity.class);
+                intent.putExtra("urlOfSelectedImage", FilePathUri.toString());
                 startActivity(intent);
-            }
-            catch (IOException e) {
+            } catch (IOException e) {
                 e.printStackTrace();
             }
         }
@@ -176,7 +181,7 @@ public class ProfileFragment extends Fragment {
         MimeTypeMap mimeTypeMap = MimeTypeMap.getSingleton();
 
         // Returning the file Extension.
-        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri)) ;
+        return mimeTypeMap.getExtensionFromMimeType(contentResolver.getType(uri));
 
     }
 

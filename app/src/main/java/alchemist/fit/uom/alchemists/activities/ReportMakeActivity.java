@@ -77,8 +77,7 @@ public class ReportMakeActivity extends AppCompatActivity {
         storageReference = FirebaseStorage.getInstance().getReference();
         // Assign FirebaseDatabase instance with root database name.
         databaseReference = FirebaseDatabase.getInstance().getReference(Database_Path);
-        // Assigning Id to ProgressDialog.
-        progressDialog = new ProgressDialog(ReportMakeActivity.this);
+
         activity_report_photo_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,6 +105,7 @@ public class ReportMakeActivity extends AppCompatActivity {
         top_bar_post_text.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                showProgressDialog();
                 if (selectedType) {
                     // Calling method to upload selected image on Firebase storage.
                     UploadImageFileToFirebaseStorage();
@@ -124,6 +124,14 @@ public class ReportMakeActivity extends AppCompatActivity {
         });
     }
 
+    private void showProgressDialog() {
+        progressDialog = new ProgressDialog(ReportMakeActivity.this);
+        progressDialog.setMessage("Alchemists"); // Setting Message
+        progressDialog.setTitle("Please wait until finishing upload!"); // Setting Title
+        progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
+        progressDialog.show(); // Display Progress Dialog
+        progressDialog.setCancelable(false);
+    }
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -174,10 +182,6 @@ public class ReportMakeActivity extends AppCompatActivity {
     public void UploadImageFileToFirebaseStorage() {
         // Checking whether imageFilePathUri Is empty or not.
         if (imageFilePathUri != null) {
-            // Setting progressDialog Title.
-            progressDialog.setTitle("Image is Uploading...");
-            // Showing progressDialog.
-            progressDialog.show();
             // Creating second StorageReference.
             StorageReference storageReference2nd = storageReference.child(storagePathImages + System.currentTimeMillis() + "." + GetFileExtension(imageFilePathUri));
             // Adding addOnSuccessListener to second StorageReference.
@@ -229,10 +233,6 @@ public class ReportMakeActivity extends AppCompatActivity {
     public void UploadVideoFileToFirebaseStorage() {
         // Checking whether imageFilePathUri Is empty or not.
         if (videoFilePathUri != null) {
-            // Setting progressDialog Title.
-            progressDialog.setTitle("Video is Uploading...");
-            // Showing progressDialog.
-            progressDialog.show();
             // Creating second StorageReference.
             StorageReference storageReference2nd = storageReference.child(storagePathVideos + System.currentTimeMillis() + "." + GetFileExtension(videoFilePathUri));
             // Adding addOnSuccessListener to second StorageReference.
