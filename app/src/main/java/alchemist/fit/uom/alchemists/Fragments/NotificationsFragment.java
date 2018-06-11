@@ -57,13 +57,13 @@ public class NotificationsFragment extends Fragment {
                 "2 week ago"
         };
         Integer[] imageId = {
-                R.drawable.test_image,
-                R.drawable.test_image,
-                R.drawable.test_image,
-                R.drawable.test_image,
-                R.drawable.test_image,
-                R.drawable.test_image,
-                R.drawable.test_image
+                R.drawable.test_image_new,
+                R.drawable.test_image_new,
+                R.drawable.test_image_new,
+                R.drawable.test_image_new,
+                R.drawable.test_image_new,
+                R.drawable.test_image_new,
+                R.drawable.test_image_new
         };
         CustomList adapter = new CustomList(getActivity(), time, web, imageId);
         list = fragment_notifications.findViewById(R.id.list);

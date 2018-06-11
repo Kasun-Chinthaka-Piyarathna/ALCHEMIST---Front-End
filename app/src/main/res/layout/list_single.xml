@@ -16,7 +16,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
-            android:src="@drawable/test_image"
+            android:src="@drawable/test_image_new"
             app:civ_border_color="#FF000000"
             app:civ_border_width="2dp" />
 
