@@ -574,7 +574,7 @@ public class ReportMakeActivity extends AppCompatActivity implements View.OnTouc
     public void onBackPressed(){
         finish();
         Intent intent = new Intent(this,TabContentActivity.class);
-        intent.putExtra("FRAGMENT_ID", 2);
+        intent.putExtra("FRAGMENT_ID", 3);
         startActivity(intent);
     }
 }
