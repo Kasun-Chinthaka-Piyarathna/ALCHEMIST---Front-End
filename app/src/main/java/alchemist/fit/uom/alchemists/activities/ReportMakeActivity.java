@@ -575,7 +575,6 @@ public class ReportMakeActivity extends AppCompatActivity implements View.OnTouc
         finish();
         Intent intent = new Intent(this,TabContentActivity.class);
         intent.putExtra("FRAGMENT_ID", 2);
-        intent.putExtra("FRAGMENT_ID", 2);
         startActivity(intent);
     }
 }
