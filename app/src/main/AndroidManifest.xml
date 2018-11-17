@@ -3,6 +3,24 @@
     package="alchemist.fit.uom.alchemists">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -11,21 +29,85 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activities.SplashScreenActivity">
+        <activity android:name=".activities.ReportMakeActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".activities.AddEmailActivity" />
-        <activity android:name=".activities.GetStartActivity" />
-        <activity android:name=".activities.JoinActivity" />
-        <activity android:name=".activities.MainActivity" />
-        <activity android:name=".activities.LoginActivity" />
-        <activity android:name=".activities.DisplayImagesActivity" />
-        <activity android:name=".activities.TabContentActivity" />
-        <activity android:name=".activities.ReportMakeActivity"></activity>
+        <activity
+            android:name=".activities.AddEmailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.GetStartActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.JoinActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.DisplayImagesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TabContentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SplashScreenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddUserNameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddNearestCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.AddUserMobileActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAq6yTclmnU92s11lEjn1E_1YEeGF28iN0" />
+
+        <receiver android:name=".BatteryUsageChecker">
+            <intent-filter>
+                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_OKAY" />
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity android:name=".activities.DetectContextActivity"></activity>
+
+
+        <service
+            android:name=".ActivityIntentService"
+            android:exported="false" />
+
+
     </application>
 
 </manifest>

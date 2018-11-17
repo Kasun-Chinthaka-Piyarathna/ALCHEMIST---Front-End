@@ -1,6 +1,7 @@
 package alchemist.fit.uom.alchemists.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -20,6 +21,7 @@ public class LoginActivity extends AppCompatActivity {
     private EditText loginEmailEditText, loginPasswordEditText;
     private String loginEmailText, loginPasswordText;
     private AlchemistsDataSource alchemistsDataSource;
+    private static final String MY_PREFS_NAME = "alchemist" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +54,9 @@ public class LoginActivity extends AppCompatActivity {
                 String[] authenticateDetails = alchemistsDataSource.getAllDataFromUserDetails(loginEmailText);
                 if(!(authenticateDetails[0].equals("NO EXIST"))) {
                     if (authenticateDetails[4].equals(loginPasswordText)) {
+                        SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
+                        editor.putString("email_address", loginEmailText);
+                        editor.commit();
                         finish();
                         Toast.makeText(this, "Welcome to Alchemist!", Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(this, TabContentActivity.class);

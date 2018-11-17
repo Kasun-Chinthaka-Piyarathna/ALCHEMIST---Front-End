@@ -15,12 +15,12 @@ public class AlchemistsDataSource {
     private String DataBaseOpenedMessage = "Database opened.";
     private String DataBaseClosedMessage = "Database closed.";
     private String userDetailsTable = "user_details";
-    private String userDetailsNameKey="name";
-    private String userDetailsNearestCityKey="nearest_city";
-    private String userDetailsMobileKey="mobile";
-    private String userDetailsEmailKey="email";
-    private String userDetailsPasswordKey="password";
-    private String notExistMessage="NO EXIST";
+    private String userDetailsNameKey = "name";
+    private String userDetailsNearestCityKey = "nearest_city";
+    private String userDetailsMobileKey = "mobile";
+    private String userDetailsEmailKey = "email";
+    private String userDetailsPasswordKey = "password";
+    private String notExistMessage = "NO EXIST";
 
     public AlchemistsDataSource(Context context) {
         this.context = context;
@@ -36,6 +36,7 @@ public class AlchemistsDataSource {
         sqLiteOpenHelper.close();
         Log.d(TAG, DataBaseClosedMessage);
     }
+
     //--------------------------InsertQuery-----------------------------
     public void insertDataUserDetails(String name, String nearest_city, String mobile, String email, String password) {
         ContentValues newValues = new ContentValues();
@@ -46,13 +47,14 @@ public class AlchemistsDataSource {
         newValues.put(userDetailsPasswordKey, password);
         sqLiteDatabase.insertOrThrow(userDetailsTable, null, newValues);
     }
+
     //----------------------------------------------------------------
     //------------------------RetrieveQuery----------------------------
     public String[] getAllDataFromUserDetails(String userEmail) {
         Cursor cursor = sqLiteDatabase.query(userDetailsTable, null, " email=?",
                 new String[]{userEmail}, null, null, null);
         String[] response = new String[2];
-        response[0]=notExistMessage;
+        response[0] = notExistMessage;
         if (cursor.getCount() < 1) {
             cursor.close();
             return response;
@@ -65,13 +67,37 @@ public class AlchemistsDataSource {
         String email = cursor.getString(cursor.getColumnIndex(userDetailsEmailKey));
         String password = cursor.getString(cursor.getColumnIndex(userDetailsPasswordKey));
 
-        arr[0]=name;
-        arr[1]=nearest_city;
-        arr[2]=mobile;
-        arr[3]=email;
-        arr[4]=password;
+        arr[0] = name;
+        arr[1] = nearest_city;
+        arr[2] = mobile;
+        arr[3] = email;
+        arr[4] = password;
         cursor.close();
         return arr;
+    }
+
+    //--------------------------------------------------------------
+    //-------------------------UpdateQuery--------------------------
+    //DailyChallenge Table
+    public void updateUserDetails(String name, String nearest_city, String mobile, String email, String password) {
+        ContentValues updatedValues = new ContentValues();
+        if (name != null) {
+            updatedValues.put(userDetailsNameKey, name);
+        }
+        else if (nearest_city != null) {
+            updatedValues.put(userDetailsNearestCityKey, nearest_city);
+        }
+        else if (mobile != null) {
+            updatedValues.put(userDetailsMobileKey, mobile);
+        }
+        else if (email != null) {
+            updatedValues.put(userDetailsEmailKey, email);
+        }
+        else {
+            updatedValues.put(userDetailsPasswordKey, password);
+        }
+        String where = "email = ?";
+        sqLiteDatabase.update(userDetailsTable, updatedValues, where, new String[]{email});
     }
 
     //--------------------------------------------------------------

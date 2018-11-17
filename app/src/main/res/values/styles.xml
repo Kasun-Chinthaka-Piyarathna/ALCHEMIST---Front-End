@@ -5,5 +5,23 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+
     </style>
+
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">#151B54</item>
+        <item name="colorAccent">#8C001A</item>
+    </style>
+
+
+    <style name="MyAlertDialogStyle2" parent="Base.Theme.AppCompat.Light.Dialog">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="android:background">#151B54</item>
+        <item name="colorAccent">#8C001A</item>
+    </style>
+2
+
+
 </resources>

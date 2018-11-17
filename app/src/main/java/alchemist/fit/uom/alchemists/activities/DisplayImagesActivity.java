@@ -15,24 +15,20 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.ArrayList;
 import java.util.List;
 
-import alchemist.fit.uom.alchemists.FileUploadInfo;
+import alchemist.fit.uom.alchemists.models.FileUploadInfo;
 import alchemist.fit.uom.alchemists.R;
-import alchemist.fit.uom.alchemists.RecyclerViewAdapter;
+import alchemist.fit.uom.alchemists.adapters.RecyclerViewAdapter;
 
 public class DisplayImagesActivity extends AppCompatActivity {
 
     // Creating DatabaseReference.
     DatabaseReference databaseReference;
-
     // Creating RecyclerView.
     RecyclerView recyclerView;
-
     // Creating RecyclerView.Adapter.
     RecyclerView.Adapter adapter ;
-
     // Creating Progress dialog
     ProgressDialog progressDialog;
-
     // Creating List of FileUploadInfo class.
     List<FileUploadInfo> list = new ArrayList<>();
 
@@ -41,55 +37,39 @@ public class DisplayImagesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_images);
-
         // Assign id to RecyclerView.
-        recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
-
+        recyclerView = findViewById(R.id.recyclerView);
         // Setting RecyclerView size true.
         recyclerView.setHasFixedSize(true);
-
         // Setting RecyclerView layout as LinearLayout.
         recyclerView.setLayoutManager(new LinearLayoutManager(DisplayImagesActivity.this));
-
         // Assign activity this to progress dialog.
         progressDialog = new ProgressDialog(DisplayImagesActivity.this);
-
         // Setting up message in Progress dialog.
         progressDialog.setMessage("Loading Images From Firebase.");
-
         // Showing progress dialog.
         progressDialog.show();
-
         // Setting up Firebase image upload folder path in databaseReference.
         // The path is already defined in MainActivity.
         databaseReference = FirebaseDatabase.getInstance().getReference(MainActivity.Database_Path);
-
         // Adding Add Value Event Listener to databaseReference.
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
-
                 for (DataSnapshot postSnapshot : snapshot.getChildren()) {
-
                     FileUploadInfo fileUploadInfo = postSnapshot.getValue(FileUploadInfo.class);
-
                     list.add(fileUploadInfo);
                 }
-
                 adapter = new RecyclerViewAdapter(getApplicationContext(), list);
-
                 recyclerView.setAdapter(adapter);
-
                 // Hiding the progress dialog.
                 progressDialog.dismiss();
             }
 
             @Override
             public void onCancelled(DatabaseError databaseError) {
-
                 // Hiding the progress dialog.
                 progressDialog.dismiss();
-
             }
         });
 

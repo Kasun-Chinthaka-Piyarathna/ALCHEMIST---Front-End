@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:orientation="vertical"
+    android:id="@+id/activity_report_make"
     tools:context="alchemist.fit.uom.alchemists.activities.ReportMakeActivity">
 
 
@@ -128,9 +129,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#E5E4E2"
             android:text="Photo"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape6"/>
 
         <Button
             android:id="@+id/activity_report_video_button"
@@ -138,9 +140,10 @@
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:layout_weight="1"
-            android:background="#E5E4E2"
             android:text="Video"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape6"/>
     </LinearLayout>
 
 </LinearLayout>

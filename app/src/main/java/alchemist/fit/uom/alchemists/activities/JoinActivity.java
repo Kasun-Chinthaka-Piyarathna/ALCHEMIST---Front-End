@@ -1,6 +1,7 @@
 package alchemist.fit.uom.alchemists.activities;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -25,6 +26,7 @@ public class JoinActivity extends AppCompatActivity {
     private String confirmPasswordText;
     public static String passEmail;
     private AlchemistsDataSource alchemistsDataSource;
+    private static final String MY_PREFS_NAME = "alchemist" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +63,9 @@ public class JoinActivity extends AppCompatActivity {
             if (isEmailValid(emailText)) {
                 if (passwordText.equals(confirmPasswordText)) {
                     alchemistsDataSource.insertDataUserDetails("Jhon Doe",null,null,emailText,passwordText);
+                    SharedPreferences.Editor editor = getSharedPreferences(MY_PREFS_NAME, MODE_PRIVATE).edit();
+                    editor.putString("email_address", emailText);
+                    editor.commit();
                     finish();
                     Intent intent = new Intent(JoinActivity.this, TabContentActivity.class);
                     startActivity(intent);

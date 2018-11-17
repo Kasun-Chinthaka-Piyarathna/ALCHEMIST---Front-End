@@ -1,14 +1,25 @@
 package alchemist.fit.uom.alchemists.activities;
 
+import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.ContentResolver;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.graphics.Point;
 import android.net.Uri;
+import android.os.Build;
 import android.provider.MediaStore;
 import android.support.annotation.NonNull;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.TextUtils;
+import android.view.Display;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
@@ -17,6 +28,8 @@ import android.webkit.MimeTypeMap;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.NumberPicker;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -29,14 +42,21 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.MultiplePermissionsReport;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.multi.MultiplePermissionsListener;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
-import alchemist.fit.uom.alchemists.FileUploadInfo;
-import alchemist.fit.uom.alchemists.Fragments.ProfileFragment;
+import alchemist.fit.uom.alchemists.CameraUtils;
+import alchemist.fit.uom.alchemists.models.FileUploadInfo;
 import alchemist.fit.uom.alchemists.R;
 
-public class ReportMakeActivity extends AppCompatActivity {
+public class ReportMakeActivity extends AppCompatActivity implements View.OnTouchListener {
 
     // Folder path for Firebase Storage.
     private String storagePathImages = "All_Image_Uploads/";
@@ -62,6 +82,37 @@ public class ReportMakeActivity extends AppCompatActivity {
     private TextView describeTextInReport;
     private Boolean selectedType;
     private LinearLayout back_button_layout;
+    private PopupWindow popupWindow;
+
+
+    ViewGroup editingLayout =null;
+    private LinearLayout parentLayout;
+    private Context currentContext;
+
+
+
+
+    // Activity request codes
+    private static final int CAMERA_CAPTURE_IMAGE_REQUEST_CODE = 100;
+    private static final int CAMERA_CAPTURE_VIDEO_REQUEST_CODE = 200;
+
+    // key to store image path in savedInstance state
+    public static final String KEY_IMAGE_STORAGE_PATH = "image_path";
+
+    public static final int MEDIA_TYPE_IMAGE = 1;
+    public static final int MEDIA_TYPE_VIDEO = 2;
+
+    // Bitmap sampling size
+    public static final int BITMAP_SAMPLE_SIZE = 8;
+
+    // Gallery directory name to store the images or videos
+    public static final String GALLERY_DIRECTORY_NAME = "Hello Camera";
+
+    // Image and Video file extensions
+    public static final String IMAGE_EXTENSION = "jpg";
+    public static final String VIDEO_EXTENSION = "mp4";
+
+    private static String imageStoragePath;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,12 +181,19 @@ public class ReportMakeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        editingLayout = findViewById(R.id.activity_report_make);
+        addNewImage();
+        clickCount = 0;
+        parentLayout = findViewById(R.id.activity_report_make);
+
+        currentContext = getApplicationContext();
     }
 
     private void showProgressDialog() {
-        progressDialog = new ProgressDialog(ReportMakeActivity.this);
-        progressDialog.setMessage("Alchemists"); // Setting Message
-        progressDialog.setTitle("Please wait until finishing upload!"); // Setting Title
+        progressDialog = new ProgressDialog(ReportMakeActivity.this,R.style.MyAlertDialogStyle);
+        progressDialog.setMessage("Please wait ..."); // Setting Message
+      //  progressDialog.setTitle("Please wait until finishing upload!"); // Setting Title
         progressDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER); // Progress Dialog Style Spinner
         progressDialog.show(); // Display Progress Dialog
         progressDialog.setCancelable(false);
@@ -174,6 +232,45 @@ public class ReportMakeActivity extends AppCompatActivity {
             } catch (IOException e) {
 
                 e.printStackTrace();
+            }
+        }  // if the result is capturing Image
+        if (requestCode == CAMERA_CAPTURE_IMAGE_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                // Refreshing the gallery
+                CameraUtils.refreshGallery(getApplicationContext(), imageStoragePath);
+
+                // successfully captured the image
+                // display it in image view
+                // previewCapturedImage();
+            } else if (resultCode == RESULT_CANCELED) {
+                // user cancelled Image capture
+                Toast.makeText(getApplicationContext(),
+                        "User cancelled image capture", Toast.LENGTH_SHORT)
+                        .show();
+            } else {
+                // failed to capture image
+                Toast.makeText(getApplicationContext(),
+                        "Sorry! Failed to capture image", Toast.LENGTH_SHORT)
+                        .show();
+            }
+        } else if (requestCode == CAMERA_CAPTURE_VIDEO_REQUEST_CODE) {
+            if (resultCode == RESULT_OK) {
+                // Refreshing the gallery
+                CameraUtils.refreshGallery(getApplicationContext(), imageStoragePath);
+
+                // video successfully recorded
+                // preview the recorded video
+                //  previewVideo();
+            } else if (resultCode == RESULT_CANCELED) {
+                // user cancelled recording
+                Toast.makeText(getApplicationContext(),
+                        "User cancelled video recording", Toast.LENGTH_SHORT)
+                        .show();
+            } else {
+                // failed to record video
+                Toast.makeText(getApplicationContext(),
+                        "Sorry! Failed to record video", Toast.LENGTH_SHORT)
+                        .show();
             }
         }
     }
@@ -287,5 +384,198 @@ public class ReportMakeActivity extends AppCompatActivity {
         } else {
             Toast.makeText(ReportMakeActivity.this, "Please Select Video or Add Video Name", Toast.LENGTH_LONG).show();
         }
+    }
+
+
+    private void addNewImage() {
+        final ImageView iv = new ImageView(this);
+        iv.setImageResource(R.drawable.camera_icon2);
+        LinearLayout.LayoutParams layoutParams = new LinearLayout.LayoutParams(200, 200);
+        iv.setLayoutParams(layoutParams);
+        editingLayout.addView(iv, layoutParams);
+        iv.setOnTouchListener(this);
+    }
+
+    int clickCount;
+    private int posX;
+    private int posY;
+    long startTime = 0 ;
+    public boolean onTouch(final View view, MotionEvent event) {
+        final int X = (int) event.getRawX();
+        final int Y = (int) event.getRawY();
+        int pointerCount = event.getPointerCount();
+        switch (event.getAction() & MotionEvent.ACTION_MASK) {
+            case MotionEvent.ACTION_DOWN:
+                LinearLayout.LayoutParams layoutParams = (LinearLayout.LayoutParams) view.getLayoutParams();
+                posX = X - layoutParams.leftMargin;
+                posY = Y - layoutParams.topMargin;
+                break;
+            case MotionEvent.ACTION_UP:
+                if (startTime == 0){
+                    startTime = System.currentTimeMillis();
+                }else {
+                    if (System.currentTimeMillis() - startTime < 200) {
+                        if (CameraUtils.checkPermissions(getApplicationContext())) {
+                            captureImage();
+                        } else {
+                            requestCameraPermission(MEDIA_TYPE_IMAGE);
+                        }
+                    }
+                    startTime = System.currentTimeMillis();
+                }
+                break;
+            case MotionEvent.ACTION_POINTER_DOWN:
+                break;
+            case MotionEvent.ACTION_POINTER_UP:
+                break;
+            case MotionEvent.ACTION_MOVE:
+                if (pointerCount == 1){
+                    LinearLayout.LayoutParams Params = (LinearLayout.LayoutParams) view.getLayoutParams();
+                    Params.leftMargin = X - posX;
+                    Params.topMargin = Y - posY;
+                    Params.rightMargin = -500;
+                    Params.bottomMargin = -500;
+                    view.setLayoutParams(Params);
+                }
+                if (pointerCount == 2){
+//                    Log.e("TAG","2 finger touched");
+//                    RelativeLayout.LayoutParams layoutParams1 = (RelativeLayout.LayoutParams) view.getLayoutParams();
+//                    layoutParams1.width = posX +(int)event.getX();
+//                    layoutParams1.height = posY + (int)event.getY();
+//                    view.setLayoutParams(layoutParams1);
+                }
+//Rotation
+                if (pointerCount == 3){
+//Rotate the ImageView
+//                    view.setRotation(view.getRotation() + 10.0f);
+                }
+                break;
+        }
+// Schedules a repaint for the root Layout.
+        editingLayout.invalidate();
+        return true;
+    }
+
+
+    /**
+     * Capturing Camera Image will launch camera app requested image capture
+     */
+    private void captureImage() {
+        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+
+        File file = CameraUtils.getOutputMediaFile(MEDIA_TYPE_IMAGE);
+        if (file != null) {
+            imageStoragePath = file.getAbsolutePath();
+        }
+
+        Uri fileUri = CameraUtils.getOutputMediaFileUri(getApplicationContext(), file);
+
+        intent.putExtra(MediaStore.EXTRA_OUTPUT, fileUri);
+
+        // start the image capture Intent
+        startActivityForResult(intent, CAMERA_CAPTURE_IMAGE_REQUEST_CODE);
+    }
+
+    /**
+     * Restoring store image path from saved instance state
+     */
+    private void restoreFromBundle(Bundle savedInstanceState) {
+        if (savedInstanceState != null) {
+            if (savedInstanceState.containsKey(KEY_IMAGE_STORAGE_PATH)) {
+                imageStoragePath = savedInstanceState.getString(KEY_IMAGE_STORAGE_PATH);
+                if (!TextUtils.isEmpty(imageStoragePath)) {
+                    if (imageStoragePath.substring(imageStoragePath.lastIndexOf(".")).equals("." + IMAGE_EXTENSION)) {
+                        // previewCapturedImage();
+                    } else if (imageStoragePath.substring(imageStoragePath.lastIndexOf(".")).equals("." + VIDEO_EXTENSION)) {
+                        //  previewVideo();
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * Requesting permissions using Dexter library
+     */
+    private void requestCameraPermission(final int type) {
+        Dexter.withActivity(this)
+                .withPermissions(Manifest.permission.CAMERA,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.RECORD_AUDIO)
+                .withListener(new MultiplePermissionsListener() {
+                    @Override
+                    public void onPermissionsChecked(MultiplePermissionsReport report) {
+                        if (report.areAllPermissionsGranted()) {
+
+                            if (type == MEDIA_TYPE_IMAGE) {
+                                // capture picture
+                                captureImage();
+                            } else {
+                                //    captureVideo();
+                            }
+
+                        } else if (report.isAnyPermissionPermanentlyDenied()) {
+                            showPermissionsAlert();
+                        }
+                    }
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(List<PermissionRequest> permissions, PermissionToken token) {
+                        token.continuePermissionRequest();
+                    }
+                }).check();
+    }
+
+    /**
+     * Saving stored image path to saved instance state
+     */
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        // save file url in bundle as it will be null on screen orientation
+        // changes
+        outState.putString(KEY_IMAGE_STORAGE_PATH, imageStoragePath);
+    }
+
+    /**
+     * Restoring image path from saved instance state
+     */
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        // get the file url
+        imageStoragePath = savedInstanceState.getString(KEY_IMAGE_STORAGE_PATH);
+    }
+
+
+    /**
+     * Alert dialog to navigate to app settings
+     * to enable necessary permissions
+     */
+    private void showPermissionsAlert() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle("Permissions required!")
+                .setMessage("Camera needs few permissions to work properly. Grant them in settings.")
+                .setPositiveButton("GOTO SETTINGS", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                        CameraUtils.openSettings(ReportMakeActivity.this);
+                    }
+                })
+                .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+
+                    }
+                }).show();
+    }
+
+    @Override
+    public void onBackPressed(){
+        finish();
+        Intent intent = new Intent(this,TabContentActivity.class);
+        intent.putExtra("FRAGMENT_ID", 2);
+        intent.putExtra("FRAGMENT_ID", 2);
+        startActivity(intent);
     }
 }
