@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_editprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E4E2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0020C2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0020C2"
+                android:onClick="editProfileCancel"
+                android:text="Cancel"
+                android:textColor="#ffffff"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0020C2"
+                android:text="Edit profile"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#0020C2"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/c2l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/test_image2" />
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/profile_image"
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-48dp"
+                android:src="@drawable/test_image"
+                app:civ_border_color="#FF000000"
+                app:civ_border_width="2dp" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                android:background="#ffffff">
+
+
+                <TextView
+                    android:id="@+id/activity_edit_profile_your_name_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="Your Name"/>
+
+                <Button
+                    android:id="@+id/activity_edit_profile_add_your_name_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="Add your name"
+                    android:textAllCaps="false"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:onClick="addUserName"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:background="#ffffff"
+                android:weightSum="2">
+
+
+                <TextView
+                    android:id="@+id/activity_edit_profile_nearest_city_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="Nearest City"
+                    android:background="#ffffff"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:drawableRight="@drawable/edit_profile_nearest_city"
+                    android:textAllCaps="false"
+                    android:background="#ffffff"
+                    android:onClick="addUserNearestCity"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                android:background="#ffffff">
+
+
+                <TextView
+                    android:id="@+id/activity_edit_profile_mobile_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:background="#ffffff"
+                    android:paddingLeft="10dp"
+                    android:text="Mobile"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Add your mobile"
+                    android:textAllCaps="false"
+                    android:background="#ffffff"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:onClick="addUserMobile"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                android:background="#ffffff">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:text="Email"
+                    android:background="#ffffff"/>
+
+                <Button
+                    android:id="@+id/activity_edit_profile_email_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:textAllCaps="false"
+                    android:background="#ffffff"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account Settings"
+                android:onClick="accountSettings"
+                android:gravity="center|right"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_margin="10dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</ScrollView>

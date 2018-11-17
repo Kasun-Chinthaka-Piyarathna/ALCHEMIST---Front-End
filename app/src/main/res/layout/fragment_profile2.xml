@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_scrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/test_image2" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-48dp"
+            android:src="@drawable/test_image"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+
+        <ImageButton
+            android:id="@+id/personal_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="-45dp"
+            android:background="#ffffff"
+            android:paddingRight="10dp"
+            android:src="@drawable/profile_section_settings_icon" />
+
+        <TextView
+            android:id="@+id/fragment_profile2_profile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="#000080"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="Jhon Doe"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/cardview1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:src="@drawable/activity_splash_screen_logo" />
+
+                    <TextView
+                        android:id="@+id/fragment_profile2_user_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:text="Califonia, USA" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="3"
+                        android:src="@drawable/activity_splash_screen_logo" />
+
+                    <TextView
+                        android:id="@+id/fragment_profile2_mobile_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="left|center"
+                        android:text="+94718724671" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+        <LinearLayout
+            android:id="@+id/makeTestForReport"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:gravity="center">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/test_image"
+                    app:civ_border_color="#FF000000"
+                    app:civ_border_width="2dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:text="Do you have something to report?" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/makePhotoToReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="Photo"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/makeVideoToReport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="Video"
+                android:textAllCaps="false" />
+        </LinearLayout>
+
+
+        <com.allattentionhere.autoplayvideos.AAH_CustomRecyclerView
+            android:id="@+id/fragment_profile_rv_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

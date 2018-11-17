@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_editprofile"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E4E2">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#0020C2"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:background="#0020C2"
+                android:onClick="cancelAccountSettings"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Settings"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Save"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:background="#0020C2"/>
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:text="Change Password"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/edit_profile_nearest_city"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:text="Delete Account"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/edit_profile_nearest_city"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="#ffffff">
+            
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tell a Friend"
+                android:gravity="center|left"
+                android:padding="10dp"
+                android:textColor="#000000"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="4"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/facebook"
+                    android:layout_weight="1"/>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/whatsapp"
+                    android:layout_weight="1"/>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/skype"
+                    android:layout_weight="1"/>
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/twitter"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Report a problem"
+                android:padding="10dp"
+                android:background="#ffffff"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:background="#ffffff">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left"
+                    android:paddingLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="Something isn't working"
+                    android:textAllCaps="false"
+                    android:background="#ffffff"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:layout_weight="1"
+                    android:text="Feedback"
+                    android:textAllCaps="false"
+                    android:background="#ffffff"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:text="Context Awareness"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/edit_profile_nearest_city"
+            android:onClick="seeContextAwareness"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:text="Support us"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/edit_profile_nearest_city"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#ffffff"
+            android:text="User Agreement"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center"
+            android:drawableRight="@drawable/edit_profile_nearest_city"/>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAllCaps="false"
+            android:text="Logout"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape6"/>
+
+
+    </LinearLayout>
+</ScrollView>
