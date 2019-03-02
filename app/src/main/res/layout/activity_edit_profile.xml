@@ -3,7 +3,7 @@
     android:id="@+id/activity_editprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E4E2">
+    android:background="?attr/activity_edit_profile_background_color">
 
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0020C2"
+            android:background="?attr/activity_edit_profile_top_bar_background_color"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -22,28 +22,28 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_edit_profile_top_bar_cancel_button_background_color"
                 android:onClick="editProfileCancel"
                 android:text="Cancel"
-                android:textColor="#ffffff"
+                android:textSize="?attr/activity_edit_profile_top_bar_cancel_button_text_size"
+                android:textColor="?attr/activity_edit_profile_top_bar_cancel_button_text_color"
                 android:textAllCaps="false" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_edit_profile_top_bar_edit_profile_text_background_color"
                 android:text="Edit profile"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
+                android:textColor="?attr/activity_edit_profile_top_bar_edit_profile_text_text_color"
+                android:textSize="?attr/activity_edit_profile_top_bar_edit_profile_text_text_size" />
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
-                android:textColor="#ffffff"
+                android:background="?attr/activity_edit_profile_top_bar_background_color"
                 android:textAllCaps="false"/>
 
         </LinearLayout>
@@ -58,19 +58,40 @@
 
 
             <ImageView
+                android:id="@+id/activity_edit_profile_cover_image"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/test_image2" />
+                android:background="@drawable/test_image2"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"/>
+
+            <ImageButton
+                android:id="@+id/activity_edit_profile_change_cover_url"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/upload_cover_profile_image_icon"
+                android:layout_marginTop="-48dp"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"/>
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:id="@+id/profile_image"
-                android:layout_width="96dp"
-                android:layout_height="96dp"
+                android:id="@+id/activity_edit_profile_profile_image"
+                android:layout_width="?attr/activity_edit_profile_circular_image_width"
+                android:layout_height="?attr/activity_edit_profile_circular_image_height"
                 android:layout_gravity="center"
                 android:layout_marginTop="-48dp"
                 android:src="@drawable/test_image"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp" />
+                app:civ_border_color="?attr/activity_edit_profile_circular_image_civ_border_color"
+                app:civ_border_width="?attr/activity_edit_profile_circular_image_civ_border_width" />
+
+            <ImageButton
+                android:id="@+id/activity_edit_profile_change_profile_url"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/upload_cover_profile_image_icon"
+                android:layout_marginTop="-48dp"
+                android:layout_gravity="center"
+                android:background="@android:color/transparent"/>
 
 
 
@@ -81,7 +102,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_margin="10dp"
                 android:weightSum="2"
-                android:background="#ffffff">
+                android:background="?attr/activity_edit_profile_option_outside_background_color">
 
 
                 <TextView
@@ -91,19 +112,25 @@
                     android:layout_weight="1"
                     android:gravity="center|left"
                     android:paddingLeft="10dp"
-                    android:text="Your Name"/>
+                    android:text="Your Name"
+                    android:textSize="?attr/activity_edit_profile_option_text_font_size"
+                    android:textColor="?attr/activity_edit_profile_option_text_font_color"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"/>
 
                 <Button
                     android:id="@+id/activity_edit_profile_add_your_name_button"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:background="#ffffff"
+                    android:background="?attr/activity_edit_profile_option_button_background_color"
                     android:text="Add your name"
                     android:textAllCaps="false"
                     android:gravity="center|right"
                     android:paddingRight="10dp"
-                    android:onClick="addUserName"/>
+                    android:textColor="?attr/activity_edit_profile_option_button_font_color"
+                    android:onClick="addUserName"
+                    android:textSize="?attr/activity_edit_profile_option_button_font_size"
+                    />
 
             </LinearLayout>
 
@@ -113,7 +140,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:layout_margin="10dp"
-                android:background="#ffffff"
+                android:background="?attr/activity_edit_profile_option_outside_background_color"
                 android:weightSum="2">
 
 
@@ -125,7 +152,9 @@
                     android:gravity="center|left"
                     android:paddingLeft="10dp"
                     android:text="Nearest City"
-                    android:background="#ffffff"/>
+                    android:textColor="?attr/activity_edit_profile_option_text_font_color"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"
+                    android:textSize="?attr/activity_edit_profile_option_text_font_size"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -136,8 +165,10 @@
                     android:paddingRight="10dp"
                     android:drawableRight="@drawable/edit_profile_nearest_city"
                     android:textAllCaps="false"
-                    android:background="#ffffff"
-                    android:onClick="addUserNearestCity"/>
+                    android:textColor="?attr/activity_edit_profile_option_button_font_color"
+                    android:background="?attr/activity_edit_profile_option_button_background_color"
+                    android:onClick="addUserNearestCity"
+                    android:textSize="?attr/activity_edit_profile_option_button_font_size"/>
 
             </LinearLayout>
             <LinearLayout
@@ -146,7 +177,7 @@
                 android:orientation="horizontal"
                 android:layout_margin="10dp"
                 android:weightSum="2"
-                android:background="#ffffff">
+                android:background="?attr/activity_edit_profile_option_outside_background_color">
 
 
                 <TextView
@@ -155,9 +186,11 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center|left"
-                    android:background="#ffffff"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"
                     android:paddingLeft="10dp"
-                    android:text="Mobile"/>
+                    android:text="Mobile"
+                    android:textColor="?attr/activity_edit_profile_option_text_font_color"
+                    android:textSize="?attr/activity_edit_profile_option_text_font_size"/>
 
                 <Button
                     android:layout_width="match_parent"
@@ -165,10 +198,12 @@
                     android:layout_weight="1"
                     android:text="Add your mobile"
                     android:textAllCaps="false"
-                    android:background="#ffffff"
+                    android:textColor="?attr/activity_edit_profile_option_button_font_color"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"
                     android:gravity="center|right"
                     android:paddingRight="10dp"
-                    android:onClick="addUserMobile"/>
+                    android:onClick="addUserMobile"
+                    android:textSize="?attr/activity_edit_profile_option_button_font_size" />
 
             </LinearLayout>
             <LinearLayout
@@ -177,7 +212,74 @@
                 android:orientation="horizontal"
                 android:layout_margin="10dp"
                 android:weightSum="2"
-                android:background="#ffffff">
+                android:background="?attr/activity_edit_profile_option_outside_background_color">
+                <TextView
+                    android:id="@+id/activity_edit_profile_birthday_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"
+                    android:paddingLeft="10dp"
+                    android:text="Birthday"
+                    android:textColor="?attr/activity_edit_profile_option_text_font_color"
+                    android:textSize="?attr/activity_edit_profile_option_text_font_size"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Add your age"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/activity_edit_profile_option_button_font_color"
+                    android:background="?attr/activity_edit_profile_option_button_background_color"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:onClick="addUserBirthday"
+                    android:textSize="?attr/activity_edit_profile_option_button_font_size"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                android:background="?attr/activity_edit_profile_option_outside_background_color">
+                <TextView
+                    android:id="@+id/activity_edit_profile_gender_text_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"
+                    android:textColor="?attr/activity_edit_profile_option_text_font_color"
+                    android:paddingLeft="10dp"
+                    android:text="Gender"
+                    android:textSize="?attr/activity_edit_profile_option_text_font_size"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Add your gender"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/activity_edit_profile_option_button_font_color"
+                    android:background="?attr/activity_edit_profile_option_button_background_color"
+                    android:gravity="center|right"
+                    android:paddingRight="10dp"
+                    android:onClick="addUserGender"
+                    android:textSize="?attr/activity_edit_profile_option_button_font_size"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:weightSum="2"
+                android:background="?attr/activity_edit_profile_option_outside_background_color">
 
 
                 <TextView
@@ -187,7 +289,9 @@
                     android:gravity="center|left"
                     android:paddingLeft="10dp"
                     android:text="Email"
-                    android:background="#ffffff"/>
+                    android:textSize="?attr/activity_edit_profile_option_text_font_size"
+                    android:textColor="?attr/activity_edit_profile_option_text_font_color"
+                    android:background="?attr/activity_edit_profile_option_text_background_color"/>
 
                 <Button
                     android:id="@+id/activity_edit_profile_email_address"
@@ -196,9 +300,10 @@
                     android:layout_weight="1"
                     android:text=""
                     android:textAllCaps="false"
-                    android:background="#ffffff"
+                    android:background="?attr/activity_edit_profile_option_button_background_color"
                     android:gravity="center|right"
-                    android:paddingRight="10dp"/>
+                    android:paddingRight="10dp"
+                    android:textSize="?attr/activity_edit_profile_option_button_font_size"/>
 
             </LinearLayout>
 
@@ -211,10 +316,12 @@
                 android:layout_gravity="right"
                 android:background="@android:color/transparent"
                 android:textAllCaps="false"
+                android:textColor="?attr/activity_edit_profile_account_settings_font_color"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
                 android:layout_margin="10dp"
-                android:textStyle="bold"/>
+                android:textStyle="bold"
+                android:textSize="?attr/activity_edit_profile_account_settings_font_size"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />

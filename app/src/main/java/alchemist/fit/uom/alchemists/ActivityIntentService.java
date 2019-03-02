@@ -15,14 +15,23 @@ import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 import alchemist.fit.uom.alchemists.activities.DetectContextActivity;
+import alchemist.fit.uom.alchemists.activities.TabContentActivity;
+import alchemist.fit.uom.alchemists.interfaces.OnContextListner;
 
 //Extend IntentService//
 public class ActivityIntentService extends IntentService {
     protected static final String TAG = "Activity";
+    private static OnContextListner listener = null;
+
+    public static void setOnContextListner(TabContentActivity OnContextListner) {
+        listener = OnContextListner;
+    }
+
     //Call the super IntentService constructor with the name for the worker thread//
     public ActivityIntentService() {
         super(TAG);
     }
+
     @Override
     public void onCreate() {
         super.onCreate();
@@ -37,7 +46,26 @@ public class ActivityIntentService extends IntentService {
 //If data is available, then extract the ActivityRecognitionResult from the Intent//
             ActivityRecognitionResult result = ActivityRecognitionResult.extractResult(intent);
 
-//Get an array of DetectedActivity objects//
+
+            DetectedActivity mostProbableActivity
+                    = result.getMostProbableActivity();
+            //Get the confidence percentage//
+            int confidence = mostProbableActivity.getConfidence();
+            //Get the activity type//
+            int activityType = mostProbableActivity.getType();
+           // Toast.makeText(this, activityType+" "+confidence, Toast.LENGTH_SHORT).show();
+
+            //If ON_FOOT has an 80% or higher probability percentage...//
+
+//            if(activityType.e"On_Foot" && confidence> 80)
+//            {
+//
+//            }
+            if (listener != null) {
+                listener.onContextReceived(activityType,confidence);
+            }
+
+            //Get an array of DetectedActivity objects//
             ArrayList<DetectedActivity> detectedActivities = (ArrayList) result.getProbableActivities();
             PreferenceManager.getDefaultSharedPreferences(this)
                     .edit()
@@ -51,7 +79,7 @@ public class ActivityIntentService extends IntentService {
 
     static String getActivityString(Context context, int detectedActivityType) {
         Resources resources = context.getResources();
-        switch(detectedActivityType) {
+        switch (detectedActivityType) {
             case DetectedActivity.ON_BICYCLE:
                 return resources.getString(R.string.bicycle);
             case DetectedActivity.ON_FOOT:
@@ -70,6 +98,7 @@ public class ActivityIntentService extends IntentService {
                 return resources.getString(R.string.unknown_activity);
         }
     }
+
     static final int[] POSSIBLE_ACTIVITIES = {
 
             DetectedActivity.STILL,
@@ -81,12 +110,16 @@ public class ActivityIntentService extends IntentService {
             DetectedActivity.TILTING,
             DetectedActivity.UNKNOWN
     };
+
     static String detectedActivitiesToJson(ArrayList<DetectedActivity> detectedActivitiesList) {
-        Type type = new TypeToken<ArrayList<DetectedActivity>>() {}.getType();
+        Type type = new TypeToken<ArrayList<DetectedActivity>>() {
+        }.getType();
         return new Gson().toJson(detectedActivitiesList, type);
     }
+
     public static ArrayList<DetectedActivity> detectedActivitiesFromJson(String jsonArray) {
-        Type listType = new TypeToken<ArrayList<DetectedActivity>>(){}.getType();
+        Type listType = new TypeToken<ArrayList<DetectedActivity>>() {
+        }.getType();
         ArrayList<DetectedActivity> detectedActivities = new Gson().fromJson(jsonArray, listType);
         if (detectedActivities == null) {
             detectedActivities = new ArrayList<>();

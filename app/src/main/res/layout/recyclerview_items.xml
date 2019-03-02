@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rv_items"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
@@ -7,7 +9,8 @@
     <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/cardview1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="?attr/recyclerview_cardview_background_color">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -28,12 +31,13 @@
                     android:gravity="center">
 
                     <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                        android:layout_width="50dp"
-                        android:layout_height="50dp"
+                        android:id="@+id/recylerview_items_profile_url"
+                        android:layout_width="?attr/recyclerview_circular_image_width"
+                        android:layout_height="?attr/recyclerview_circular_image_height"
                         android:layout_gravity="center"
                         android:src="@drawable/test_image"
-                        app:civ_border_color="#FF000000"
-                        app:civ_border_width="2dp" />
+                        app:civ_border_color="?attr/recyclerview_circular_image_civ_border_color"
+                        app:civ_border_width="?attr/recyclerview_circular_image_civ_border_width" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -41,141 +45,135 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center|left"
-                    android:weightSum="2"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    android:weightSum="2">
 
                     <TextView
+                        android:id="@+id/recylerview_items_user_name"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="bottom|left"
-                        android:text="Jhon Doe"
-                        android:textSize="15dp"/>
+                        android:text="Chamari Prasad"
+                        android:textColor="?attr/recyclerview_user_name_text_color"
+                        android:textSize="?attr/recyclerview_user_name_text_size" />
 
                     <TextView
+                        android:id="@+id/recylerview_items_user_location"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
                         android:gravity="top|left"
-                        android:text="California"
-                        android:textSize="10dp"/>
+                        android:text="Kandy"
+                        android:textColor="?attr/recyclerview_location_text_color"
+                        android:textSize="?attr/recyclerview_location_text_size" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="2"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageButton
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:scaleX="0.6"
-                        android:scaleY="0.6"
-                        android:src="@drawable/three_dot_icon"/>
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/recylerview_items_post_time_stamp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:textColor="?attr/recyclerview_post_time_stamp_text_color"
+                        android:textSize="?attr/recyclerview_post_time_stamp_text_size" />
                 </LinearLayout>
             </LinearLayout>
 
             <TextView
-                android:id="@+id/ImageNameTextView"
+                android:id="@+id/recylerview_items_post_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:paddingLeft="10dp"
-                android:textColor="#000000"
-                android:textSize="20dp" />
+                android:textColor="?attr/recyclerview_post_text_color"
+                android:textSize="?attr/recyclerview_post_text_size" />
 
-            <ImageView
-                android:id="@+id/recyclerview_items_image_view"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="10dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:visibility="gone" />
 
-            <VideoView
-                android:id="@+id/recyclerview_items_video_view"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:adjustViewBounds="true"
-                android:scaleType="centerCrop"
-                android:visibility="gone" />
+            <FrameLayout
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center">
+
+                <com.allattentionhere.autoplayvideos.AAH_VideoImage
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/loading"/>
+
+                <ImageView
+                    android:id="@+id/img_playback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:layout_margin="8dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_pause" />
+
+                <ImageView
+                    android:id="@+id/img_vol"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_margin="8dp"
+                    android:visibility="gone"
+                    app:srcCompat="@drawable/ic_unmute" />
+            </FrameLayout>
 
             <LinearLayout
+                android:id="@+id/recyclerview_bottom_layout"
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
-                android:background="#D1D0CE"
+                android:background="?attr/recyclerview_comment_layout_outside_color"
                 android:orientation="horizontal">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_margin="10dp"
-                    android:background="#ffffff"
+                    android:background="?attr/recyclerview_comment_layout_inside_color"
                     android:weightSum="3">
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_weight="1"
-                        android:orientation="horizontal"
-                        android:weightSum="2">
+                        android:orientation="horizontal">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:layout_gravity="center"
-                            android:layout_weight="1"
                             android:orientation="horizontal"
                             android:weightSum="2">
 
 
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
+                            <com.like.LikeButton
+                                android:id="@+id/star_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_weight="1"
-                                android:scaleX="0.6"
-                                android:scaleY="0.6"
-                                android:src="@drawable/heart_icon" />
+                                app:anim_scale_factor="10"
+                                app:icon_size="25dp"
+                                app:icon_type="star" />
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center"
                                 android:layout_weight="1"
-                                android:text="80" />
+                                android:text="Star"
+                                android:textColor="?attr/recyclerview_comment_layout_star_button_label_text_color"
+                                android:textSize="?attr/recyclerview_comment_layout_star_button_label_text_size" />
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_gravity="center"
-                            android:layout_weight="1"
-                            android:orientation="horizontal"
-                            android:weightSum="2">
-
-
-                            <ImageView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:scaleX="0.6"
-                                android:scaleY="0.6"
-                                android:src="@drawable/message_icon" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_gravity="center"
-                                android:layout_weight="1"
-                                android:text="80" />
-
-                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -188,15 +186,25 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_weight="1"></LinearLayout>
+                        android:layout_weight="1">
+
+                        <Button
+                            android:id="@+id/moveComments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@android:color/transparent"
+                            android:gravity="center"
+                            android:onClick="moveToComment"
+                            android:text="comments"
+                            android:textAllCaps="false"
+                            android:textColor="?attr/recyclerview_comment_layout_comment_text_color"
+                            android:textSize="?attr/recyclerview_comment_layout_comment_text_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
-
-            <!--<TextView-->
-                <!--android:layout_width="match_parent"-->
-                <!--android:layout_height="2dp"-->
-                <!--android:background="#000000" />-->
 
         </LinearLayout>
 

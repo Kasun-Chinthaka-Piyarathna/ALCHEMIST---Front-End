@@ -3,7 +3,7 @@
     android:id="@+id/activity_add_user_mobile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E4E2">
+    android:background="?attr/activity_x_option_background_color">
 
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0020C2"
+            android:background="?attr/activity_x_option_top_bar_background_color"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -22,60 +22,63 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_x_option_top_bar_cancel_button_background_color"
+                android:onClick="activityAddUserMobileCancel"
                 android:text="Cancel"
+                android:textSize="?attr/activity_x_option_top_bar_cancel_button_text_size"
                 android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:onClick="activityAddUserMobileCancel"/>
+                android:textColor="?attr/activity_x_option_top_bar_cancel_button_text_color" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_x_option_top_bar_caption_background_color"
                 android:text="Mobile Info"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
+                android:textColor="?attr/activity_x_option_top_bar_caption_text_color"
+                android:textSize="?attr/activity_x_option_top_bar_caption_text_size" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_x_option_top_bar_background_color"
                 android:text=""
-                android:textAllCaps="false"
-                android:textColor="#ffffff" />
+                android:textAllCaps="false" />
 
         </LinearLayout>
-
-
 
 
         <EditText
             android:id="@+id/activity_add_user_mobile_edit_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Add your mobile number"
-            android:layout_marginTop="50dp"
-            android:padding="10dp"
-            android:background="#ffffff"
-            android:gravity="center|left"
             android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"/>
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/activity_x_option_edit_text_background_color"
+            android:textColor="?attr/activity_x_option_edit_text_text_color"
+            android:textColorHint="?attr/activity_x_option_edit_hint_text_color"
+            android:gravity="center|left"
+            android:hint="Add your mobile number"
+            android:textSize="?attr/activity_x_option_edit_text_text_size"
+            android:padding="10dp" />
+
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="Confirm"
-            android:gravity="center"
             android:layout_gravity="center"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="20dp"
-            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape6"
+            android:gravity="center"
             android:onClick="confirmUserMobile"
-            android:background="@drawable/buttonshape6"/>
+            android:text="Confirm"
+            android:textSize="?attr/activity_x_option_confirm_button_text_size"
+            android:textAllCaps="false"
+            android:textColor="?attr/activity_x_option_confirm_button_text_color" />
 
 
     </LinearLayout>

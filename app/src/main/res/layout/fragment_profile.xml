@@ -1,173 +1,231 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_profile_swipe_refresh_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
-    android:orientation="vertical">
+    android:layout_gravity="center"
+    android:background="?attr/fragment_profile_bakground_color"
+    android:orientation="vertical"
+    android:padding="10dp">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:adjustViewBounds="true"
-            android:scaleType="centerCrop"
-            android:src="@drawable/test_image2" />
-
-
-        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-            android:id="@+id/profile_image"
-            android:layout_width="96dp"
-            android:layout_height="96dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="-48dp"
-            android:src="@drawable/test_image"
-            app:civ_border_color="#FF000000"
-            app:civ_border_width="2dp" />
-
-
-        <ImageButton
-            android:id="@+id/personal_settings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#ffffff"
-            android:src="@drawable/profile_section_settings_icon"
-            android:layout_gravity="right"
-            android:paddingRight="10dp"
-            android:layout_marginTop="-45dp"/>
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-            android:background="#000080"
-            android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingLeft="15dp"
-            android:paddingRight="15dp"
-            android:paddingTop="5dp"
-            android:text="Jhon Doe"
-            android:textColor="#ffffff"
-            android:textSize="20dp" />
-
-        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-            android:id="@+id/cardview1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal"
-                    android:weightSum="4">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:src="@drawable/activity_splash_screen_logo" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="left|center"
-                        android:text="Califonia, USA" />
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal"
-                    android:weightSum="4">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="3"
-                        android:src="@drawable/activity_splash_screen_logo" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:gravity="left|center"
-                        android:text="+94718724671" />
-                </LinearLayout>
-            </LinearLayout>
-        </android.support.v7.widget.CardView>
-
+        android:layout_height="wrap_content">
 
         <LinearLayout
-            android:id="@+id/makeTestForReport"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            android:weightSum="5">
+            android:orientation="vertical">
 
-            <LinearLayout
+            <ImageView
+                android:id="@+id/fragment_profile_cover_image"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="4"
-                android:gravity="center">
+                android:layout_height="200dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/test_image2" />
 
-                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                    android:layout_width="30dp"
-                    android:layout_height="30dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/test_image"
-                    app:civ_border_color="#FF000000"
-                    app:civ_border_width="2dp" />
-            </LinearLayout>
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/fragment_profile_profile_image"
+                android:layout_width="?attr/fragment_profile_profile_circular_image_width"
+                android:layout_height="?attr/fragment_profile_profile__circular_image_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="-48dp"
+                android:src="@drawable/test_image"
+                app:civ_border_color="?attr/fragment_profile_profile__circular_image_civ_border_color"
+                app:civ_border_width="?attr/fragment_profile_profile__circular_image_civ_border_width" />
+
+
+            <ImageButton
+                android:id="@+id/personal_settings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="-45dp"
+                android:background="@android:color/transparent"
+                android:paddingRight="10dp"
+                android:src="@drawable/profile_section_settings_icon" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:gravity="center|left"
-                android:text="Do you have something to report?" />
-        </LinearLayout>
+                android:id="@+id/fragment_profile2_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="?attr/fragment_profile_profile_name_background_color"
+                android:gravity="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:paddingRight="15dp"
+                android:paddingBottom="5dp"
+                android:text="Jhon Doe"
+                android:textColor="?attr/fragment_profile_profile_name_text_color"
+                android:textSize="?attr/fragment_profile_profile_name_text_size" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="2">
-
-            <Button
-                android:id="@+id/makePhotoToReport"
+            <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/cardview1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:text="Photo"
-                android:textAllCaps="false" />
+                android:layout_marginTop="10dp"
+                app:cardBackgroundColor="?attr/fragment_profile_location__mobile_card_back_ground_color">
 
-            <Button
-                android:id="@+id/makeVideoToReport"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/fragment_profile_location_outside_layout_height"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/fragment_profile_location_imageview"
+                                android:layout_width="?attr/fragment_profile_location_circular_image_width"
+                                android:layout_height="?attr/fragment_profile_location__circular_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/test_image"
+                                app:civ_border_color="?attr/fragment_profile_location__circular_image_civ_border_color"
+                                app:civ_border_width="?attr/fragment_profile_location__circular_image_civ_border_width" />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/fragment_profile2_user_location"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="Califonia, USA"
+                            android:textColor="?attr/fragment_profile_profile_user_location_text_color"
+                            android:textSize="?attr/fragment_profile_profile_user_location_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="?attr/fragment_profile_location_outside_layout_height"
+                        android:orientation="horizontal"
+                        android:weightSum="4">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:gravity="center">
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/fragment_profile_mobile_number_imageview"
+                                android:layout_width="?attr/fragment_profile_location_circular_image_width"
+                                android:layout_height="?attr/fragment_profile_location__circular_image_height"
+                                android:layout_gravity="center"
+                                android:src="@drawable/test_image"
+                                app:civ_border_color="?attr/fragment_profile_location__circular_image_civ_border_color"
+                                app:civ_border_width="?attr/fragment_profile_location__circular_image_civ_border_width" />
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:id="@+id/fragment_profile2_mobile_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="left|center"
+                            android:text="+94718724671"
+                            android:textColor="?attr/fragment_profile_profile_mobile_number_text_color"
+                            android:textSize="?attr/fragment_profile_profile_mobile_number_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                android:id="@+id/makeTestForReport"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="#ffffff"
-                android:text="Video"
-                android:textAllCaps="false" />
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:weightSum="5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                        android:id="@+id/fragment_profile_profile_url"
+                        android:layout_width="?attr/fragment_profile_location_circular_image_width"
+                        android:layout_height="?attr/fragment_profile_location__circular_image_height"
+                        android:layout_gravity="center"
+                        android:src="@drawable/test_image"
+                        app:civ_border_color="?attr/fragment_profile_location__circular_image_civ_border_color"
+                        app:civ_border_width="?attr/fragment_profile_location__circular_image_civ_border_width" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center|left"
+                    android:text="Do you have something to report?"
+                    android:textColor="?attr/fragment_profile_profile_report_text_text_color"
+                    android:textSize="?attr/fragment_profile_profile_report_text_text_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/makePhotoToReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/fragment_profile_profile_photo_button_bakground_color"
+                    android:text="Photo"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/fragment_profile_profile_photo_button_text_color"
+                    android:textSize="?attr/fragment_profile_profile_photo_button_text_size" />
+
+                <Button
+                    android:id="@+id/makeVideoToReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="?attr/fragment_profile_profile_video_button_bakground_color"
+                    android:text="Video"
+                    android:textAllCaps="false"
+                    android:textColor="?attr/fragment_profile_profile_video_button_text_color"
+                    android:textSize="?attr/fragment_profile_profile_video_button_text_size" />
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/viewProfilePosts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:text="Profile Posts"
+                android:textAllCaps="false"
+                android:textColor="?attr/fragment_profile_profile_profile_posts_button_text_color"
+                android:textSize="?attr/fragment_profile_profile_profile_posts_button_text_size"
+                android:textStyle="bold|italic" />
+
+
         </LinearLayout>
+    </ScrollView>
 
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/fragment_profile_recyclerView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
-
-</android.support.v4.widget.NestedScrollView>
+</android.support.v4.widget.SwipeRefreshLayout>

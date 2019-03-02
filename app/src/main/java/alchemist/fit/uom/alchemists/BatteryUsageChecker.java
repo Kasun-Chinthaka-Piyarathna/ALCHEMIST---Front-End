@@ -20,7 +20,6 @@ public class BatteryUsageChecker extends BroadcastReceiver {
         listener = onBatteryStatusReceivedListener;
     }
 
-
     @Override
     public void onReceive(Context context, Intent intent) {
 

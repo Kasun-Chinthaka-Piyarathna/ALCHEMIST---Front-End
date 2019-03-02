@@ -3,7 +3,7 @@
     android:id="@+id/activity_editprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E4E2">
+    android:background="?attr/activity_settings_background_color">
 
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0020C2"
+            android:background="?attr/activity_settings_top_bar_background_color"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -23,9 +23,10 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Cancel"
-                android:textColor="#ffffff"
+                android:textSize="?attr/activity_settings_cancel_button_text_size"
+                android:textColor="?attr/activity_settings_cancel_button_text_color"
                 android:textAllCaps="false"
-                android:background="#0020C2"
+                android:background="?attr/activity_settings_cancel_button_background_color"
                 android:onClick="cancelAccountSettings"/>
 
             <TextView
@@ -34,26 +35,31 @@
                 android:layout_weight="1"
                 android:text="Settings"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
+                android:textColor="?attr/activity_settings_caption_text_color"
+                android:textSize="?attr/activity_settings_caption_text_size"
+                android:background="?attr/activity_settings_caption_background_color"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Save"
-                android:textColor="#ffffff"
+                android:textSize="?attr/activity_settings_save_button_text_size"
+                android:textColor="?attr/activity_settings_save_button_text_color"
                 android:textAllCaps="false"
-                android:background="#0020C2"/>
+                android:background="?attr/activity_settings_save_button_background_color"/>
 
         </LinearLayout>
 
 
         <Button
+            android:onClick="ChangePassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#ffffff"
+            android:background="?attr/activity_settings_change_password_button_background_color"
+            android:textColor="?attr/activity_settings_change_password_button_text_color"
+            android:textSize="?attr/activity_settings_change_password_button_text_size"
             android:text="Change Password"
             android:textAlignment="textStart"
             android:textAllCaps="false"
@@ -64,10 +70,13 @@
 
 
         <Button
+            android:onClick="DeleteAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#ffffff"
+            android:background="?attr/activity_settings_delete_button_background_color"
+            android:textColor="?attr/activity_settings_delete_button_text_color"
+            android:textSize="?attr/activity_settings_delete_button_text_size"
             android:text="Delete Account"
             android:textAlignment="textStart"
             android:textAllCaps="false"
@@ -82,7 +91,7 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_margin="10dp"
-            android:background="#ffffff">
+            android:background="?attr/activity_settings_report_a_problem_background_color">
             
             
             <TextView
@@ -91,7 +100,9 @@
                 android:text="Tell a Friend"
                 android:gravity="center|left"
                 android:padding="10dp"
-                android:textColor="#000000"/>
+                android:background="?attr/activity_settings_tell_a_friend_background_color"
+                android:textColor="?attr/activity_settings_tell_a_friend_text_color"
+                android:textSize="?attr/activity_settings_tell_a_friend_text_size"/>
 
 
             <LinearLayout
@@ -134,7 +145,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="#ffffff"
+            android:background="?attr/activity_settings_report_a_problem_background_color"
             android:layout_margin="10dp">
 
             <TextView
@@ -142,7 +153,9 @@
                 android:layout_height="wrap_content"
                 android:text="Report a problem"
                 android:padding="10dp"
-                android:background="#ffffff"/>
+                android:background="?attr/activity_settings_report_a_problem_background_color"
+                android:textColor="?attr/activity_settings_report_a_problem_text_color"
+                android:textSize="?attr/activity_settings_report_a_problem_text_size"/>
 
 
             <LinearLayout
@@ -150,26 +163,36 @@
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:weightSum="2"
-                android:background="#ffffff">
+                android:background="?attr/activity_settings_feedback_background_color">
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|left"
                     android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:layout_weight="1"
                     android:text="Something isn't working"
                     android:textAllCaps="false"
-                    android:background="#ffffff"/>
+                    android:background="?attr/activity_settings_feedback_background_color"
+                    android:textColor="?attr/activity_settings_feedback_text_color"
+                    android:textSize="?attr/activity_settings_feedback_text_size"/>
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:gravity="center|right"
                     android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
                     android:layout_weight="1"
                     android:text="Feedback"
                     android:textAllCaps="false"
-                    android:background="#ffffff"/>
+                    android:background="?attr/activity_settings_feedback_background_color"
+                    android:textColor="?attr/activity_settings_feedback_text_color"
+                    android:textSize="?attr/activity_settings_feedback_text_size"/>
             </LinearLayout>
 
 
@@ -181,8 +204,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:text="Context Awareness"
+            android:background="?attr/activity_settings_context_support_agreement_background_color"
+            android:textColor="?attr/activity_settings_context_support_agreement_text_color"
+            android:textSize="?attr/activity_settings_feedback_text_size"
+            android:text="Dynamic Behaviour"
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:paddingLeft="10dp"
@@ -196,8 +221,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#ffffff"
-            android:text="Support us"
+            android:background="?attr/activity_settings_context_support_agreement_background_color"
+            android:textColor="?attr/activity_settings_context_support_agreement_text_color"
+            android:textSize="?attr/activity_settings_context_support_agreement_text_size"
+            android:text="Support Us"
             android:textAlignment="textStart"
             android:textAllCaps="false"
             android:paddingLeft="10dp"
@@ -210,7 +237,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:background="#ffffff"
+            android:background="?attr/activity_settings_context_support_agreement_background_color"
+            android:textColor="?attr/activity_settings_context_support_agreement_text_color"
+            android:textSize="?attr/activity_settings_context_support_agreement_text_size"
             android:text="User Agreement"
             android:textAlignment="textStart"
             android:textAllCaps="false"
@@ -230,7 +259,8 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="20dp"
-            android:textColor="#ffffff"
+            android:textColor="?attr/activity_settings_logout_button_text_color"
+            android:textSize="?attr/activity_settings_logout_button_text_size"
             android:background="@drawable/buttonshape6"/>
 
 

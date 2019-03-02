@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ALCHEMISTS</string>
+    <string name="app_name">UReport</string>
 
     <string name="track">Track me</string>
     <string name="percentage">%1$d%%</string>
@@ -11,4 +11,7 @@
     <string name="unknown_activity">Unknown activity</string>
     <string name="vehicle">In a vehicle</string>
     <string name="walking">Walking</string>
+
+
+    <string name="prefs_theme_key">theme</string>
 </resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_add_user_birthday"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/activity_x_option_background_color">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/activity_x_option_top_bar_background_color"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/activity_x_option_top_bar_cancel_button_background_color"
+                android:onClick="activityAddUserBirthdayCancel"
+                android:text="Cancel"
+                android:textSize="?attr/activity_x_option_top_bar_cancel_button_text_size"
+                android:textAllCaps="false"
+                android:textColor="?attr/activity_x_option_top_bar_cancel_button_text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/activity_x_option_top_bar_caption_background_color"
+                android:text="Birthday Info"
+                android:textAlignment="center"
+                android:textColor="?attr/activity_x_option_top_bar_caption_text_color"
+                android:textSize="?attr/activity_x_option_top_bar_caption_text_size" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="?attr/activity_x_option_top_bar_background_color"
+                android:text=""
+                android:textAllCaps="false" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/activity_add_user_birthday_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="10dp"
+            android:background="?attr/activity_x_option_edit_text_background_color"
+            android:gravity="center"
+            android:textColorHint="?attr/activity_x_option_edit_hint_text_color"
+            android:hint="Click here to add your birthday"
+            android:textSize="?attr/activity_x_option_edit_text_text_size"
+            android:onClick="addBirthDay"
+            android:padding="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="70dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/buttonshape6"
+            android:gravity="center"
+            android:onClick="confirmUserBirthday"
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textSize="?attr/activity_x_option_confirm_button_text_size"
+            android:textColor="?attr/activity_x_option_confirm_button_text_color" />
+
+
+    </LinearLayout>
+</ScrollView>

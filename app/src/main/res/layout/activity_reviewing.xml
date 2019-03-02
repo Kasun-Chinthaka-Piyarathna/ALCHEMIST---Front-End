@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_report_make"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/activity_report_make_background_color"
+    android:orientation="vertical"
+    tools:context="alchemist.fit.uom.alchemists.activities.ReportMakeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="?attr/activity_report_make_top_bar_background_color"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/back_button_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/back_arrow" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="left|center"
+            android:text="Create Post"
+            android:textColor="?attr/activity_report_make_top_bar_create_post_text_color"
+            android:textSize="?attr/activity_report_make_top_bar_create_post_text_size" />
+
+        <TextView
+            android:id="@+id/top_bar_pending_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="PENDING"
+            android:visibility="gone"
+            android:textColor="?attr/activity_report_make_top_bar_pending_post_text_color"
+            android:textSize="?attr/activity_report_make_top_bar_pending_post_text_size" />
+
+        <TextView
+            android:id="@+id/top_bar_post_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="POST NOW"
+            android:textColor="?attr/activity_report_make_top_bar_post_text_color"
+            android:textSize="?attr/activity_report_make_top_bar_post_text_size"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/activity_report_make_profile_image_url"
+                android:layout_width="?attr/activity_report_make_circular_image_width"
+                android:layout_height="?attr/activity_report_make_circular_image_height"
+                android:layout_gravity="center"
+                android:src="@drawable/test_image"
+                app:civ_border_color="?attr/activity_report_make_circular_image_boarder_color"
+                app:civ_border_width="?attr/activity_report_make_circular_image_boarder_width" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/activity_report_make_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="Jhon Doe"
+            android:textColor="?attr/activity_report_make_profile_name_text_color"
+            android:textSize="?attr/activity_report_make_profile_name_size" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/suggest_text_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/suggest_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/suggest_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+        <RadioButton
+            android:id="@+id/suggest_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/describeTextInReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:gravity="start"
+        android:hint="Describe something you have seen..."
+        android:padding="10dp"
+        android:textColor="?attr/activity_report_make_post_text_color"
+        android:textColorHint="?attr/activity_report_make_post_text_hint_color"
+        android:textSize="?attr/activity_report_make_post_text_size" />
+
+    <ImageView
+        android:id="@+id/ShowImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <VideoView
+        android:id="@+id/ShowVideoView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+
+</LinearLayout>

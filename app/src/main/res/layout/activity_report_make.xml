@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="?attr/activity_report_make_background_color"
     android:orientation="vertical"
     android:id="@+id/activity_report_make"
     tools:context="alchemist.fit.uom.alchemists.activities.ReportMakeActivity">
@@ -12,7 +12,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#003366"
+        android:background="?attr/activity_report_make_top_bar_background_color"
         android:orientation="horizontal"
         android:weightSum="5">
 
@@ -36,7 +36,8 @@
             android:layout_weight="1"
             android:gravity="left|center"
             android:text="Create Post"
-            android:textColor="#ffffff" />
+            android:textColor="?attr/activity_report_make_top_bar_create_post_text_color"
+            android:textSize="?attr/activity_report_make_top_bar_create_post_text_size"/>
 
         <TextView
             android:id="@+id/top_bar_pending_text"
@@ -45,7 +46,8 @@
             android:layout_weight="2"
             android:gravity="center"
             android:text="PENDING"
-            android:textColor="#ffffff" />
+            android:textColor="?attr/activity_report_make_top_bar_pending_post_text_color"
+            android:textSize="?attr/activity_report_make_top_bar_pending_post_text_size"/>
 
         <TextView
             android:id="@+id/top_bar_post_text"
@@ -54,8 +56,9 @@
             android:layout_weight="2"
             android:gravity="center"
             android:text="POST"
-            android:textColor="#ffffff"
-            android:visibility="gone" />
+            android:textColor="?attr/activity_report_make_top_bar_post_text_color"
+            android:visibility="gone"
+            android:textSize="?attr/activity_report_make_top_bar_post_text_size"/>
 
     </LinearLayout>
 
@@ -73,20 +76,24 @@
             android:gravity="center">
 
             <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
+                android:id="@+id/activity_report_make_profile_image_url"
+                android:layout_width="?attr/activity_report_make_circular_image_width"
+                android:layout_height="?attr/activity_report_make_circular_image_height"
                 android:layout_gravity="center"
                 android:src="@drawable/test_image"
-                app:civ_border_color="#FF000000"
-                app:civ_border_width="2dp" />
+                app:civ_border_color="?attr/activity_report_make_circular_image_boarder_color"
+                app:civ_border_width="?attr/activity_report_make_circular_image_boarder_width" />
         </LinearLayout>
 
         <TextView
+            android:id="@+id/activity_report_make_user_name"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center|left"
-            android:text="Jhon Doe" />
+            android:text="Jhon Doe"
+            android:textSize="?attr/activity_report_make_profile_name_size"
+            android:textColor="?attr/activity_report_make_profile_name_text_color"/>
     </LinearLayout>
 
     <EditText
@@ -94,6 +101,9 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:gravity="start"
+        android:textColorHint="?attr/activity_report_make_post_text_hint_color"
+        android:textSize="?attr/activity_report_make_post_text_size"
+        android:textColor="?attr/activity_report_make_post_text_color"
         android:hint="Describe something you have seen..."
         android:padding="10dp" />
 
@@ -120,7 +130,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:weightSum="2">
+        android:weightSum="4">
 
 
         <Button
@@ -128,10 +138,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_weight="1"
-            android:text="Photo"
+            android:layout_weight="2"
+            android:text="Image"
+            android:gravity="center"
+            android:drawableLeft="@drawable/camera"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
+            android:textColor="?attr/activity_report_make_photo_button_text_color"
+            android:textSize="?attr/activity_report_make_photo_button_text_size"
             android:background="@drawable/buttonshape6"/>
 
         <Button
@@ -139,10 +154,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:drawableLeft="@drawable/play_button"
             android:text="Video"
+            android:textSize="?attr/activity_report_make_photo_button_text_size"
             android:textAllCaps="false"
-            android:textColor="#ffffff"
+            android:textColor="?attr/activity_report_make_video_button_text_color"
             android:background="@drawable/buttonshape6"/>
     </LinearLayout>
 

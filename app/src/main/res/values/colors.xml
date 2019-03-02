@@ -4,4 +4,1405 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
     <color name="status_bar_color">#b3b2b0</color>
+
+
+    <!-- A light Holo shade of blue -->
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <!-- A light Holo shade of gray -->
+    <color name="holo_gray_light">#33999999</color>
+    <!-- A light Holo shade of green -->
+    <color name="holo_green_light">#ff99cc00</color>
+    <!-- A light Holo shade of red -->
+    <color name="holo_red_light">#ffff4444</color>
+    <!-- A dark Holo shade of blue -->
+    <color name="holo_blue_dark">#ff0099cc</color>
+    <!-- A dark Holo shade of green -->
+    <color name="holo_green_dark">#ff669900</color>
+    <!-- A dark Holo shade of red -->
+    <color name="holo_red_dark">#ffcc0000</color>
+    <!-- A Holo shade of purple -->
+    <color name="holo_purple">#ffaa66cc</color>
+    <!-- A light Holo shade of orange -->
+    <color name="holo_orange_light">#ffffbb33</color>
+    <!-- A dark Holo shade of orange -->
+    <color name="holo_orange_dark">#ffff8800</color>
+    <!-- A really bright Holo shade of blue -->
+    <color name="holo_blue_bright">#ff00ddff</color>
+    <!-- A really bright Holo shade of gray -->
+    <color name="holo_gray_bright">#33CCCCCC</color>
+
+    <!--Default Theme-->
+
+    <!--recyclerview_items-->
+    <color name="recyclerview_circular_image_civ_border_color">#FF000000</color>
+    <color name="recyclerview_post_text_color">#000000</color>
+    <color name="recyclerview_comment_layout_outside_color">#D1D0CE</color>
+    <color name="recyclerview_comment_layout_inside_color">#ffffff</color>
+    <color name="recyclerview_cardview_background_color">#ffffff</color>
+    <color name="recyclerview_user_name_text_color">#848482</color>
+    <color name="recyclerview_location_text_color">#848482</color>
+    <color name="recyclerview_post_time_stamp_text_color">#848482</color>
+    <color name="recyclerview_comment_layout_comment_text_color">#000000</color>
+    <color name="recyclerview_comment_layout_star_button_label_text_color">#000000</color>
+
+    <!--fragment_news_feed.xml-->
+    <color name="fragment_news_feed_bakground_color">#f5f5f5</color>
+    <!--fragment_notifications.xml-->
+    <color name="fragment_notifications_bakground_color">#f5f5f5</color>
+
+    <!--fragment_profile.xml-->
+    <color name="fragment_profile_bakground_color">#f5f5f5</color>
+    <color name="fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="fragment_profile_profile_name_background_color">#000080</color>
+    <color name="fragment_profile_profile_user_location_text_color">#848482</color>
+    <color name="fragment_profile_profile_mobile_number_text_color">#848482</color>
+    <color name="fragment_profile_profile_report_text_text_color">#848482</color>
+    <color name="fragment_profile_profile_photo_button_text_color">#000000</color>
+    <color name="fragment_profile_profile_photo_button_bakground_color">#ffffff</color>
+    <color name="fragment_profile_profile_video_button_text_color">#000000</color>
+    <color name="fragment_profile_profile_video_button_bakground_color">#ffffff</color>
+    <color name="fragment_profile_profile_profile_posts_button_text_color">#000000</color>
+
+    <color name="fragment_profile_profile__circular_image_civ_border_color">#FF000000</color>
+    <color name="fragment_profile_location__circular_image_civ_border_color">#FF000000</color>
+    <color name="fragment_profile_location__mobile_card_back_ground_color">#ffffff</color>
+
+    <!--notification_section.xml-->
+    <color name="notification_section_cardview_layout_background_color">#ffffff</color>
+    <color name="notification_section_circular_image_civ_border_color">#FF000000</color>
+    <color name="notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="notification_section_notification_section_time_stamp_text_color">#000000</color>
+
+    <!--activity_view_user_posts-->
+    <color name="activity_view_user_posts_background_color">#ffffff</color>
+
+    <!--activity_report_make.xml-->
+    <color name="activity_report_make_background_color">#ffffff</color>
+    <color name="activity_report_make_top_bar_background_color">#003366</color>
+    <color name="activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="activity_report_make_circular_image_boarder_color">#FF000000</color>
+    <color name="activity_report_make_profile_name_text_color">#848482</color>
+    <color name="activity_report_make_post_text_color">#000000</color>
+    <color name="activity_report_make_post_text_hint_color">#848482</color>
+    <color name="activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="activity_report_make_upload_buttons_background_color">#003366</color>
+
+
+    <!--activity_edit_profile.xml-->
+    <color name="activity_edit_profile_background_color">#E5E4E2</color>
+    <color name="activity_edit_profile_top_bar_background_color">#0020C2</color>
+    <color name="activity_edit_profile_top_bar_cancel_button_background_color">#0020C2</color>
+    <color name="activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="activity_edit_profile_top_bar_edit_profile_text_background_color">#0020C2</color>
+    <color name="activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="activity_edit_profile_circular_image_civ_border_color">#FF000000</color>
+    <color name="activity_edit_profile_option_outside_background_color">#ffffff</color>
+    <color name="activity_edit_profile_option_text_background_color">#ffffff</color>
+    <color name="activity_edit_profile_option_text_font_color">#848482</color>
+    <color name="activity_edit_profile_option_button_background_color">#ffffff</color>
+    <color name="activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="activity_edit_profile_account_settings_font_color">#000000</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="activity_x_option_background_color">#E5E4E2</color>
+    <color name="activity_x_option_top_bar_background_color">#0020C2</color>
+    <color name="activity_x_option_top_bar_cancel_button_background_color">#0020C2</color>
+    <color name="activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="activity_x_option_top_bar_caption_background_color">#0020C2</color>
+    <color name="activity_x_option_edit_text_text_color">#000000</color>
+    <color name="activity_x_option_edit_hint_text_color">#848482</color>
+    <color name="activity_x_option_edit_text_background_color">#ffffff</color>
+    <color name="activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="activity_settings_background_color">#E5E4E2</color>
+    <color name="activity_settings_top_bar_background_color">#0020C2</color>
+    <color name="activity_settings_cancel_button_background_color">#0020C2</color>
+    <color name="activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="activity_settings_save_button_background_color">#0020C2</color>
+    <color name="activity_settings_save_button_text_color">#ffffff</color>
+    <color name="activity_settings_caption_background_color">#0020C2</color>
+    <color name="activity_settings_caption_text_color">#ffffff</color>
+    <color name="activity_settings_change_password_button_background_color">#ffffff</color>
+    <color name="activity_settings_change_password_button_text_color">#000000</color>
+    <color name="activity_settings_delete_button_background_color">#ffffff</color>
+    <color name="activity_settings_delete_button_text_color">#000000</color>
+    <color name="activity_settings_tell_a_friend_background_color">#ffffff</color>
+    <color name="activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="activity_settings_report_a_problem_text_color">#848482</color>
+    <color name="activity_settings_report_a_problem_background_color">#ffffff</color>
+    <color name="activity_settings_feedback_text_color">#000000</color>
+    <color name="activity_settings_feedback_background_color">#ffffff</color>
+    <color name="activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="activity_settings_context_support_agreement_background_color">#ffffff</color>
+    <color name="activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="bottom_navigation_background_color">#512da8</color>
+    <color name="status_bar_background_color">#512da8</color>
+
+    <!--AppThemeForDG1 Theme-->
+
+    <!--<color name="primaryColor">#79baec</color>-->
+    <!--<color name="primaryLightColor">#adecff</color>-->
+    <!--<color name="primaryDarkColor">#448ab9</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+    <!--recyclerview_items-->
+
+    <color name="dg1_recyclerview_circular_image_civ_border_color">#448ab9</color>
+    <color name="dg1_recyclerview_post_text_color">#000000</color>
+    <color name="dg1_recyclerview_comment_layout_outside_color">#448ab9</color>
+    <color name="dg1_recyclerview_comment_layout_inside_color">#adecff</color>
+    <color name="dg1_recyclerview_cardview_background_color">#adecff</color>
+    <color name="dg1_recyclerview_user_name_text_color">#448ab9</color>
+    <color name="dg1_recyclerview_location_text_color">#448ab9</color>
+    <color name="dg1_recyclerview_post_time_stamp_text_color">#448ab9</color>
+    <color name="dg1_recyclerview_comment_layout_comment_text_color">#448ab9</color>
+    <color name="dg1_recyclerview_comment_layout_star_button_label_text_color">#448ab9</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg1_fragment_news_feed_bakground_color">#79baec</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg1_fragment_notifications_bakground_color">#79baec</color>
+    <!--fragment_profile.xml-->
+    <color name="dg1_fragment_profile_bakground_color">#79baec</color>
+    <color name="dg1_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg1_fragment_profile_profile_name_background_color">#448ab9</color>
+    <color name="dg1_fragment_profile_profile_user_location_text_color">#448ab9</color>
+    <color name="dg1_fragment_profile_profile_mobile_number_text_color">#448ab9</color>
+    <color name="dg1_fragment_profile_profile_report_text_text_color">#448ab9</color>
+    <color name="dg1_fragment_profile_profile_photo_button_text_color">#000000</color>
+    <color name="dg1_fragment_profile_profile_photo_button_bakground_color">#448ab9</color>
+    <color name="dg1_fragment_profile_profile_video_button_text_color">#000000</color>
+    <color name="dg1_fragment_profile_profile_video_button_bakground_color">#448ab9</color>
+    <color name="dg1_fragment_profile_profile_profile_posts_button_text_color">#000000</color>
+    <color name="dg1_fragment_profile_profile__circular_image_civ_border_color">#448aba</color>
+    <color name="dg1_fragment_profile_location__circular_image_civ_border_color">#448aba</color>
+    <color name="dg1_fragment_profile_location__mobile_card_back_ground_color">#adecff</color>
+
+    <!--notification_section.xml-->
+    <color name="dg1_notification_section_cardview_layout_background_color">#adecff</color>
+    <color name="dg1_notification_section_circular_image_civ_border_color">#448ab9</color>
+    <color name="dg1_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg1_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg1_activity_view_user_posts_background_color">#79baec</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg1_activity_report_make_background_color">#79baec</color>
+    <color name="dg1_activity_report_make_top_bar_background_color">#448ab9</color>
+    <color name="dg1_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg1_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg1_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg1_activity_report_make_circular_image_boarder_color">#448ab9</color>
+    <color name="dg1_activity_report_make_profile_name_text_color">#adecff</color>
+    <color name="dg1_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg1_activity_report_make_post_text_hint_color">#adecff</color>
+    <color name="dg1_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg1_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg1_activity_report_make_upload_buttons_background_color">#448ab9</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg1_activity_edit_profile_background_color">#79baec</color>
+    <color name="dg1_activity_edit_profile_top_bar_background_color">#448ab9</color>
+    <color name="dg1_activity_edit_profile_top_bar_cancel_button_background_color">#448ab9</color>
+    <color name="dg1_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg1_activity_edit_profile_top_bar_edit_profile_text_background_color">#448ab9</color>
+    <color name="dg1_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg1_activity_edit_profile_circular_image_civ_border_color">#448ab9</color>
+    <color name="dg1_activity_edit_profile_option_outside_background_color">#adecff</color>
+    <color name="dg1_activity_edit_profile_option_text_background_color">#adecff</color>
+    <color name="dg1_activity_edit_profile_option_text_font_color">#448ab9</color>
+    <color name="dg1_activity_edit_profile_option_button_background_color">#adecff</color>
+    <color name="dg1_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg1_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg1_activity_x_option_background_color">#79baec</color>
+    <color name="dg1_activity_x_option_top_bar_background_color">#448ab9</color>
+    <color name="dg1_activity_x_option_top_bar_cancel_button_background_color">#448ab9</color>
+    <color name="dg1_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg1_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg1_activity_x_option_top_bar_caption_background_color">#448ab9</color>
+    <color name="dg1_activity_x_option_edit_text_text_color">#000000</color>
+    <color name="dg1_activity_x_option_edit_hint_text_color">#448ab9</color>
+    <color name="dg1_activity_x_option_edit_text_background_color">#adecff</color>
+    <color name="dg1_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg1_activity_settings_background_color">#79baec</color>
+    <color name="dg1_activity_settings_top_bar_background_color">#448ab9</color>
+    <color name="dg1_activity_settings_cancel_button_background_color">#448ab9</color>
+    <color name="dg1_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg1_activity_settings_save_button_background_color">#448ab9</color>
+    <color name="dg1_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg1_activity_settings_caption_background_color">#448ab9</color>
+    <color name="dg1_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg1_activity_settings_change_password_button_background_color">#adecff</color>
+    <color name="dg1_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg1_activity_settings_delete_button_background_color">#adecff</color>
+    <color name="dg1_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg1_activity_settings_tell_a_friend_background_color">#adecff</color>
+    <color name="dg1_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg1_activity_settings_report_a_problem_text_color">#448ab9</color>
+    <color name="dg1_activity_settings_report_a_problem_background_color">#adecff</color>
+    <color name="dg1_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg1_activity_settings_feedback_background_color">#adecff</color>
+    <color name="dg1_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg1_activity_settings_context_support_agreement_background_color">#adecff</color>
+    <color name="dg1_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg1_bottom_navigation_background_color">#448ab9</color>
+    <color name="dg1_status_bar_background_color">#448ab9</color>
+
+
+    <!--AppThemeForDG2 Theme-->
+
+    <!--<color name="primaryColor">#99badd</color>-->
+    <!--<color name="primaryLightColor">#cbecff</color>-->
+    <!--<color name="primaryDarkColor">#698aab</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+    <!--recyclerview_items-->
+    <color name="dg2_recyclerview_circular_image_civ_border_color">#698aab</color>
+    <color name="dg2_recyclerview_post_text_color">#000000</color>
+    <color name="dg2_recyclerview_comment_layout_outside_color">#698aab</color>
+    <color name="dg2_recyclerview_comment_layout_inside_color">#cbecff</color>
+    <color name="dg2_recyclerview_cardview_background_color">#cbecff</color>
+    <color name="dg2_recyclerview_user_name_text_color">#698aab</color>
+    <color name="dg2_recyclerview_location_text_color">#698aab</color>
+    <color name="dg2_recyclerview_post_time_stamp_text_color">#698aab</color>
+    <color name="dg2_recyclerview_comment_layout_comment_text_color">#698aab</color>
+    <color name="dg2_recyclerview_comment_layout_star_button_label_text_color">#698aab</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg2_fragment_news_feed_bakground_color">#99badd</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg2_fragment_notifications_bakground_color">#99badd</color>
+    <!--fragment_profile.xml-->
+    <color name="dg2_fragment_profile_bakground_color">#99badd</color>
+    <color name="dg2_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg2_fragment_profile_profile_name_background_color">#698aab</color>
+    <color name="dg2_fragment_profile_profile_user_location_text_color">#698aab</color>
+    <color name="dg2_fragment_profile_profile_mobile_number_text_color">#698aab</color>
+    <color name="dg2_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg2_fragment_profile_profile_photo_button_text_color">#000000</color>
+    <color name="dg2_fragment_profile_profile_photo_button_bakground_color">#698aab</color>
+    <color name="dg2_fragment_profile_profile_video_button_text_color">#000000</color>
+    <color name="dg2_fragment_profile_profile_video_button_bakground_color">#698aab</color>
+    <color name="dg2_fragment_profile_profile_profile_posts_button_text_color">#000000</color>
+    <color name="dg2_fragment_profile_profile__circular_image_civ_border_color">#698aab</color>
+    <color name="dg2_fragment_profile_location__circular_image_civ_border_color">#698aab</color>
+    <color name="dg2_fragment_profile_location__mobile_card_back_ground_color">#cbecff</color>
+
+    <!--notification_section.xml-->
+    <color name="dg2_notification_section_cardview_layout_background_color">#cbecff</color>
+    <color name="dg2_notification_section_circular_image_civ_border_color">#698aab</color>
+    <color name="dg2_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg2_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg2_activity_view_user_posts_background_color">#99badd</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg2_activity_report_make_background_color">#99badd</color>
+    <color name="dg2_activity_report_make_top_bar_background_color">#698aab</color>
+    <color name="dg2_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg2_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg2_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg2_activity_report_make_circular_image_boarder_color">#698aab</color>
+    <color name="dg2_activity_report_make_profile_name_text_color">#cbecff</color>
+    <color name="dg2_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg2_activity_report_make_post_text_hint_color">#cbecff</color>
+    <color name="dg2_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg2_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg2_activity_report_make_upload_buttons_background_color">#698aab</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg2_activity_edit_profile_background_color">#99badd</color>
+    <color name="dg2_activity_edit_profile_top_bar_background_color">#698aab</color>
+    <color name="dg2_activity_edit_profile_top_bar_cancel_button_background_color">#698aab</color>
+    <color name="dg2_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg2_activity_edit_profile_top_bar_edit_profile_text_background_color">#698aab</color>
+    <color name="dg2_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg2_activity_edit_profile_circular_image_civ_border_color">#698aab</color>
+    <color name="dg2_activity_edit_profile_option_outside_background_color">#cbecff</color>
+    <color name="dg2_activity_edit_profile_option_text_background_color">#cbecff</color>
+    <color name="dg2_activity_edit_profile_option_text_font_color">#698aab</color>
+    <color name="dg2_activity_edit_profile_option_button_background_color">#cbecff</color>
+    <color name="dg2_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg2_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg2_activity_x_option_background_color">#99badd</color>
+    <color name="dg2_activity_x_option_top_bar_background_color">#698aab</color>
+    <color name="dg2_activity_x_option_top_bar_cancel_button_background_color">#698aab</color>
+    <color name="dg2_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg2_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg2_activity_x_option_top_bar_caption_background_color">#698aab</color>
+    <color name="dg2_activity_x_option_edit_text_text_color">#000000</color>
+    <color name="dg2_activity_x_option_edit_hint_text_color">#698aab</color>
+    <color name="dg2_activity_x_option_edit_text_background_color">#cbecff</color>
+    <color name="dg2_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--<color name="primaryColor">#99badd</color>-->
+    <!--<color name="primaryLightColor">#cbecff</color>-->
+    <!--<color name="primaryDarkColor">#698aab</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+    <!--activity_settings.xml-->
+    <color name="dg2_activity_settings_background_color">#99badd</color>
+    <color name="dg2_activity_settings_top_bar_background_color">#698aab</color>
+    <color name="dg2_activity_settings_cancel_button_background_color">#698aab</color>
+    <color name="dg2_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg2_activity_settings_save_button_background_color">#698aab</color>
+    <color name="dg2_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg2_activity_settings_caption_background_color">#698aab</color>
+    <color name="dg2_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg2_activity_settings_change_password_button_background_color">#cbecff</color>
+    <color name="dg2_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg2_activity_settings_delete_button_background_color">#cbecff</color>
+    <color name="dg2_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg2_activity_settings_tell_a_friend_background_color">#cbecff</color>
+    <color name="dg2_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg2_activity_settings_report_a_problem_text_color">#698aab</color>
+    <color name="dg2_activity_settings_report_a_problem_background_color">#cbecff</color>
+    <color name="dg2_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg2_activity_settings_feedback_background_color">#cbecff</color>
+    <color name="dg2_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg2_activity_settings_context_support_agreement_background_color">#cbecff</color>
+    <color name="dg2_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg2_bottom_navigation_background_color">#698aab</color>
+    <color name="dg2_status_bar_background_color">#698aab</color>
+
+    <!--AppThemeForDG3 Theme-->
+
+    <!--<color name="primaryColor">#002147</color>-->
+    <!--<color name="primaryLightColor">#344873</color>-->
+    <!--<color name="primaryDarkColor">#000020</color>-->
+    <!--<color name="primaryTextColor">#ffffff</color>-->
+
+    <!--recyclerview_items-->
+    <color name="dg3_recyclerview_circular_image_civ_border_color">#000020</color>
+    <color name="dg3_recyclerview_post_text_color">#000000</color>
+    <color name="dg3_recyclerview_comment_layout_outside_color">#000020</color>
+    <color name="dg3_recyclerview_comment_layout_inside_color">#344873</color>
+    <color name="dg3_recyclerview_cardview_background_color">#344873</color>
+    <color name="dg3_recyclerview_user_name_text_color">#000020</color>
+    <color name="dg3_recyclerview_location_text_color">#000020</color>
+    <color name="dg3_recyclerview_post_time_stamp_text_color">#000020</color>
+    <color name="dg3_recyclerview_comment_layout_comment_text_color">#000020</color>
+    <color name="dg3_recyclerview_comment_layout_star_button_label_text_color">#000020</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg3_fragment_news_feed_bakground_color">#002147</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg3_fragment_notifications_bakground_color">#002147</color>
+    <!--fragment_profile.xml-->
+    <color name="dg3_fragment_profile_bakground_color">#002147</color>
+    <color name="dg3_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg3_fragment_profile_profile_name_background_color">#000020</color>
+    <color name="dg3_fragment_profile_profile_user_location_text_color">#000020</color>
+    <color name="dg3_fragment_profile_profile_mobile_number_text_color">#000020</color>
+    <color name="dg3_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg3_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg3_fragment_profile_profile_photo_button_bakground_color">#000020</color>
+    <color name="dg3_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg3_fragment_profile_profile_video_button_bakground_color">#000020</color>
+    <color name="dg3_fragment_profile_profile_profile_posts_button_text_color">#000020</color>
+    <color name="dg3_fragment_profile_profile__circular_image_civ_border_color">#000020</color>
+    <color name="dg3_fragment_profile_location__circular_image_civ_border_color">#000020</color>
+    <color name="dg3_fragment_profile_location__mobile_card_back_ground_color">#344873</color>
+
+    <!--notification_section.xml-->
+    <color name="dg3_notification_section_cardview_layout_background_color">#344873</color>
+    <color name="dg3_notification_section_circular_image_civ_border_color">#000020</color>
+    <color name="dg3_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg3_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg3_activity_view_user_posts_background_color">#002147</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg3_activity_report_make_background_color">#002147</color>
+    <color name="dg3_activity_report_make_top_bar_background_color">#000020</color>
+    <color name="dg3_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg3_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg3_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg3_activity_report_make_circular_image_boarder_color">#000020</color>
+    <color name="dg3_activity_report_make_profile_name_text_color">#344873</color>
+    <color name="dg3_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg3_activity_report_make_post_text_hint_color">#344873</color>
+    <color name="dg3_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg3_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg3_activity_report_make_upload_buttons_background_color">#000020</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg3_activity_edit_profile_background_color">#002147</color>
+    <color name="dg3_activity_edit_profile_top_bar_background_color">#000020</color>
+    <color name="dg3_activity_edit_profile_top_bar_cancel_button_background_color">#000020</color>
+    <color name="dg3_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg3_activity_edit_profile_top_bar_edit_profile_text_background_color">#000020</color>
+    <color name="dg3_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg3_activity_edit_profile_circular_image_civ_border_color">#000020</color>
+    <color name="dg3_activity_edit_profile_option_outside_background_color">#344873</color>
+    <color name="dg3_activity_edit_profile_option_text_background_color">#344873</color>
+    <color name="dg3_activity_edit_profile_option_text_font_color">#000020</color>
+    <color name="dg3_activity_edit_profile_option_button_background_color">#344873</color>
+    <color name="dg3_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg3_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg3_activity_x_option_background_color">#002147</color>
+    <color name="dg3_activity_x_option_top_bar_background_color">#000020</color>
+    <color name="dg3_activity_x_option_top_bar_cancel_button_background_color">#000020</color>
+    <color name="dg3_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg3_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg3_activity_x_option_top_bar_caption_background_color">#000020</color>
+    <color name="dg3_activity_x_option_edit_text_text_color">#ffffff</color>
+    <color name="dg3_activity_x_option_edit_hint_text_color">#000020</color>
+    <color name="dg3_activity_x_option_edit_text_background_color">#344873</color>
+    <color name="dg3_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg3_activity_settings_background_color">#002147</color>
+    <color name="dg3_activity_settings_top_bar_background_color">#000020</color>
+    <color name="dg3_activity_settings_cancel_button_background_color">#000020</color>
+    <color name="dg3_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg3_activity_settings_save_button_background_color">#000020</color>
+    <color name="dg3_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg3_activity_settings_caption_background_color">#000020</color>
+    <color name="dg3_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg3_activity_settings_change_password_button_background_color">#344873</color>
+    <color name="dg3_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg3_activity_settings_delete_button_background_color">#344873</color>
+    <color name="dg3_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg3_activity_settings_tell_a_friend_background_color">#344873</color>
+    <color name="dg3_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg3_activity_settings_report_a_problem_text_color">#000020</color>
+    <color name="dg3_activity_settings_report_a_problem_background_color">#344873</color>
+    <color name="dg3_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg3_activity_settings_feedback_background_color">#344873</color>
+    <color name="dg3_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg3_activity_settings_context_support_agreement_background_color">#344873</color>
+    <color name="dg3_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg3_bottom_navigation_background_color">#000020</color>
+    <color name="dg3_status_bar_background_color">#000020</color>
+
+
+    <!--AppThemeForDG4 Theme-->
+
+    <!--<color name="primaryColor">#008080</color>-->
+    <!--<color name="primaryLightColor">#4cb0af</color>-->
+    <!--<color name="primaryDarkColor">#005354</color>-->
+    <!--<color name="primaryTextColor">#ffffff</color>-->
+
+    <!--recyclerview_items-->
+    <color name="dg4_recyclerview_circular_image_civ_border_color">#005354</color>
+    <color name="dg4_recyclerview_post_text_color">#000000</color>
+    <color name="dg4_recyclerview_comment_layout_outside_color">#005354</color>
+    <color name="dg4_recyclerview_comment_layout_inside_color">#4cb0af</color>
+    <color name="dg4_recyclerview_cardview_background_color">#4cb0af</color>
+    <color name="dg4_recyclerview_user_name_text_color">#005354</color>
+    <color name="dg4_recyclerview_location_text_color">#005354</color>
+    <color name="dg4_recyclerview_post_time_stamp_text_color">#005354</color>
+    <color name="dg4_recyclerview_comment_layout_comment_text_color">#005354</color>
+    <color name="dg4_recyclerview_comment_layout_star_button_label_text_color">#005354</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg4_fragment_news_feed_bakground_color">#008080</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg4_fragment_notifications_bakground_color">#008080</color>
+    <!--fragment_profile.xml-->
+    <color name="dg4_fragment_profile_bakground_color">#008080</color>
+    <color name="dg4_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg4_fragment_profile_profile_name_background_color">#005354</color>
+    <color name="dg4_fragment_profile_profile_user_location_text_color">#005354</color>
+    <color name="dg4_fragment_profile_profile_mobile_number_text_color">#005354</color>
+    <color name="dg4_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg4_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg4_fragment_profile_profile_photo_button_bakground_color">#005354</color>
+    <color name="dg4_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg4_fragment_profile_profile_video_button_bakground_color">#005354</color>
+    <color name="dg4_fragment_profile_profile_profile_posts_button_text_color">#005354</color>
+    <color name="dg4_fragment_profile_profile__circular_image_civ_border_color">#005354</color>
+    <color name="dg4_fragment_profile_location__circular_image_civ_border_color">#005354</color>
+    <color name="dg4_fragment_profile_location__mobile_card_back_ground_color">#4cb0af</color>
+
+
+    <!--notification_section.xml-->
+    <color name="dg4_notification_section_cardview_layout_background_color">#4cb0af</color>
+    <color name="dg4_notification_section_circular_image_civ_border_color">#005354</color>
+    <color name="dg4_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg4_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg4_activity_view_user_posts_background_color">#008080</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg4_activity_report_make_background_color">#008080</color>
+    <color name="dg4_activity_report_make_top_bar_background_color">#005354</color>
+    <color name="dg4_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg4_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg4_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg4_activity_report_make_circular_image_boarder_color">#005354</color>
+    <color name="dg4_activity_report_make_profile_name_text_color">#4cb0af</color>
+    <color name="dg4_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg4_activity_report_make_post_text_hint_color">#4cb0af</color>
+    <color name="dg4_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg4_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg4_activity_report_make_upload_buttons_background_color">#005354</color>
+
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg4_activity_edit_profile_background_color">#008080</color>
+    <color name="dg4_activity_edit_profile_top_bar_background_color">#005354</color>
+    <color name="dg4_activity_edit_profile_top_bar_cancel_button_background_color">#005354</color>
+    <color name="dg4_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg4_activity_edit_profile_top_bar_edit_profile_text_background_color">#005354</color>
+    <color name="dg4_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg4_activity_edit_profile_circular_image_civ_border_color">#005354</color>
+    <color name="dg4_activity_edit_profile_option_outside_background_color">#4cb0af</color>
+    <color name="dg4_activity_edit_profile_option_text_background_color">#4cb0af</color>
+    <color name="dg4_activity_edit_profile_option_text_font_color">#005354</color>
+    <color name="dg4_activity_edit_profile_option_button_background_color">#4cb0af</color>
+    <color name="dg4_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg4_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg4_activity_x_option_background_color">#008080</color>
+    <color name="dg4_activity_x_option_top_bar_background_color">#005354</color>
+    <color name="dg4_activity_x_option_top_bar_cancel_button_background_color">#005354</color>
+    <color name="dg4_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg4_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg4_activity_x_option_top_bar_caption_background_color">#005354</color>
+    <color name="dg4_activity_x_option_edit_text_text_color">#ffffff</color>
+    <color name="dg4_activity_x_option_edit_hint_text_color">#005354</color>
+    <color name="dg4_activity_x_option_edit_text_background_color">#4cb0af</color>
+    <color name="dg4_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg4_activity_settings_background_color">#008080</color>
+    <color name="dg4_activity_settings_top_bar_background_color">#005354</color>
+    <color name="dg4_activity_settings_cancel_button_background_color">#005354</color>
+    <color name="dg4_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg4_activity_settings_save_button_background_color">#005354</color>
+    <color name="dg4_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg4_activity_settings_caption_background_color">#005354</color>
+    <color name="dg4_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg4_activity_settings_change_password_button_background_color">#4cb0af</color>
+    <color name="dg4_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg4_activity_settings_delete_button_background_color">#4cb0af</color>
+    <color name="dg4_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg4_activity_settings_tell_a_friend_background_color">#4cb0af</color>
+    <color name="dg4_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg4_activity_settings_report_a_problem_text_color">#000000</color>
+    <color name="dg4_activity_settings_report_a_problem_background_color">#4cb0af</color>
+    <color name="dg4_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg4_activity_settings_feedback_background_color">#4cb0af</color>
+    <color name="dg4_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg4_activity_settings_context_support_agreement_background_color">#4cb0af</color>
+    <color name="dg4_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg4_bottom_navigation_background_color">#005354</color>
+    <color name="dg4_status_bar_background_color">#005354</color>
+
+    <!--AppThemeForDG5 Theme-->
+
+    <!--   chosen color      <color name="primaryColor">#b784a7</color>-->
+    <!--<color name="primaryLightColor">#eab4d8</color>-->
+    <!--<color name="primaryDarkColor">#865778</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+
+    <!--recyclerview_items-->
+    <color name="dg5_recyclerview_circular_image_civ_border_color">#865778</color>
+    <color name="dg5_recyclerview_post_text_color">#000000</color>
+    <color name="dg5_recyclerview_comment_layout_outside_color">#865778</color>
+    <color name="dg5_recyclerview_comment_layout_inside_color">#eab4d8</color>
+    <color name="dg5_recyclerview_cardview_background_color">#eab4d8</color>
+    <color name="dg5_recyclerview_user_name_text_color">#865778</color>
+    <color name="dg5_recyclerview_location_text_color">#865778</color>
+    <color name="dg5_recyclerview_post_time_stamp_text_color">#865778</color>
+    <color name="dg5_recyclerview_comment_layout_comment_text_color">#865778</color>
+    <color name="dg5_recyclerview_comment_layout_star_button_label_text_color">#865778</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg5_fragment_news_feed_bakground_color">#b784a7</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg5_fragment_notifications_bakground_color">#b784a7</color>
+    <!--fragment_profile.xml-->
+    <color name="dg5_fragment_profile_bakground_color">#b784a7</color>
+    <color name="dg5_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg5_fragment_profile_profile_name_background_color">#865778</color>
+    <color name="dg5_fragment_profile_profile_user_location_text_color">#865778</color>
+    <color name="dg5_fragment_profile_profile_mobile_number_text_color">#865778</color>
+    <color name="dg5_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg5_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg5_fragment_profile_profile_photo_button_bakground_color">#865778</color>
+    <color name="dg5_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg5_fragment_profile_profile_video_button_bakground_color">#865778</color>
+    <color name="dg5_fragment_profile_profile_profile_posts_button_text_color">#ffffff</color>
+    <color name="dg5_fragment_profile_profile__circular_image_civ_border_color">#865778</color>
+    <color name="dg5_fragment_profile_location__circular_image_civ_border_color">#865778</color>
+    <color name="dg5_fragment_profile_location__mobile_card_back_ground_color">#eab4d8</color>
+
+    <!--notification_section.xml-->
+    <color name="dg5_notification_section_cardview_layout_background_color">#eab4d8</color>
+    <color name="dg5_notification_section_circular_image_civ_border_color">#865778</color>
+    <color name="dg5_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg5_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg5_activity_view_user_posts_background_color">#b784a7</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg5_activity_report_make_background_color">#b784a7</color>
+    <color name="dg5_activity_report_make_top_bar_background_color">#865778</color>
+    <color name="dg5_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg5_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg5_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg5_activity_report_make_circular_image_boarder_color">#865778</color>
+    <color name="dg5_activity_report_make_profile_name_text_color">#eab4d8</color>
+    <color name="dg5_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg5_activity_report_make_post_text_hint_color">#eab4d8</color>
+    <color name="dg5_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg5_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg5_activity_report_make_upload_buttons_background_color">#865778</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg5_activity_edit_profile_background_color">#b784a7</color>
+    <color name="dg5_activity_edit_profile_top_bar_background_color">#865778</color>
+    <color name="dg5_activity_edit_profile_top_bar_cancel_button_background_color">#865778</color>
+    <color name="dg5_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg5_activity_edit_profile_top_bar_edit_profile_text_background_color">#865778</color>
+    <color name="dg5_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg5_activity_edit_profile_circular_image_civ_border_color">#865778</color>
+    <color name="dg5_activity_edit_profile_option_outside_background_color">#eab4d8</color>
+    <color name="dg5_activity_edit_profile_option_text_background_color">#eab4d8</color>
+    <color name="dg5_activity_edit_profile_option_text_font_color">#865778</color>
+    <color name="dg5_activity_edit_profile_option_button_background_color">#eab4d8</color>
+    <color name="dg5_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg5_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg5_activity_x_option_background_color">#b784a7</color>
+    <color name="dg5_activity_x_option_top_bar_background_color">#865778</color>
+    <color name="dg5_activity_x_option_top_bar_cancel_button_background_color">#865778</color>
+    <color name="dg5_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg5_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg5_activity_x_option_top_bar_caption_background_color">#865778</color>
+    <color name="dg5_activity_x_option_edit_text_text_color">#ffffff</color>
+    <color name="dg5_activity_x_option_edit_hint_text_color">#865778</color>
+    <color name="dg5_activity_x_option_edit_text_background_color">#eab4d8</color>
+    <color name="dg5_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg5_activity_settings_background_color">#b784a7</color>
+    <color name="dg5_activity_settings_top_bar_background_color">#865778</color>
+    <color name="dg5_activity_settings_cancel_button_background_color">#865778</color>
+    <color name="dg5_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg5_activity_settings_save_button_background_color">#865778</color>
+    <color name="dg5_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg5_activity_settings_caption_background_color">#865778</color>
+    <color name="dg5_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg5_activity_settings_change_password_button_background_color">#eab4d8</color>
+    <color name="dg5_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg5_activity_settings_delete_button_background_color">#eab4d8</color>
+    <color name="dg5_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg5_activity_settings_tell_a_friend_background_color">#eab4d8</color>
+    <color name="dg5_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg5_activity_settings_report_a_problem_text_color">#865778</color>
+    <color name="dg5_activity_settings_report_a_problem_background_color">#eab4d8</color>
+    <color name="dg5_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg5_activity_settings_feedback_background_color">#eab4d8</color>
+    <color name="dg5_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg5_activity_settings_context_support_agreement_background_color">#eab4d8</color>
+    <color name="dg5_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg5_bottom_navigation_background_color">#865778</color>
+    <color name="dg5_status_bar_background_color">#865778</color>
+
+    <!--AppThemeForDG6 Theme-->
+
+    <!--  chosen color    <color name="primaryColor">#dc143c</color>-->
+    <!--<color name="primaryLightColor">#ff5966</color>-->
+    <!--<color name="primaryDarkColor">#a20016</color>-->
+    <!--<color name="primaryTextColor">#ffffff</color>-->
+
+    <!--recyclerview_items-->
+    <color name="dg6_recyclerview_circular_image_civ_border_color">#a20016</color>
+    <color name="dg6_recyclerview_post_text_color">#000000</color>
+    <color name="dg6_recyclerview_comment_layout_outside_color">#a20016</color>
+    <color name="dg6_recyclerview_comment_layout_inside_color">#ff5966</color>
+    <color name="dg6_recyclerview_cardview_background_color">#ff5966</color>
+    <color name="dg6_recyclerview_user_name_text_color">#a20016</color>
+    <color name="dg6_recyclerview_location_text_color">#a20016</color>
+    <color name="dg6_recyclerview_post_time_stamp_text_color">#a20016</color>
+    <color name="dg6_recyclerview_comment_layout_comment_text_color">#a20016</color>
+    <color name="dg6_recyclerview_comment_layout_star_button_label_text_color">#a20016</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg6_fragment_news_feed_bakground_color">#dc143c</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg6_fragment_notifications_bakground_color">#dc143c</color>
+    <!--fragment_profile.xml-->
+    <color name="dg6_fragment_profile_bakground_color">#dc143c</color>
+    <color name="dg6_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg6_fragment_profile_profile_name_background_color">#a20016</color>
+    <color name="dg6_fragment_profile_profile_user_location_text_color">#a20016</color>
+    <color name="dg6_fragment_profile_profile_mobile_number_text_color">#a20016</color>
+    <color name="dg6_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg6_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg6_fragment_profile_profile_photo_button_bakground_color">#a20016</color>
+    <color name="dg6_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg6_fragment_profile_profile_video_button_bakground_color">#a20016</color>
+    <color name="dg6_fragment_profile_profile_profile_posts_button_text_color">#ffffff</color>
+    <color name="dg6_fragment_profile_profile__circular_image_civ_border_color">#a20016</color>
+    <color name="dg6_fragment_profile_location__circular_image_civ_border_color">#a20016</color>
+    <color name="dg6_fragment_profile_location__mobile_card_back_ground_color">#ff5966</color>
+
+    <!--notification_section.xml-->
+    <color name="dg6_notification_section_cardview_layout_background_color">#ff5966</color>
+    <color name="dg6_notification_section_circular_image_civ_border_color">#a20016</color>
+    <color name="dg6_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg6_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg6_activity_view_user_posts_background_color">#dc143c</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg6_activity_report_make_background_color">#dc143c</color>
+    <color name="dg6_activity_report_make_top_bar_background_color">#a20016</color>
+    <color name="dg6_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg6_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg6_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg6_activity_report_make_circular_image_boarder_color">#a20016</color>
+    <color name="dg6_activity_report_make_profile_name_text_color">#ff5966</color>
+    <color name="dg6_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg6_activity_report_make_post_text_hint_color">#ff5966</color>
+    <color name="dg6_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg6_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg6_activity_report_make_upload_buttons_background_color">#a20016</color>
+
+
+    <!--activity_edit_profile.xml-->
+
+    <color name="dg6_activity_edit_profile_background_color">#dc143c</color>
+    <color name="dg6_activity_edit_profile_top_bar_background_color">#a20016</color>
+    <color name="dg6_activity_edit_profile_top_bar_cancel_button_background_color">#a20016</color>
+    <color name="dg6_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg6_activity_edit_profile_top_bar_edit_profile_text_background_color">#a20016</color>
+    <color name="dg6_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg6_activity_edit_profile_circular_image_civ_border_color">#a20016</color>
+    <color name="dg6_activity_edit_profile_option_outside_background_color">#ff5966</color>
+    <color name="dg6_activity_edit_profile_option_text_background_color">#ff5966</color>
+    <color name="dg6_activity_edit_profile_option_text_font_color">#a20016</color>
+    <color name="dg6_activity_edit_profile_option_button_background_color">#ff5966</color>
+    <color name="dg6_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg6_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg6_activity_x_option_background_color">#dc143c</color>
+    <color name="dg6_activity_x_option_top_bar_background_color">#a20016</color>
+    <color name="dg6_activity_x_option_top_bar_cancel_button_background_color">#a20016</color>
+    <color name="dg6_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg6_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg6_activity_x_option_top_bar_caption_background_color">#a20016</color>
+    <color name="dg6_activity_x_option_edit_text_text_color">#ffffff</color>
+    <color name="dg6_activity_x_option_edit_hint_text_color">#a20016</color>
+    <color name="dg6_activity_x_option_edit_text_background_color">#ff5966</color>
+    <color name="dg6_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg6_activity_settings_background_color">#dc143c</color>
+    <color name="dg6_activity_settings_top_bar_background_color">#a20016</color>
+    <color name="dg6_activity_settings_cancel_button_background_color">#a20016</color>
+    <color name="dg6_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg6_activity_settings_save_button_background_color">#a20016</color>
+    <color name="dg6_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg6_activity_settings_caption_background_color">#a20016</color>
+    <color name="dg6_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg6_activity_settings_change_password_button_background_color">#ff5966</color>
+    <color name="dg6_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg6_activity_settings_delete_button_background_color">#ff5966</color>
+    <color name="dg6_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg6_activity_settings_tell_a_friend_background_color">#ff5966</color>
+    <color name="dg6_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg6_activity_settings_report_a_problem_text_color">#a20016</color>
+    <color name="dg6_activity_settings_report_a_problem_background_color">#ff5966</color>
+    <color name="dg6_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg6_activity_settings_feedback_background_color">#ff5966</color>
+    <color name="dg6_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg6_activity_settings_context_support_agreement_background_color">#ff5966</color>
+    <color name="dg6_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg6_bottom_navigation_background_color">#a20016</color>
+    <color name="dg6_status_bar_background_color">#a20016</color>
+
+    <!--AppThemeForDG7 Theme-->
+
+    <!--    chosen color   <color name="primaryColor">#eace6a</color>-->
+    <!--<color name="primaryLightColor">#ffff9a</color>-->
+    <!--<color name="primaryDarkColor">#b59d3b</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+    <!--recyclerview_items-->
+
+    <color name="dg7_recyclerview_circular_image_civ_border_color">#b59d3b</color>
+    <color name="dg7_recyclerview_post_text_color">#000000</color>
+    <color name="dg7_recyclerview_comment_layout_outside_color">#b59d3b</color>
+    <color name="dg7_recyclerview_comment_layout_inside_color">#ffff9a</color>
+    <color name="dg7_recyclerview_cardview_background_color">#ffff9a</color>
+    <color name="dg7_recyclerview_user_name_text_color">#b59d3b</color>
+    <color name="dg7_recyclerview_location_text_color">#b59d3b</color>
+    <color name="dg7_recyclerview_post_time_stamp_text_color">#b59d3b</color>
+    <color name="dg7_recyclerview_comment_layout_comment_text_color">#b59d3b</color>
+    <color name="dg7_recyclerview_comment_layout_star_button_label_text_color">#b59d3b</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg7_fragment_news_feed_bakground_color">#eace6a</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg7_fragment_notifications_bakground_color">#eace6a</color>
+    <!--fragment_profile.xml-->
+    <color name="dg7_fragment_profile_bakground_color">#eace6a</color>
+    <color name="dg7_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg7_fragment_profile_profile_name_background_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_profile_user_location_text_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_profile_mobile_number_text_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg7_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg7_fragment_profile_profile_photo_button_bakground_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg7_fragment_profile_profile_video_button_bakground_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_profile_profile_posts_button_text_color">#ffffff</color>
+    <color name="dg7_fragment_profile_profile__circular_image_civ_border_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_location__circular_image_civ_border_color">#b59d3b</color>
+    <color name="dg7_fragment_profile_location__mobile_card_back_ground_color">#ffff9a</color>
+
+    <!--notification_section.xml-->
+    <color name="dg7_notification_section_cardview_layout_background_color">#ffff9a</color>
+    <color name="dg7_notification_section_circular_image_civ_border_color">#b59d3b</color>
+    <color name="dg7_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg7_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg7_activity_view_user_posts_background_color">#eace6a</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg7_activity_report_make_background_color">#eace6a</color>
+    <color name="dg7_activity_report_make_top_bar_background_color">#b59d3b</color>
+    <color name="dg7_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg7_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg7_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg7_activity_report_make_circular_image_boarder_color">#b59d3b</color>
+    <color name="dg7_activity_report_make_profile_name_text_color">#ffff9a</color>
+    <color name="dg7_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg7_activity_report_make_post_text_hint_color">#ffff9a</color>
+    <color name="dg7_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg7_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg7_activity_report_make_upload_buttons_background_color">#b59d3b</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg7_activity_edit_profile_background_color">#eace6a</color>
+    <color name="dg7_activity_edit_profile_top_bar_background_color">#b59d3b</color>
+    <color name="dg7_activity_edit_profile_top_bar_cancel_button_background_color">#b59d3b</color>
+    <color name="dg7_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg7_activity_edit_profile_top_bar_edit_profile_text_background_color">#b59d3b</color>
+    <color name="dg7_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg7_activity_edit_profile_circular_image_civ_border_color">#b59d3b</color>
+    <color name="dg7_activity_edit_profile_option_outside_background_color">#ffff9a</color>
+    <color name="dg7_activity_edit_profile_option_text_background_color">#ffff9a</color>
+    <color name="dg7_activity_edit_profile_option_text_font_color">#b59d3b</color>
+    <color name="dg7_activity_edit_profile_option_button_background_color">#ffff9a</color>
+    <color name="dg7_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg7_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg7_activity_x_option_background_color">#eace6a</color>
+    <color name="dg7_activity_x_option_top_bar_background_color">#b59d3b</color>
+    <color name="dg7_activity_x_option_top_bar_cancel_button_background_color">#b59d3b</color>
+    <color name="dg7_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg7_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg7_activity_x_option_top_bar_caption_background_color">#b59d3b</color>
+    <color name="dg7_activity_x_option_edit_text_text_color">#000000</color>
+    <color name="dg7_activity_x_option_edit_hint_text_color">#b59d3b</color>
+    <color name="dg7_activity_x_option_edit_text_background_color">#ffff9a</color>
+    <color name="dg7_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg7_activity_settings_background_color">#eace6a</color>
+    <color name="dg7_activity_settings_top_bar_background_color">#b59d3b</color>
+    <color name="dg7_activity_settings_cancel_button_background_color">#b59d3b</color>
+    <color name="dg7_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg7_activity_settings_save_button_background_color">#b59d3b</color>
+    <color name="dg7_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg7_activity_settings_caption_background_color">#b59d3b</color>
+    <color name="dg7_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg7_activity_settings_change_password_button_background_color">#ffff9a</color>
+    <color name="dg7_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg7_activity_settings_delete_button_background_color">#ffff9a</color>
+    <color name="dg7_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg7_activity_settings_tell_a_friend_background_color">#ffff9a</color>
+    <color name="dg7_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg7_activity_settings_report_a_problem_text_color">#b59d3b</color>
+    <color name="dg7_activity_settings_report_a_problem_background_color">#ffff9a</color>
+    <color name="dg7_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg7_activity_settings_feedback_background_color">#ffff9a</color>
+    <color name="dg7_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg7_activity_settings_context_support_agreement_background_color">#ffff9a</color>
+    <color name="dg7_activity_settings_logout_button_text_color">#ffffff</color>
+
+
+    <!--global_access-->
+    <color name="dg7_bottom_navigation_background_color">#b59d3b</color>
+    <color name="dg7_status_bar_background_color">#b59d3b</color>
+
+    <!--AppThemeForDG8 Theme-->
+
+    <!--  chosen color <color name="primaryColor">#50c878</color>-->
+    <!--<color name="primaryLightColor">#85fca8</color>-->
+    <!--<color name="primaryDarkColor">#02964b</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+    <!--recyclerview_items-->
+    <color name="dg8_recyclerview_circular_image_civ_border_color">#02964b</color>
+    <color name="dg8_recyclerview_post_text_color">#000000</color>
+    <color name="dg8_recyclerview_comment_layout_outside_color">#02964b</color>
+    <color name="dg8_recyclerview_comment_layout_inside_color">#85fca8</color>
+    <color name="dg8_recyclerview_cardview_background_color">#85fca8</color>
+    <color name="dg8_recyclerview_user_name_text_color">#02964b</color>
+    <color name="dg8_recyclerview_location_text_color">#02964b</color>
+    <color name="dg8_recyclerview_post_time_stamp_text_color">#02964b</color>
+    <color name="dg8_recyclerview_comment_layout_comment_text_color">#02964b</color>
+    <color name="dg8_recyclerview_comment_layout_star_button_label_text_color">#02964b</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg8_fragment_news_feed_bakground_color">#50c878</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg8_fragment_notifications_bakground_color">#50c878</color>
+    <!--fragment_profile.xml-->
+    <color name="dg8_fragment_profile_bakground_color">#50c878</color>
+    <color name="dg8_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg8_fragment_profile_profile_name_background_color">#02964b</color>
+    <color name="dg8_fragment_profile_profile_user_location_text_color">#02964b</color>
+    <color name="dg8_fragment_profile_profile_mobile_number_text_color">#02964b</color>
+    <color name="dg8_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg8_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg8_fragment_profile_profile_photo_button_bakground_color">#02964b</color>
+    <color name="dg8_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg8_fragment_profile_profile_video_button_bakground_color">#02964b</color>
+    <color name="dg8_fragment_profile_profile_profile_posts_button_text_color">#ffffff</color>
+    <color name="dg8_fragment_profile_profile__circular_image_civ_border_color">#02964b</color>
+    <color name="dg8_fragment_profile_location__circular_image_civ_border_color">#02964b</color>
+    <color name="dg8_fragment_profile_location__mobile_card_back_ground_color">#85fca8</color>
+
+    <!--notification_section.xml-->
+    <color name="dg8_notification_section_cardview_layout_background_color">#85fca8</color>
+    <color name="dg8_notification_section_circular_image_civ_border_color">#02964b</color>
+    <color name="dg8_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg8_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg8_activity_view_user_posts_background_color">#50c878</color>
+
+
+    <!--activity_report_make.xml-->
+    <color name="dg8_activity_report_make_background_color">#50c878</color>
+    <color name="dg8_activity_report_make_top_bar_background_color">#02964b</color>
+    <color name="dg8_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg8_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg8_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg8_activity_report_make_circular_image_boarder_color">#02964b</color>
+    <color name="dg8_activity_report_make_profile_name_text_color">#85fca8</color>
+    <color name="dg8_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg8_activity_report_make_post_text_hint_color">#85fca8</color>
+    <color name="dg8_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg8_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg8_activity_report_make_upload_buttons_background_color">#02964b</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg8_activity_edit_profile_background_color">#50c878</color>
+    <color name="dg8_activity_edit_profile_top_bar_background_color">#02964b</color>
+    <color name="dg8_activity_edit_profile_top_bar_cancel_button_background_color">#02964b</color>
+    <color name="dg8_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg8_activity_edit_profile_top_bar_edit_profile_text_background_color">#02964b</color>
+    <color name="dg8_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg8_activity_edit_profile_circular_image_civ_border_color">#02964b</color>
+    <color name="dg8_activity_edit_profile_option_outside_background_color">#85fca8</color>
+    <color name="dg8_activity_edit_profile_option_text_background_color">#85fca8</color>
+    <color name="dg8_activity_edit_profile_option_text_font_color">#02964b</color>
+    <color name="dg8_activity_edit_profile_option_button_background_color">#85fca8</color>
+    <color name="dg8_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg8_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg8_activity_x_option_background_color">#50c878</color>
+    <color name="dg8_activity_x_option_top_bar_background_color">#02964b</color>
+    <color name="dg8_activity_x_option_top_bar_cancel_button_background_color">#02964b</color>
+    <color name="dg8_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg8_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg8_activity_x_option_top_bar_caption_background_color">#02964b</color>
+    <color name="dg8_activity_x_option_edit_text_text_color">#000000</color>
+    <color name="dg8_activity_x_option_edit_hint_text_color">#02964b</color>
+    <color name="dg8_activity_x_option_edit_text_background_color">#85fca8</color>
+    <color name="dg8_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg8_activity_settings_background_color">#50c878</color>
+    <color name="dg8_activity_settings_top_bar_background_color">#02964b</color>
+    <color name="dg8_activity_settings_cancel_button_background_color">#02964b</color>
+    <color name="dg8_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg8_activity_settings_save_button_background_color">#02964b</color>
+    <color name="dg8_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg8_activity_settings_caption_background_color">#02964b</color>
+    <color name="dg8_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg8_activity_settings_change_password_button_background_color">#85fca8</color>
+    <color name="dg8_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg8_activity_settings_delete_button_background_color">#85fca8</color>
+    <color name="dg8_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg8_activity_settings_tell_a_friend_background_color">#85fca8</color>
+    <color name="dg8_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg8_activity_settings_report_a_problem_text_color">#02964b</color>
+    <color name="dg8_activity_settings_report_a_problem_background_color">#85fca8</color>
+    <color name="dg8_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg8_activity_settings_feedback_background_color">#85fca8</color>
+    <color name="dg8_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg8_activity_settings_context_support_agreement_background_color">#85fca8</color>
+    <color name="dg8_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg8_bottom_navigation_background_color">#02964b</color>
+    <color name="dg8_status_bar_background_color">#02964b</color>
+
+    <!--AppThemeForDG9 Theme-->
+
+    <!--  chosen color   <color name="primaryColor">#fbceb1</color>-->
+    <!--<color name="primaryLightColor">#ffffe3</color>-->
+    <!--<color name="primaryDarkColor">#c79d81</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+    <!--recyclerview_items-->
+    <color name="dg9_recyclerview_circular_image_civ_border_color">#c79d81</color>
+    <color name="dg9_recyclerview_post_text_color">#000000</color>
+    <color name="dg9_recyclerview_comment_layout_outside_color">#c79d81</color>
+    <color name="dg9_recyclerview_comment_layout_inside_color">#ffffe3</color>
+    <color name="dg9_recyclerview_cardview_background_color">#ffffe3</color>
+    <color name="dg9_recyclerview_user_name_text_color">#c79d81</color>
+    <color name="dg9_recyclerview_location_text_color">#c79d81</color>
+    <color name="dg9_recyclerview_post_time_stamp_text_color">#c79d81</color>
+    <color name="dg9_recyclerview_comment_layout_comment_text_color">#c79d81</color>
+    <color name="dg9_recyclerview_comment_layout_star_button_label_text_color">#c79d81</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg9_fragment_news_feed_bakground_color">#fbceb1</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg9_fragment_notifications_bakground_color">#fbceb1</color>
+    <!--fragment_profile.xml-->
+    <color name="dg9_fragment_profile_bakground_color">#fbceb1</color>
+    <color name="dg9_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg9_fragment_profile_profile_name_background_color">#c79d81</color>
+    <color name="dg9_fragment_profile_profile_user_location_text_color">#c79d81</color>
+    <color name="dg9_fragment_profile_profile_mobile_number_text_color">#c79d81</color>
+    <color name="dg9_fragment_profile_profile_report_text_text_color">#ffffff</color>
+    <color name="dg9_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg9_fragment_profile_profile_photo_button_bakground_color">#c79d81</color>
+    <color name="dg9_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg9_fragment_profile_profile_video_button_bakground_color">#c79d81</color>
+    <color name="dg9_fragment_profile_profile_profile_posts_button_text_color">#ffffff</color>
+    <color name="dg9_fragment_profile_profile__circular_image_civ_border_color">#c79d81</color>
+    <color name="dg9_fragment_profile_location__circular_image_civ_border_color">#c79d81</color>
+    <color name="dg9_fragment_profile_location__mobile_card_back_ground_color">#ffffe3</color>
+
+
+    <!--notification_section.xml-->
+    <color name="dg9_notification_section_cardview_layout_background_color">#ffffe3</color>
+    <color name="dg9_notification_section_circular_image_civ_border_color">#c79d81</color>
+    <color name="dg9_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg9_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg9_activity_view_user_posts_background_color">#fbceb1</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg9_activity_report_make_background_color">#fbceb1</color>
+    <color name="dg9_activity_report_make_top_bar_background_color">#c79d81</color>
+    <color name="dg9_activity_report_make_top_bar_create_post_text_color">#ffffff</color>
+    <color name="dg9_activity_report_make_top_bar_pending_post_text_color">#ffffff</color>
+    <color name="dg9_activity_report_make_top_bar_post_text_color">#ffffff</color>
+    <color name="dg9_activity_report_make_circular_image_boarder_color">#c79d81</color>
+    <color name="dg9_activity_report_make_profile_name_text_color">#ffffe3</color>
+    <color name="dg9_activity_report_make_post_text_color">#ffffff</color>
+    <color name="dg9_activity_report_make_post_text_hint_color">#ffffe3</color>
+    <color name="dg9_activity_report_make_photo_button_text_color">#ffffff</color>
+    <color name="dg9_activity_report_make_video_button_text_color">#ffffff</color>
+    <color name="dg9_activity_report_make_upload_buttons_background_color">#c79d81</color>
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg9_activity_edit_profile_background_color">#fbceb1</color>
+    <color name="dg9_activity_edit_profile_top_bar_background_color">#c79d81</color>
+    <color name="dg9_activity_edit_profile_top_bar_cancel_button_background_color">#c79d81</color>
+    <color name="dg9_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg9_activity_edit_profile_top_bar_edit_profile_text_background_color">#c79d81</color>
+    <color name="dg9_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg9_activity_edit_profile_circular_image_civ_border_color">#c79d81</color>
+    <color name="dg9_activity_edit_profile_option_outside_background_color">#ffffe3</color>
+    <color name="dg9_activity_edit_profile_option_text_background_color">#ffffe3</color>
+    <color name="dg9_activity_edit_profile_option_text_font_color">#c79d81</color>
+    <color name="dg9_activity_edit_profile_option_button_background_color">#ffffe3</color>
+    <color name="dg9_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg9_activity_edit_profile_account_settings_font_color">#ffffff</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg9_activity_x_option_background_color">#fbceb1</color>
+    <color name="dg9_activity_x_option_top_bar_background_color">#c79d81</color>
+    <color name="dg9_activity_x_option_top_bar_cancel_button_background_color">#c79d81</color>
+    <color name="dg9_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg9_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg9_activity_x_option_top_bar_caption_background_color">#c79d81</color>
+    <color name="dg9_activity_x_option_edit_text_text_color">#000000</color>
+    <color name="dg9_activity_x_option_edit_hint_text_color">#c79d81</color>
+    <color name="dg9_activity_x_option_edit_text_background_color">#ffffe3</color>
+    <color name="dg9_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--activity_settings.xml-->
+    <color name="dg9_activity_settings_background_color">#fbceb1</color>
+    <color name="dg9_activity_settings_top_bar_background_color">#c79d81</color>
+    <color name="dg9_activity_settings_cancel_button_background_color">#c79d81</color>
+    <color name="dg9_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg9_activity_settings_save_button_background_color">#c79d81</color>
+    <color name="dg9_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg9_activity_settings_caption_background_color">#c79d81</color>
+    <color name="dg9_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg9_activity_settings_change_password_button_background_color">#ffffe3</color>
+    <color name="dg9_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg9_activity_settings_delete_button_background_color">#ffffe3</color>
+    <color name="dg9_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg9_activity_settings_tell_a_friend_background_color">#ffffe3</color>
+    <color name="dg9_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg9_activity_settings_report_a_problem_text_color">#c79d81</color>
+    <color name="dg9_activity_settings_report_a_problem_background_color">#ffffe3</color>
+    <color name="dg9_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg9_activity_settings_feedback_background_color">#ffffe3</color>
+    <color name="dg9_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg9_activity_settings_context_support_agreement_background_color">#ffffe3</color>
+    <color name="dg9_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg9_bottom_navigation_background_color">#c79d81</color>
+    <color name="dg9_status_bar_background_color">#c79d81</color>
+
+    <!--AppThemeForDG10 Theme-->
+
+    <!--   chosen color <color name="primaryColor">#f1f6df</color>-->
+    <!--<color name="primaryLightColor">#ffffff</color>-->
+    <!--<color name="primaryDarkColor">#bec3ad</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+
+    <!--recyclerview_items-->
+    <color name="dg10_recyclerview_circular_image_civ_border_color">#bec3ad</color>
+    <color name="dg10_recyclerview_post_text_color">#000000</color>
+    <color name="dg10_recyclerview_comment_layout_outside_color">#bec3ad</color>
+    <color name="dg10_recyclerview_comment_layout_inside_color">#ffffff</color>
+    <color name="dg10_recyclerview_cardview_background_color">#ffffff</color>
+    <color name="dg10_recyclerview_user_name_text_color">#bec3ad</color>
+    <color name="dg10_recyclerview_location_text_color">#bec3ad</color>
+    <color name="dg10_recyclerview_post_time_stamp_text_color">#bec3ad</color>
+    <color name="dg10_recyclerview_comment_layout_comment_text_color">#bec3ad</color>
+    <color name="dg10_recyclerview_comment_layout_star_button_label_text_color">#bec3ad</color>
+    <!--fragment_news_feed.xml-->
+    <color name="dg10_fragment_news_feed_bakground_color">#f1f6df</color>
+    <!--fragment_notifications.xml-->
+    <color name="dg10_fragment_notifications_bakground_color">#f1f6df</color>
+    <!--fragment_profile.xml-->
+    <color name="dg10_fragment_profile_bakground_color">#f1f6df</color>
+    <color name="dg10_fragment_profile_profile_name_text_color">#ffffff</color>
+    <color name="dg10_fragment_profile_profile_name_background_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_profile_user_location_text_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_profile_mobile_number_text_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_profile_report_text_text_color">#000000</color>
+    <color name="dg10_fragment_profile_profile_photo_button_text_color">#ffffff</color>
+    <color name="dg10_fragment_profile_profile_photo_button_bakground_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_profile_video_button_text_color">#ffffff</color>
+    <color name="dg10_fragment_profile_profile_video_button_bakground_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_profile_profile_posts_button_text_color">#000000</color>
+    <color name="dg10_fragment_profile_profile__circular_image_civ_border_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_location__circular_image_civ_border_color">#bec3ad</color>
+    <color name="dg10_fragment_profile_location__mobile_card_back_ground_color">#ffffff</color>
+
+    <!--notification_section.xml-->
+    <color name="dg10_notification_section_cardview_layout_background_color">#ffffff</color>
+    <color name="dg10_notification_section_circular_image_civ_border_color">#bec3ad</color>
+    <color name="dg10_notification_section_notification_section_heading_text_color">#000000</color>
+    <color name="dg10_notification_section_notification_section_time_stamp_text_color">#000000
+    </color>
+
+    <!--activity_view_user_posts-->
+    <color name="dg10_activity_view_user_posts_background_color">#f1f6df</color>
+
+    <!--activity_report_make.xml-->
+    <color name="dg10_activity_report_make_background_color">#f1f6df</color>
+    <color name="dg10_activity_report_make_top_bar_background_color">#bec3ad</color>
+    <color name="dg10_activity_report_make_top_bar_create_post_text_color">#000000</color>
+    <color name="dg10_activity_report_make_top_bar_pending_post_text_color">#000000</color>
+    <color name="dg10_activity_report_make_top_bar_post_text_color">#000000</color>
+    <color name="dg10_activity_report_make_circular_image_boarder_color">#bec3ad</color>
+    <color name="dg10_activity_report_make_profile_name_text_color">#bec3ad</color>
+    <color name="dg10_activity_report_make_post_text_color">#000000</color>
+    <color name="dg10_activity_report_make_post_text_hint_color">#bec3ad</color>
+    <color name="dg10_activity_report_make_photo_button_text_color">#000000</color>
+    <color name="dg10_activity_report_make_video_button_text_color">#000000</color>
+    <color name="dg10_activity_report_make_upload_buttons_background_color">#bec3ad</color>
+
+
+    <!--activity_edit_profile.xml-->
+    <color name="dg10_activity_edit_profile_background_color">#f1f6df</color>
+    <color name="dg10_activity_edit_profile_top_bar_background_color">#bec3ad</color>
+    <color name="dg10_activity_edit_profile_top_bar_cancel_button_background_color">#bec3ad</color>
+    <color name="dg10_activity_edit_profile_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg10_activity_edit_profile_top_bar_edit_profile_text_background_color">#bec3ad</color>
+    <color name="dg10_activity_edit_profile_top_bar_edit_profile_text_text_color">#ffffff</color>
+    <color name="dg10_activity_edit_profile_circular_image_civ_border_color">#bec3ad</color>
+    <color name="dg10_activity_edit_profile_option_outside_background_color">#ffffff</color>
+    <color name="dg10_activity_edit_profile_option_text_background_color">#ffffff</color>
+    <color name="dg10_activity_edit_profile_option_text_font_color">#bec3ad</color>
+    <color name="dg10_activity_edit_profile_option_button_background_color">#ffffff</color>
+    <color name="dg10_activity_edit_profile_option_button_font_color">#000000</color>
+    <color name="dg10_activity_edit_profile_account_settings_font_color">#000000</color>
+
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <color name="dg10_activity_x_option_background_color">#f1f6df</color>
+    <color name="dg10_activity_x_option_top_bar_background_color">#bec3ad</color>
+    <color name="dg10_activity_x_option_top_bar_cancel_button_background_color">#bec3ad</color>
+    <color name="dg10_activity_x_option_top_bar_cancel_button_text_color">#ffffff</color>
+    <color name="dg10_activity_x_option_top_bar_caption_text_color">#ffffff</color>
+    <color name="dg10_activity_x_option_top_bar_caption_background_color">#bec3ad</color>
+    <color name="dg10_activity_x_option_edit_text_text_color">#000000</color>
+    <color name="dg10_activity_x_option_edit_hint_text_color">#bec3ad</color>
+    <color name="dg10_activity_x_option_edit_text_background_color">#ffffff</color>
+    <color name="dg10_activity_x_option_confirm_button_text_color">#ffffff</color>
+
+    <!--   chosen color <color name="primaryColor">#f1f6df</color>-->
+    <!--<color name="primaryLightColor">#ffffff</color>-->
+    <!--<color name="primaryDarkColor">#bec3ad</color>-->
+    <!--<color name="primaryTextColor">#000000</color>-->
+
+    <!--activity_settings.xml-->
+    <color name="dg10_activity_settings_background_color">#f1f6df</color>
+    <color name="dg10_activity_settings_top_bar_background_color">#bec3ad</color>
+    <color name="dg10_activity_settings_cancel_button_background_color">#bec3ad</color>
+    <color name="dg10_activity_settings_cancel_button_text_color">#ffffff</color>
+    <color name="dg10_activity_settings_save_button_background_color">#bec3ad</color>
+    <color name="dg10_activity_settings_save_button_text_color">#ffffff</color>
+    <color name="dg10_activity_settings_caption_background_color">#bec3ad</color>
+    <color name="dg10_activity_settings_caption_text_color">#ffffff</color>
+    <color name="dg10_activity_settings_change_password_button_background_color">#ffffff</color>
+    <color name="dg10_activity_settings_change_password_button_text_color">#000000</color>
+    <color name="dg10_activity_settings_delete_button_background_color">#ffffff</color>
+    <color name="dg10_activity_settings_delete_button_text_color">#000000</color>
+    <color name="dg10_activity_settings_tell_a_friend_background_color">#ffffff</color>
+    <color name="dg10_activity_settings_tell_a_friend_text_color">#000000</color>
+    <color name="dg10_activity_settings_report_a_problem_text_color">#bec3ad</color>
+    <color name="dg10_activity_settings_report_a_problem_background_color">#ffffff</color>
+    <color name="dg10_activity_settings_feedback_text_color">#000000</color>
+    <color name="dg10_activity_settings_feedback_background_color">#ffffff</color>
+    <color name="dg10_activity_settings_context_support_agreement_text_color">#000000</color>
+    <color name="dg10_activity_settings_context_support_agreement_background_color">#ffffff</color>
+    <color name="dg10_activity_settings_logout_button_text_color">#ffffff</color>
+
+    <!--global_access-->
+    <color name="dg10_bottom_navigation_background_color">#bec3ad</color>
+    <color name="dg10_status_bar_background_color">#bec3ad</color>
+
 </resources>

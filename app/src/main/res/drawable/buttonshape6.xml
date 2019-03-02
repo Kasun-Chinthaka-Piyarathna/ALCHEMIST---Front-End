@@ -7,9 +7,9 @@
         android:angle="45"
         android:centerX="35%"
         android:type="linear"
-        android:startColor="#003366"
-        android:centerColor="#003366"
-        android:endColor="#003366"
+        android:startColor="?attr/activity_report_make_upload_buttons_background_color"
+        android:centerColor="?attr/activity_report_make_upload_buttons_background_color"
+        android:endColor="?attr/activity_report_make_upload_buttons_background_color"
         />
     <padding
         android:left="0dp"
@@ -23,7 +23,7 @@
         />
     <stroke
         android:width="2dp"
-        android:color="#003366"
+        android:color="?attr/activity_report_make_upload_buttons_background_color"
 
 
         />

@@ -1,39 +1,64 @@
 package alchemist.fit.uom.alchemists.models;
 
-/**
- * Created by krupenghetiya on 03/02/17.
- */
-
 public class MyModel {
-    private final String image_url;
-    private String video_url;
-    private final String name;
+    private String currentContext;
+    private String userProfileImageUrl;
+    private String userName;
+    private String userNearestCity;
+    private String postId;
+    private String postText;
+    private String postType;
+    private String postFileUrl;
+    private String postTimeStamp;
 
-    public MyModel(String video_url, String image_url, String name) {
-        this.video_url = video_url;
-        this.image_url = image_url;
-        this.name = name;
+    public MyModel(String currentContext, String userProfileImageUrl, String userName, String userNearestCity,
+                   String postId, String postText, String postType, String postFileUrl, String postTimeStamp) {
+        this.currentContext = currentContext;
+        this.userProfileImageUrl = userProfileImageUrl;
+        this.userName = userName;
+        this.userNearestCity = userNearestCity;
+        this.postId = postId;
+        this.postText = postText;
+        this.postType = postType;
+        this.postFileUrl = postFileUrl;
+        this.postTimeStamp = postTimeStamp;
     }
 
-    public MyModel(String image_url, String name) {
-        this.image_url = image_url;
-        this.name = name;
+    public String getCurrentContext() {
+        return currentContext;
     }
 
-    public MyModel(String name) {
-        this.image_url=null;
-        this.name = name;
+    public String getUserProfileImageUrl() {
+        return userProfileImageUrl;
     }
 
-    public String getImage_url() {
-        return image_url;
+    public String getUserName() {
+        return userName;
     }
 
-    public String getVideo_url() {
-        return video_url;
+    public String getUserNearestCity() {
+        return userNearestCity;
     }
 
-    public String getName() {
-        return name;
+    public String getPostId() {
+        return postId;
     }
+
+    public String getPostText() {
+        return postText;
+    }
+
+    public String getPostType() {
+        return postType;
+    }
+
+    public String getPostFileUrl() {
+        return postFileUrl;
+    }
+
+    public String getPostTimeStamp() {
+        return postTimeStamp;
+    }
+
 }
+

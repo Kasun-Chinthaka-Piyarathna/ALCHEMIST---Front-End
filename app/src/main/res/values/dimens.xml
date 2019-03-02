@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Default Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="recyclerview_circular_image_width">50dp</dimen>
+    <dimen name="recyclerview_circular_image_height">50dp</dimen>
+    <dimen name="recyclerview_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="recyclerview_user_name_text_size">15dp</dimen>
+    <dimen name="recyclerview_location_text_size">10dp</dimen>
+    <dimen name="recyclerview_post_time_stamp_text_size">10dp</dimen>
+    <dimen name="recyclerview_post_text_size">20dp</dimen>
+    <dimen name="recyclerview_comment_layout_height">50dp</dimen>
+    <dimen name="recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="recyclerview_frame_layout_height">150dp</dimen>
+    <dimen name="recyclerview_comment_layout_comment_text_size">14dp</dimen>
+    <dimen name="recyclerview_comment_layout_star_button_label_text_size">14dp</dimen>
+
+
+    <!--fragment_profile-->
+    <dimen name="fragment_profile_profile_name_text_size">20dp</dimen>
+    <dimen name="fragment_profile_profile_user_location_text_size">14dp</dimen>
+    <dimen name="fragment_profile_profile_mobile_number_text_size">14dp</dimen>
+    <dimen name="fragment_profile_profile_report_text_text_size">14dp</dimen>
+    <dimen name="fragment_profile_profile_photo_button_text_size">14dp</dimen>
+    <dimen name="fragment_profile_profile_video_button_text_size">14dp</dimen>
+    <dimen name="fragment_profile_profile_profile_posts_button_text_size">14dp</dimen>
+
+
+    <dimen name="fragment_profile_profile_circular_image_width">96dp</dimen>
+    <dimen name="fragment_profile_profile__circular_image_height">96dp</dimen>
+    <dimen name="fragment_profile_profile__circular_image_civ_border_width">2dp</dimen>
+    <dimen name="fragment_profile_location_outside_layout_height">40dp</dimen>
+    <dimen name="fragment_profile_location_circular_image_width">30dp</dimen>
+    <dimen name="fragment_profile_location__circular_image_height">30dp</dimen>
+    <dimen name="fragment_profile_location__circular_image_civ_border_width">2dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="notification_section_cardview_layout_height">70dp</dimen>
+    <dimen name="notification_section_outside_linear_layout_height">60dp</dimen>
+    <dimen name="notification_section_circular_image_view_height">50dp</dimen>
+    <dimen name="notification_section_circular_image_view_weight">50dp</dimen>
+    <dimen name="notification_section_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="notification_section_notification_section_heading_text_size">14dp</dimen>
+    <dimen name="notification_section_notification_section_time_stamp_text_size">14dp</dimen>
+
+
+    <!--activity_report_make.xml-->
+    <dimen name="activity_report_make_top_bar_create_post_text_size">14dp</dimen>
+    <dimen name="activity_report_make_top_bar_pending_post_text_size">14dp</dimen>
+    <dimen name="activity_report_make_top_bar_post_text_size">14dp</dimen>
+    <dimen name="activity_report_make_circular_image_width">50dp</dimen>
+    <dimen name="activity_report_make_circular_image_height">50dp</dimen>
+    <dimen name="activity_report_make_circular_image_boarder_width">2dp</dimen>
+    <dimen name="activity_report_make_profile_name_size">14dp</dimen>
+    <dimen name="activity_report_make_post_text_size">16dp</dimen>
+    <dimen name="activity_report_make_photo_button_text_size">14dp</dimen>
+    <dimen name="activity_report_make_video_button_text_size">14dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="activity_edit_profile_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="activity_edit_profile_top_bar_edit_profile_text_text_size">20dp</dimen>
+    <dimen name="activity_edit_profile_circular_image_width">96dp</dimen>
+    <dimen name="activity_edit_profile_circular_image_height">96dp</dimen>
+    <dimen name="activity_edit_profile_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="activity_edit_profile_option_text_font_size">14dp</dimen>
+    <dimen name="activity_edit_profile_option_button_font_size">14dp</dimen>
+    <dimen name="activity_edit_profile_account_settings_font_size">14dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="activity_x_option_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="activity_x_option_top_bar_caption_text_size">20dp</dimen>
+    <dimen name="activity_x_option_edit_text_text_size">14dp</dimen>
+    <dimen name="activity_x_option_confirm_button_text_size">14dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="activity_settings_cancel_button_text_size">14dp</dimen>
+    <dimen name="activity_settings_save_button_text_size">14dp</dimen>
+    <dimen name="activity_settings_caption_text_size">20dp</dimen>
+    <dimen name="activity_settings_change_password_button_text_size">14dp</dimen>
+    <dimen name="activity_settings_delete_button_text_size">14dp</dimen>
+    <dimen name="activity_settings_tell_a_friend_text_size">14dp</dimen>
+    <dimen name="activity_settings_report_a_problem_text_size">14dp</dimen>
+    <dimen name="activity_settings_feedback_text_size">14dp</dimen>
+    <dimen name="activity_settings_context_support_agreement_text_size">14dp</dimen>
+    <dimen name="activity_settings_logout_button_text_size">14dp</dimen>
+
+
+
+    <!--AppThemeForDG1 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg1_recyclerview_circular_image_width">50dp</dimen>
+    <dimen name="dg1_recyclerview_circular_image_height">50dp</dimen>
+    <dimen name="dg1_recyclerview_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg1_recyclerview_user_name_text_size">15dp</dimen>
+    <dimen name="dg1_recyclerview_location_text_size">10dp</dimen>
+    <dimen name="dg1_recyclerview_post_time_stamp_text_size">10dp</dimen>
+    <dimen name="dg1_recyclerview_post_text_size">20dp</dimen>
+    <dimen name="dg1_recyclerview_comment_layout_height">50dp</dimen>
+    <dimen name="dg1_recyclerview_comment_layout_comment_text_size">14dp</dimen>
+    <dimen name="dg1_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg1_recyclerview_frame_layout_height">150dp</dimen>
+    <dimen name="dg1_recyclerview_comment_layout_star_button_label_text_size">14dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg1_fragment_profile_profile_name_text_size">20dp</dimen>
+    <dimen name="dg1_fragment_profile_profile_user_location_text_size">14dp</dimen>
+    <dimen name="dg1_fragment_profile_profile_mobile_number_text_size">14dp</dimen>
+    <dimen name="dg1_fragment_profile_profile_report_text_text_size">14dp</dimen>
+    <dimen name="dg1_fragment_profile_profile_profile_posts_button_text_size">14dp</dimen>
+    <dimen name="dg1_fragment_profile_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg1_fragment_profile_profile__circular_image_height">96dp</dimen>
+    <dimen name="dg1_fragment_profile_profile__circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg1_fragment_profile_location_outside_layout_height">40dp</dimen>
+    <dimen name="dg1_fragment_profile_location_circular_image_width">30dp</dimen>
+    <dimen name="dg1_fragment_profile_location__circular_image_height">30dp</dimen>
+    <dimen name="dg1_fragment_profile_location__circular_image_civ_border_width">2dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg1_notification_section_cardview_layout_height">70dp</dimen>
+    <dimen name="dg1_notification_section_outside_linear_layout_height">60dp</dimen>
+    <dimen name="dg1_notification_section_circular_image_view_height">50dp</dimen>
+    <dimen name="dg1_notification_section_circular_image_view_weight">50dp</dimen>
+    <dimen name="dg1_notification_section_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg1_notification_section_notification_section_heading_text_size">14dp</dimen>
+    <dimen name="dg1_notification_section_notification_section_time_stamp_text_size">14dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg1_activity_report_make_top_bar_create_post_text_size">14dp</dimen>
+    <dimen name="dg1_activity_report_make_top_bar_pending_post_text_size">14dp</dimen>
+    <dimen name="dg1_activity_report_make_top_bar_post_text_size">14dp</dimen>
+    <dimen name="dg1_activity_report_make_circular_image_width">50dp</dimen>
+    <dimen name="dg1_activity_report_make_circular_image_height">50dp</dimen>
+    <dimen name="dg1_activity_report_make_circular_image_boarder_width">2dp</dimen>
+    <dimen name="dg1_activity_report_make_profile_name_size">14dp</dimen>
+    <dimen name="dg1_activity_report_make_post_text_size">16dp</dimen>
+    <dimen name="dg1_activity_report_make_photo_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_report_make_video_button_text_size">14dp</dimen>
+
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg1_activity_edit_profile_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_edit_profile_top_bar_edit_profile_text_text_size">20dp</dimen>
+    <dimen name="dg1_activity_edit_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg1_activity_edit_profile_circular_image_height">96dp</dimen>
+    <dimen name="dg1_activity_edit_profile_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg1_activity_edit_profile_option_text_font_size">14dp</dimen>
+    <dimen name="dg1_activity_edit_profile_option_button_font_size">14dp</dimen>
+    <dimen name="dg1_activity_edit_profile_account_settings_font_size">14dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg1_activity_x_option_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_x_option_top_bar_caption_text_size">20dp</dimen>
+    <dimen name="dg1_activity_x_option_edit_text_text_size">14dp</dimen>
+    <dimen name="dg1_activity_x_option_confirm_button_text_size">14dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg1_activity_settings_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_save_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_caption_text_size">20dp</dimen>
+    <dimen name="dg1_activity_settings_change_password_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_delete_button_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_tell_a_friend_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_report_a_problem_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_feedback_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_context_support_agreement_text_size">14dp</dimen>
+    <dimen name="dg1_activity_settings_logout_button_text_size">14dp</dimen>
+
+    <!--AppThemeForDG2 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg2_recyclerview_circular_image_width">50dp</dimen>
+    <dimen name="dg2_recyclerview_circular_image_height">50dp</dimen>
+    <dimen name="dg2_recyclerview_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg2_recyclerview_user_name_text_size">15dp</dimen>
+    <dimen name="dg2_recyclerview_location_text_size">10dp</dimen>
+    <dimen name="dg2_recyclerview_post_time_stamp_text_size">10dp</dimen>
+    <dimen name="dg2_recyclerview_post_text_size">20dp</dimen>
+    <dimen name="dg2_recyclerview_comment_layout_height">50dp</dimen>
+    <dimen name="dg2_recyclerview_comment_layout_comment_text_size">14dp</dimen>
+    <dimen name="dg2_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg2_recyclerview_frame_layout_height">150dp</dimen>
+    <dimen name="dg2_recyclerview_comment_layout_star_button_label_text_size">14dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg2_fragment_profile_profile_name_text_size">20dp</dimen>
+    <dimen name="dg2_fragment_profile_profile_user_location_text_size">14dp</dimen>
+    <dimen name="dg2_fragment_profile_profile_mobile_number_text_size">14dp</dimen>
+    <dimen name="dg2_fragment_profile_profile_report_text_text_size">14dp</dimen>
+    <dimen name="dg2_fragment_profile_profile_profile_posts_button_text_size">14dp</dimen>
+    <dimen name="dg2_fragment_profile_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg2_fragment_profile_profile__circular_image_height">96dp</dimen>
+    <dimen name="dg2_fragment_profile_profile__circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg2_fragment_profile_location_outside_layout_height">40dp</dimen>
+    <dimen name="dg2_fragment_profile_location_circular_image_width">30dp</dimen>
+    <dimen name="dg2_fragment_profile_location__circular_image_height">30dp</dimen>
+    <dimen name="dg2_fragment_profile_location__circular_image_civ_border_width">2dp</dimen>
+
+
+    <!--notification_section.xml-->
+    <dimen name="dg2_notification_section_cardview_layout_height">70dp</dimen>
+    <dimen name="dg2_notification_section_outside_linear_layout_height">60dp</dimen>
+    <dimen name="dg2_notification_section_circular_image_view_height">50dp</dimen>
+    <dimen name="dg2_notification_section_circular_image_view_weight">50dp</dimen>
+    <dimen name="dg2_notification_section_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg2_notification_section_notification_section_heading_text_size">14dp</dimen>
+    <dimen name="dg2_notification_section_notification_section_time_stamp_text_size">14dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg2_activity_report_make_top_bar_create_post_text_size">14dp</dimen>
+    <dimen name="dg2_activity_report_make_top_bar_pending_post_text_size">14dp</dimen>
+    <dimen name="dg2_activity_report_make_top_bar_post_text_size">14dp</dimen>
+    <dimen name="dg2_activity_report_make_circular_image_width">50dp</dimen>
+    <dimen name="dg2_activity_report_make_circular_image_height">50dp</dimen>
+    <dimen name="dg2_activity_report_make_circular_image_boarder_width">2dp</dimen>
+    <dimen name="dg2_activity_report_make_profile_name_size">14dp</dimen>
+    <dimen name="dg2_activity_report_make_post_text_size">16dp</dimen>
+    <dimen name="dg2_activity_report_make_photo_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_report_make_video_button_text_size">14dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg2_activity_edit_profile_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_edit_profile_top_bar_edit_profile_text_text_size">20dp</dimen>
+    <dimen name="dg2_activity_edit_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg2_activity_edit_profile_circular_image_height">96dp</dimen>
+    <dimen name="dg2_activity_edit_profile_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg2_activity_edit_profile_option_text_font_size">14dp</dimen>
+    <dimen name="dg2_activity_edit_profile_option_button_font_size">14dp</dimen>
+    <dimen name="dg2_activity_edit_profile_account_settings_font_size">14dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg2_activity_x_option_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_x_option_top_bar_caption_text_size">20dp</dimen>
+    <dimen name="dg2_activity_x_option_edit_text_text_size">14dp</dimen>
+    <dimen name="dg2_activity_x_option_confirm_button_text_size">14dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg2_activity_settings_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_save_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_caption_text_size">20dp</dimen>
+    <dimen name="dg2_activity_settings_change_password_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_delete_button_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_tell_a_friend_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_report_a_problem_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_feedback_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_context_support_agreement_text_size">14dp</dimen>
+    <dimen name="dg2_activity_settings_logout_button_text_size">14dp</dimen>
+
+    <!--AppThemeForDG3 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg3_recyclerview_circular_image_width">51dp</dimen>
+    <dimen name="dg3_recyclerview_circular_image_height">51dp</dimen>
+    <dimen name="dg3_recyclerview_circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg3_recyclerview_user_name_text_size">16dp</dimen>
+    <dimen name="dg3_recyclerview_location_text_size">11dp</dimen>
+    <dimen name="dg3_recyclerview_post_time_stamp_text_size">11dp</dimen>
+    <dimen name="dg3_recyclerview_post_text_size">21dp</dimen>
+    <dimen name="dg3_recyclerview_comment_layout_height">51dp</dimen>
+    <dimen name="dg3_recyclerview_comment_layout_comment_text_size">15dp</dimen>
+    <dimen name="dg3_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg3_recyclerview_frame_layout_height">151dp</dimen>
+    <dimen name="dg3_recyclerview_comment_layout_star_button_label_text_size">15dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg3_fragment_profile_profile_name_text_size">21dp</dimen>
+    <dimen name="dg3_fragment_profile_profile_user_location_text_size">15dp</dimen>
+    <dimen name="dg3_fragment_profile_profile_mobile_number_text_size">15dp</dimen>
+    <dimen name="dg3_fragment_profile_profile_report_text_text_size">15dp</dimen>
+    <dimen name="dg3_fragment_profile_profile_profile_posts_button_text_size">15dp</dimen>
+    <dimen name="dg3_fragment_profile_profile_circular_image_width">97dp</dimen>
+    <dimen name="dg3_fragment_profile_profile__circular_image_height">97dp</dimen>
+    <dimen name="dg3_fragment_profile_profile__circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg3_fragment_profile_location_outside_layout_height">41dp</dimen>
+    <dimen name="dg3_fragment_profile_location_circular_image_width">31dp</dimen>
+    <dimen name="dg3_fragment_profile_location__circular_image_height">31dp</dimen>
+    <dimen name="dg3_fragment_profile_location__circular_image_civ_border_width">3dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg3_notification_section_cardview_layout_height">71dp</dimen>
+    <dimen name="dg3_notification_section_outside_linear_layout_height">61dp</dimen>
+    <dimen name="dg3_notification_section_circular_image_view_height">51dp</dimen>
+    <dimen name="dg3_notification_section_circular_image_view_weight">51dp</dimen>
+    <dimen name="dg3_notification_section_circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg3_notification_section_notification_section_heading_text_size">15dp</dimen>
+    <dimen name="dg3_notification_section_notification_section_time_stamp_text_size">15dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg3_activity_report_make_top_bar_create_post_text_size">15dp</dimen>
+    <dimen name="dg3_activity_report_make_top_bar_pending_post_text_size">16dp</dimen>
+    <dimen name="dg3_activity_report_make_top_bar_post_text_size">16dp</dimen>
+    <dimen name="dg3_activity_report_make_circular_image_width">51dp</dimen>
+    <dimen name="dg3_activity_report_make_circular_image_height">51dp</dimen>
+    <dimen name="dg3_activity_report_make_circular_image_boarder_width">3dp</dimen>
+    <dimen name="dg3_activity_report_make_profile_name_size">15dp</dimen>
+    <dimen name="dg3_activity_report_make_post_text_size">17dp</dimen>
+    <dimen name="dg3_activity_report_make_photo_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_report_make_video_button_text_size">15dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg3_activity_edit_profile_top_bar_cancel_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_edit_profile_top_bar_edit_profile_text_text_size">21dp</dimen>
+    <dimen name="dg3_activity_edit_profile_circular_image_width">97dp</dimen>
+    <dimen name="dg3_activity_edit_profile_circular_image_height">97dp</dimen>
+    <dimen name="dg3_activity_edit_profile_circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg3_activity_edit_profile_option_text_font_size">15dp</dimen>
+    <dimen name="dg3_activity_edit_profile_option_button_font_size">15dp</dimen>
+    <dimen name="dg3_activity_edit_profile_account_settings_font_size">15dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg3_activity_x_option_top_bar_cancel_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_x_option_top_bar_caption_text_size">21dp</dimen>
+    <dimen name="dg3_activity_x_option_edit_text_text_size">15dp</dimen>
+    <dimen name="dg3_activity_x_option_confirm_button_text_size">15dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg3_activity_settings_cancel_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_save_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_caption_text_size">21dp</dimen>
+    <dimen name="dg3_activity_settings_change_password_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_delete_button_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_tell_a_friend_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_report_a_problem_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_feedback_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_context_support_agreement_text_size">15dp</dimen>
+    <dimen name="dg3_activity_settings_logout_button_text_size">15dp</dimen>
+
+    <!--AppThemeForDG4 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg4_recyclerview_circular_image_width">52dp</dimen>
+    <dimen name="dg4_recyclerview_circular_image_height">52dp</dimen>
+    <dimen name="dg4_recyclerview_circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg4_recyclerview_user_name_text_size">17dp</dimen>
+    <dimen name="dg4_recyclerview_location_text_size">12dp</dimen>
+    <dimen name="dg4_recyclerview_post_time_stamp_text_size">12dp</dimen>
+    <dimen name="dg4_recyclerview_post_text_size">22dp</dimen>
+    <dimen name="dg4_recyclerview_comment_layout_height">52dp</dimen>
+    <dimen name="dg4_recyclerview_comment_layout_comment_text_size">16dp</dimen>
+    <dimen name="dg4_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg4_recyclerview_frame_layout_height">152dp</dimen>
+    <dimen name="dg4_recyclerview_comment_layout_star_button_label_text_size">16dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg4_fragment_profile_profile_name_text_size">22dp</dimen>
+    <dimen name="dg4_fragment_profile_profile_user_location_text_size">16dp</dimen>
+    <dimen name="dg4_fragment_profile_profile_mobile_number_text_size">16dp</dimen>
+    <dimen name="dg4_fragment_profile_profile_report_text_text_size">16dp</dimen>
+    <dimen name="dg4_fragment_profile_profile_profile_posts_button_text_size">16dp</dimen>
+    <dimen name="dg4_fragment_profile_profile_circular_image_width">98dp</dimen>
+    <dimen name="dg4_fragment_profile_profile__circular_image_height">98dp</dimen>
+    <dimen name="dg4_fragment_profile_profile__circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg4_fragment_profile_location_outside_layout_height">42dp</dimen>
+    <dimen name="dg4_fragment_profile_location_circular_image_width">32dp</dimen>
+    <dimen name="dg4_fragment_profile_location__circular_image_height">32dp</dimen>
+    <dimen name="dg4_fragment_profile_location__circular_image_civ_border_width">4dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg4_notification_section_cardview_layout_height">72dp</dimen>
+    <dimen name="dg4_notification_section_outside_linear_layout_height">62dp</dimen>
+    <dimen name="dg4_notification_section_circular_image_view_height">52dp</dimen>
+    <dimen name="dg4_notification_section_circular_image_view_weight">52dp</dimen>
+    <dimen name="dg4_notification_section_circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg4_notification_section_notification_section_heading_text_size">16dp</dimen>
+    <dimen name="dg4_notification_section_notification_section_time_stamp_text_size">16dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg4_activity_report_make_top_bar_create_post_text_size">16dp</dimen>
+    <dimen name="dg4_activity_report_make_top_bar_pending_post_text_size">16dp</dimen>
+    <dimen name="dg4_activity_report_make_top_bar_post_text_size">16dp</dimen>
+    <dimen name="dg4_activity_report_make_circular_image_width">52dp</dimen>
+    <dimen name="dg4_activity_report_make_circular_image_height">52dp</dimen>
+    <dimen name="dg4_activity_report_make_circular_image_boarder_width">4dp</dimen>
+    <dimen name="dg4_activity_report_make_profile_name_size">16dp</dimen>
+    <dimen name="dg4_activity_report_make_post_text_size">18dp</dimen>
+    <dimen name="dg4_activity_report_make_photo_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_report_make_video_button_text_size">16dp</dimen>
+
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg4_activity_edit_profile_top_bar_cancel_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_edit_profile_top_bar_edit_profile_text_text_size">22dp</dimen>
+    <dimen name="dg4_activity_edit_profile_circular_image_width">98dp</dimen>
+    <dimen name="dg4_activity_edit_profile_circular_image_height">98dp</dimen>
+    <dimen name="dg4_activity_edit_profile_circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg4_activity_edit_profile_option_text_font_size">16dp</dimen>
+    <dimen name="dg4_activity_edit_profile_option_button_font_size">16dp</dimen>
+    <dimen name="dg4_activity_edit_profile_account_settings_font_size">16dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg4_activity_x_option_top_bar_cancel_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_x_option_top_bar_caption_text_size">22dp</dimen>
+    <dimen name="dg4_activity_x_option_edit_text_text_size">16dp</dimen>
+    <dimen name="dg4_activity_x_option_confirm_button_text_size">16dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg4_activity_settings_cancel_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_save_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_caption_text_size">22dp</dimen>
+    <dimen name="dg4_activity_settings_change_password_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_delete_button_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_tell_a_friend_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_report_a_problem_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_feedback_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_context_support_agreement_text_size">16dp</dimen>
+    <dimen name="dg4_activity_settings_logout_button_text_size">16dp</dimen>
+
+    <!--AppThemeForDG5 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg5_recyclerview_circular_image_width">53dp</dimen>
+    <dimen name="dg5_recyclerview_circular_image_height">53dp</dimen>
+    <dimen name="dg5_recyclerview_circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg5_recyclerview_user_name_text_size">18dp</dimen>
+    <dimen name="dg5_recyclerview_location_text_size">13dp</dimen>
+    <dimen name="dg5_recyclerview_post_time_stamp_text_size">13dp</dimen>
+    <dimen name="dg5_recyclerview_post_text_size">23dp</dimen>
+    <dimen name="dg5_recyclerview_comment_layout_height">53dp</dimen>
+    <dimen name="dg5_recyclerview_comment_layout_comment_text_size">17dp</dimen>
+    <dimen name="dg5_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg5_recyclerview_frame_layout_height">153dp</dimen>
+    <dimen name="dg5_recyclerview_comment_layout_star_button_label_text_size">17dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg5_fragment_profile_profile_name_text_size">23dp</dimen>
+    <dimen name="dg5_fragment_profile_profile_user_location_text_size">17dp</dimen>
+    <dimen name="dg5_fragment_profile_profile_mobile_number_text_size">17dp</dimen>
+    <dimen name="dg5_fragment_profile_profile_report_text_text_size">17dp</dimen>
+    <dimen name="dg5_fragment_profile_profile_profile_posts_button_text_size">17dp</dimen>
+    <dimen name="dg5_fragment_profile_profile_circular_image_width">99dp</dimen>
+    <dimen name="dg5_fragment_profile_profile__circular_image_height">99dp</dimen>
+    <dimen name="dg5_fragment_profile_profile__circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg5_fragment_profile_location_outside_layout_height">43dp</dimen>
+    <dimen name="dg5_fragment_profile_location_circular_image_width">33dp</dimen>
+    <dimen name="dg5_fragment_profile_location__circular_image_height">33dp</dimen>
+    <dimen name="dg5_fragment_profile_location__circular_image_civ_border_width">5dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg5_notification_section_cardview_layout_height">82dp</dimen>
+    <dimen name="dg5_notification_section_outside_linear_layout_height">80dp</dimen>
+    <dimen name="dg5_notification_section_circular_image_view_height">53dp</dimen>
+    <dimen name="dg5_notification_section_circular_image_view_weight">53dp</dimen>
+    <dimen name="dg5_notification_section_circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg5_notification_section_notification_section_heading_text_size">17dp</dimen>
+    <dimen name="dg5_notification_section_notification_section_time_stamp_text_size">17dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg5_activity_report_make_top_bar_create_post_text_size">17dp</dimen>
+    <dimen name="dg5_activity_report_make_top_bar_pending_post_text_size">17dp</dimen>
+    <dimen name="dg5_activity_report_make_top_bar_post_text_size">17dp</dimen>
+    <dimen name="dg5_activity_report_make_circular_image_width">53dp</dimen>
+    <dimen name="dg5_activity_report_make_circular_image_height">53dp</dimen>
+    <dimen name="dg5_activity_report_make_circular_image_boarder_width">5dp</dimen>
+    <dimen name="dg5_activity_report_make_profile_name_size">17dp</dimen>
+    <dimen name="dg5_activity_report_make_post_text_size">19dp</dimen>
+    <dimen name="dg5_activity_report_make_photo_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_report_make_video_button_text_size">17dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg5_activity_edit_profile_top_bar_cancel_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_edit_profile_top_bar_edit_profile_text_text_size">23dp</dimen>
+    <dimen name="dg5_activity_edit_profile_circular_image_width">99dp</dimen>
+    <dimen name="dg5_activity_edit_profile_circular_image_height">99dp</dimen>
+    <dimen name="dg5_activity_edit_profile_circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg5_activity_edit_profile_option_text_font_size">17dp</dimen>
+    <dimen name="dg5_activity_edit_profile_option_button_font_size">17dp</dimen>
+    <dimen name="dg5_activity_edit_profile_account_settings_font_size">17dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg5_activity_x_option_top_bar_cancel_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_x_option_top_bar_caption_text_size">23dp</dimen>
+    <dimen name="dg5_activity_x_option_edit_text_text_size">17dp</dimen>
+    <dimen name="dg5_activity_x_option_confirm_button_text_size">17dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg5_activity_settings_cancel_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_save_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_caption_text_size">23dp</dimen>
+    <dimen name="dg5_activity_settings_change_password_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_delete_button_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_tell_a_friend_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_report_a_problem_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_feedback_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_context_support_agreement_text_size">17dp</dimen>
+    <dimen name="dg5_activity_settings_logout_button_text_size">17dp</dimen>
+
+    <!--AppThemeForDG6 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg6_recyclerview_circular_image_width">50dp</dimen>
+    <dimen name="dg6_recyclerview_circular_image_height">50dp</dimen>
+    <dimen name="dg6_recyclerview_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg6_recyclerview_user_name_text_size">15dp</dimen>
+    <dimen name="dg6_recyclerview_location_text_size">10dp</dimen>
+    <dimen name="dg6_recyclerview_post_time_stamp_text_size">10dp</dimen>
+    <dimen name="dg6_recyclerview_post_text_size">20dp</dimen>
+    <dimen name="dg6_recyclerview_comment_layout_height">50dp</dimen>
+    <dimen name="dg6_recyclerview_comment_layout_comment_text_size">14dp</dimen>
+    <dimen name="dg6_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg6_recyclerview_frame_layout_height">150dp</dimen>
+    <dimen name="dg6_recyclerview_comment_layout_star_button_label_text_size">14dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg6_fragment_profile_profile_name_text_size">20dp</dimen>
+    <dimen name="dg6_fragment_profile_profile_user_location_text_size">14dp</dimen>
+    <dimen name="dg6_fragment_profile_profile_mobile_number_text_size">14dp</dimen>
+    <dimen name="dg6_fragment_profile_profile_report_text_text_size">14dp</dimen>
+    <dimen name="dg6_fragment_profile_profile_profile_posts_button_text_size">14dp</dimen>
+    <dimen name="dg6_fragment_profile_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg6_fragment_profile_profile__circular_image_height">96dp</dimen>
+    <dimen name="dg6_fragment_profile_profile__circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg6_fragment_profile_location_outside_layout_height">40dp</dimen>
+    <dimen name="dg6_fragment_profile_location_circular_image_width">30dp</dimen>
+    <dimen name="dg6_fragment_profile_location__circular_image_height">30dp</dimen>
+    <dimen name="dg6_fragment_profile_location__circular_image_civ_border_width">2dp</dimen>
+
+
+    <!--notification_section.xml-->
+    <dimen name="dg6_notification_section_cardview_layout_height">70dp</dimen>
+    <dimen name="dg6_notification_section_outside_linear_layout_height">60dp</dimen>
+    <dimen name="dg6_notification_section_circular_image_view_height">50dp</dimen>
+    <dimen name="dg6_notification_section_circular_image_view_weight">50dp</dimen>
+    <dimen name="dg6_notification_section_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg6_notification_section_notification_section_heading_text_size">14dp</dimen>
+    <dimen name="dg6_notification_section_notification_section_time_stamp_text_size">14dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg6_activity_report_make_top_bar_create_post_text_size">14dp</dimen>
+    <dimen name="dg6_activity_report_make_top_bar_pending_post_text_size">14dp</dimen>
+    <dimen name="dg6_activity_report_make_top_bar_post_text_size">14dp</dimen>
+    <dimen name="dg6_activity_report_make_circular_image_width">50dp</dimen>
+    <dimen name="dg6_activity_report_make_circular_image_height">50dp</dimen>
+    <dimen name="dg6_activity_report_make_circular_image_boarder_width">2dp</dimen>
+    <dimen name="dg6_activity_report_make_profile_name_size">14dp</dimen>
+    <dimen name="dg6_activity_report_make_post_text_size">16dp</dimen>
+    <dimen name="dg6_activity_report_make_photo_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_report_make_video_button_text_size">14dp</dimen>
+
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg6_activity_edit_profile_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_edit_profile_top_bar_edit_profile_text_text_size">20dp</dimen>
+    <dimen name="dg6_activity_edit_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg6_activity_edit_profile_circular_image_height">96dp</dimen>
+    <dimen name="dg6_activity_edit_profile_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg6_activity_edit_profile_option_text_font_size">14dp</dimen>
+    <dimen name="dg6_activity_edit_profile_option_button_font_size">14dp</dimen>
+    <dimen name="dg6_activity_edit_profile_account_settings_font_size">14dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg6_activity_x_option_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_x_option_top_bar_caption_text_size">20dp</dimen>
+    <dimen name="dg6_activity_x_option_edit_text_text_size">14dp</dimen>
+    <dimen name="dg6_activity_x_option_confirm_button_text_size">14dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg6_activity_settings_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_save_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_caption_text_size">20dp</dimen>
+    <dimen name="dg6_activity_settings_change_password_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_delete_button_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_tell_a_friend_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_report_a_problem_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_feedback_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_context_support_agreement_text_size">14dp</dimen>
+    <dimen name="dg6_activity_settings_logout_button_text_size">14dp</dimen>
+
+    <!--AppThemeForDG7 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg7_recyclerview_circular_image_width">50dp</dimen>
+    <dimen name="dg7_recyclerview_circular_image_height">50dp</dimen>
+    <dimen name="dg7_recyclerview_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg7_recyclerview_user_name_text_size">15dp</dimen>
+    <dimen name="dg7_recyclerview_location_text_size">10dp</dimen>
+    <dimen name="dg7_recyclerview_post_time_stamp_text_size">10dp</dimen>
+    <dimen name="dg7_recyclerview_post_text_size">20dp</dimen>
+    <dimen name="dg7_recyclerview_comment_layout_height">50dp</dimen>
+    <dimen name="dg7_recyclerview_comment_layout_comment_text_size">14dp</dimen>
+    <dimen name="dg7_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg7_recyclerview_frame_layout_height">150dp</dimen>
+    <dimen name="dg7_recyclerview_comment_layout_star_button_label_text_size">14dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg7_fragment_profile_profile_name_text_size">20dp</dimen>
+    <dimen name="dg7_fragment_profile_profile_user_location_text_size">14dp</dimen>
+    <dimen name="dg7_fragment_profile_profile_mobile_number_text_size">14dp</dimen>
+    <dimen name="dg7_fragment_profile_profile_report_text_text_size">14dp</dimen>
+    <dimen name="dg7_fragment_profile_profile_profile_posts_button_text_size">14dp</dimen>
+    <dimen name="dg7_fragment_profile_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg7_fragment_profile_profile__circular_image_height">96dp</dimen>
+    <dimen name="dg7_fragment_profile_profile__circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg7_fragment_profile_location_outside_layout_height">40dp</dimen>
+    <dimen name="dg7_fragment_profile_location_circular_image_width">30dp</dimen>
+    <dimen name="dg7_fragment_profile_location__circular_image_height">30dp</dimen>
+    <dimen name="dg7_fragment_profile_location__circular_image_civ_border_width">2dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg7_notification_section_cardview_layout_height">70dp</dimen>
+    <dimen name="dg7_notification_section_outside_linear_layout_height">60dp</dimen>
+    <dimen name="dg7_notification_section_circular_image_view_height">50dp</dimen>
+    <dimen name="dg7_notification_section_circular_image_view_weight">50dp</dimen>
+    <dimen name="dg7_notification_section_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg7_notification_section_notification_section_heading_text_size">14dp</dimen>
+    <dimen name="dg7_notification_section_notification_section_time_stamp_text_size">14dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg7_activity_report_make_top_bar_create_post_text_size">14dp</dimen>
+    <dimen name="dg7_activity_report_make_top_bar_pending_post_text_size">14dp</dimen>
+    <dimen name="dg7_activity_report_make_top_bar_post_text_size">14dp</dimen>
+    <dimen name="dg7_activity_report_make_circular_image_width">50dp</dimen>
+    <dimen name="dg7_activity_report_make_circular_image_height">50dp</dimen>
+    <dimen name="dg7_activity_report_make_circular_image_boarder_width">2dp</dimen>
+    <dimen name="dg7_activity_report_make_profile_name_size">14dp</dimen>
+    <dimen name="dg7_activity_report_make_post_text_size">16dp</dimen>
+    <dimen name="dg7_activity_report_make_photo_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_report_make_video_button_text_size">14dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg7_activity_edit_profile_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_edit_profile_top_bar_edit_profile_text_text_size">20dp</dimen>
+    <dimen name="dg7_activity_edit_profile_circular_image_width">96dp</dimen>
+    <dimen name="dg7_activity_edit_profile_circular_image_height">96dp</dimen>
+    <dimen name="dg7_activity_edit_profile_circular_image_civ_border_width">2dp</dimen>
+    <dimen name="dg7_activity_edit_profile_option_text_font_size">14dp</dimen>
+    <dimen name="dg7_activity_edit_profile_option_button_font_size">14dp</dimen>
+    <dimen name="dg7_activity_edit_profile_account_settings_font_size">14dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg7_activity_x_option_top_bar_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_x_option_top_bar_caption_text_size">20dp</dimen>
+    <dimen name="dg7_activity_x_option_edit_text_text_size">14dp</dimen>
+    <dimen name="dg7_activity_x_option_confirm_button_text_size">14dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg7_activity_settings_cancel_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_save_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_caption_text_size">20dp</dimen>
+    <dimen name="dg7_activity_settings_change_password_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_delete_button_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_tell_a_friend_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_report_a_problem_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_feedback_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_context_support_agreement_text_size">14dp</dimen>
+    <dimen name="dg7_activity_settings_logout_button_text_size">14dp</dimen>
+
+    <!--AppThemeForDG8 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg8_recyclerview_circular_image_width">51dp</dimen>
+    <dimen name="dg8_recyclerview_circular_image_height">51dp</dimen>
+    <dimen name="dg8_recyclerview_circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg8_recyclerview_user_name_text_size">16dp</dimen>
+    <dimen name="dg8_recyclerview_location_text_size">11dp</dimen>
+    <dimen name="dg8_recyclerview_post_time_stamp_text_size">11dp</dimen>
+    <dimen name="dg8_recyclerview_post_text_size">21dp</dimen>
+    <dimen name="dg8_recyclerview_comment_layout_height">51dp</dimen>
+    <dimen name="dg8_recyclerview_comment_layout_comment_text_size">15dp</dimen>
+    <dimen name="dg8_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg8_recyclerview_frame_layout_height">151dp</dimen>
+    <dimen name="dg8_recyclerview_comment_layout_star_button_label_text_size">15dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg8_fragment_profile_profile_name_text_size">21dp</dimen>
+    <dimen name="dg8_fragment_profile_profile_user_location_text_size">15dp</dimen>
+    <dimen name="dg8_fragment_profile_profile_mobile_number_text_size">15dp</dimen>
+    <dimen name="dg8_fragment_profile_profile_report_text_text_size">15dp</dimen>
+    <dimen name="dg8_fragment_profile_profile_profile_posts_button_text_size">15dp</dimen>
+    <dimen name="dg8_fragment_profile_profile_circular_image_width">97dp</dimen>
+    <dimen name="dg8_fragment_profile_profile__circular_image_height">97dp</dimen>
+    <dimen name="dg8_fragment_profile_profile__circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg8_fragment_profile_location_outside_layout_height">41dp</dimen>
+    <dimen name="dg8_fragment_profile_location_circular_image_width">31dp</dimen>
+    <dimen name="dg8_fragment_profile_location__circular_image_height">31dp</dimen>
+    <dimen name="dg8_fragment_profile_location__circular_image_civ_border_width">3dp</dimen>
+
+
+    <!--notification_section.xml-->
+    <dimen name="dg8_notification_section_cardview_layout_height">71dp</dimen>
+    <dimen name="dg8_notification_section_outside_linear_layout_height">61dp</dimen>
+    <dimen name="dg8_notification_section_circular_image_view_height">51dp</dimen>
+    <dimen name="dg8_notification_section_circular_image_view_weight">51dp</dimen>
+    <dimen name="dg8_notification_section_circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg8_notification_section_notification_section_heading_text_size">15dp</dimen>
+    <dimen name="dg8_notification_section_notification_section_time_stamp_text_size">15dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg8_activity_report_make_top_bar_create_post_text_size">15dp</dimen>
+    <dimen name="dg8_activity_report_make_top_bar_pending_post_text_size">15dp</dimen>
+    <dimen name="dg8_activity_report_make_top_bar_post_text_size">15dp</dimen>
+    <dimen name="dg8_activity_report_make_circular_image_width">51dp</dimen>
+    <dimen name="dg8_activity_report_make_circular_image_height">51dp</dimen>
+    <dimen name="dg8_activity_report_make_circular_image_boarder_width">3dp</dimen>
+    <dimen name="dg8_activity_report_make_profile_name_size">15dp</dimen>
+    <dimen name="dg8_activity_report_make_post_text_size">17dp</dimen>
+    <dimen name="dg8_activity_report_make_photo_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_report_make_video_button_text_size">15dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg8_activity_edit_profile_top_bar_cancel_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_edit_profile_top_bar_edit_profile_text_text_size">21dp</dimen>
+    <dimen name="dg8_activity_edit_profile_circular_image_width">97dp</dimen>
+    <dimen name="dg8_activity_edit_profile_circular_image_height">97dp</dimen>
+    <dimen name="dg8_activity_edit_profile_circular_image_civ_border_width">3dp</dimen>
+    <dimen name="dg8_activity_edit_profile_option_text_font_size">15dp</dimen>
+    <dimen name="dg8_activity_edit_profile_option_button_font_size">15dp</dimen>
+    <dimen name="dg8_activity_edit_profile_account_settings_font_size">15dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg8_activity_x_option_top_bar_cancel_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_x_option_top_bar_caption_text_size">21dp</dimen>
+    <dimen name="dg8_activity_x_option_edit_text_text_size">15dp</dimen>
+    <dimen name="dg8_activity_x_option_confirm_button_text_size">15dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg8_activity_settings_cancel_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_save_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_caption_text_size">21dp</dimen>
+    <dimen name="dg8_activity_settings_change_password_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_delete_button_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_tell_a_friend_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_report_a_problem_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_feedback_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_context_support_agreement_text_size">15dp</dimen>
+    <dimen name="dg8_activity_settings_logout_button_text_size">15dp</dimen>
+
+    <!--AppThemeForDG9 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg9_recyclerview_circular_image_width">52dp</dimen>
+    <dimen name="dg9_recyclerview_circular_image_height">52dp</dimen>
+    <dimen name="dg9_recyclerview_circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg9_recyclerview_user_name_text_size">17dp</dimen>
+    <dimen name="dg9_recyclerview_location_text_size">12dp</dimen>
+    <dimen name="dg9_recyclerview_post_time_stamp_text_size">12dp</dimen>
+    <dimen name="dg9_recyclerview_post_text_size">22dp</dimen>
+    <dimen name="dg9_recyclerview_comment_layout_height">52dp</dimen>
+    <dimen name="dg9_recyclerview_comment_layout_comment_text_size">16dp</dimen>
+    <dimen name="dg9_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg9_recyclerview_frame_layout_height">152dp</dimen>
+    <dimen name="dg9_recyclerview_comment_layout_star_button_label_text_size">16dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg9_fragment_profile_profile_name_text_size">22dp</dimen>
+    <dimen name="dg9_fragment_profile_profile_user_location_text_size">16dp</dimen>
+    <dimen name="dg9_fragment_profile_profile_mobile_number_text_size">16dp</dimen>
+    <dimen name="dg9_fragment_profile_profile_report_text_text_size">16dp</dimen>
+    <dimen name="dg9_fragment_profile_profile_profile_posts_button_text_size">16dp</dimen>
+    <dimen name="dg9_fragment_profile_profile_circular_image_width">98dp</dimen>
+    <dimen name="dg9_fragment_profile_profile__circular_image_height">98dp</dimen>
+    <dimen name="dg9_fragment_profile_profile__circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg9_fragment_profile_location_outside_layout_height">42dp</dimen>
+    <dimen name="dg9_fragment_profile_location_circular_image_width">32dp</dimen>
+    <dimen name="dg9_fragment_profile_location__circular_image_height">32dp</dimen>
+    <dimen name="dg9_fragment_profile_location__circular_image_civ_border_width">4dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg9_notification_section_cardview_layout_height">72dp</dimen>
+    <dimen name="dg9_notification_section_outside_linear_layout_height">62dp</dimen>
+    <dimen name="dg9_notification_section_circular_image_view_height">52dp</dimen>
+    <dimen name="dg9_notification_section_circular_image_view_weight">52dp</dimen>
+    <dimen name="dg9_notification_section_circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg9_notification_section_notification_section_heading_text_size">16dp</dimen>
+    <dimen name="dg9_notification_section_notification_section_time_stamp_text_size">16dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg9_activity_report_make_top_bar_create_post_text_size">16dp</dimen>
+    <dimen name="dg9_activity_report_make_top_bar_pending_post_text_size">16dp</dimen>
+    <dimen name="dg9_activity_report_make_top_bar_post_text_size">16dp</dimen>
+    <dimen name="dg9_activity_report_make_circular_image_width">52dp</dimen>
+    <dimen name="dg9_activity_report_make_circular_image_height">52dp</dimen>
+    <dimen name="dg9_activity_report_make_circular_image_boarder_width">4dp</dimen>
+    <dimen name="dg9_activity_report_make_profile_name_size">16dp</dimen>
+    <dimen name="dg9_activity_report_make_post_text_size">18dp</dimen>
+    <dimen name="dg9_activity_report_make_photo_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_report_make_video_button_text_size">16dp</dimen>
+
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg9_activity_edit_profile_top_bar_cancel_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_edit_profile_top_bar_edit_profile_text_text_size">22dp</dimen>
+    <dimen name="dg9_activity_edit_profile_circular_image_width">98dp</dimen>
+    <dimen name="dg9_activity_edit_profile_circular_image_height">98dp</dimen>
+    <dimen name="dg9_activity_edit_profile_circular_image_civ_border_width">4dp</dimen>
+    <dimen name="dg9_activity_edit_profile_option_text_font_size">16dp</dimen>
+    <dimen name="dg9_activity_edit_profile_option_button_font_size">16dp</dimen>
+    <dimen name="dg9_activity_edit_profile_account_settings_font_size">16dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg9_activity_x_option_top_bar_cancel_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_x_option_top_bar_caption_text_size">22dp</dimen>
+    <dimen name="dg9_activity_x_option_edit_text_text_size">16dp</dimen>
+    <dimen name="dg9_activity_x_option_confirm_button_text_size">16dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg9_activity_settings_cancel_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_save_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_caption_text_size">22dp</dimen>
+    <dimen name="dg9_activity_settings_change_password_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_delete_button_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_tell_a_friend_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_report_a_problem_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_feedback_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_context_support_agreement_text_size">16dp</dimen>
+    <dimen name="dg9_activity_settings_logout_button_text_size">16dp</dimen>
+
+    <!--AppThemeForDG10 Theme-->
+    <!--recyclerview_items.xml-->
+    <dimen name="dg10_recyclerview_circular_image_width">53dp</dimen>
+    <dimen name="dg10_recyclerview_circular_image_height">53dp</dimen>
+    <dimen name="dg10_recyclerview_circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg10_recyclerview_user_name_text_size">18dp</dimen>
+    <dimen name="dg10_recyclerview_location_text_size">13dp</dimen>
+    <dimen name="dg10_recyclerview_post_time_stamp_text_size">13dp</dimen>
+    <dimen name="dg10_recyclerview_post_text_size">23dp</dimen>
+    <dimen name="dg10_recyclerview_comment_layout_height">53dp</dimen>
+    <dimen name="dg10_recyclerview_comment_layout_comment_text_size">17dp</dimen>
+    <dimen name="dg10_recyclerview_frame_layout_width">300dp</dimen>
+    <dimen name="dg10_recyclerview_frame_layout_height">153dp</dimen>
+    <dimen name="dg10_recyclerview_comment_layout_star_button_label_text_size">17dp</dimen>
+
+    <!--fragment_profile-->
+    <dimen name="dg10_fragment_profile_profile_name_text_size">23dp</dimen>
+    <dimen name="dg10_fragment_profile_profile_user_location_text_size">17dp</dimen>
+    <dimen name="dg10_fragment_profile_profile_mobile_number_text_size">17dp</dimen>
+    <dimen name="dg10_fragment_profile_profile_report_text_text_size">17dp</dimen>
+    <dimen name="dg10_fragment_profile_profile_profile_posts_button_text_size">17dp</dimen>
+    <dimen name="dg10_fragment_profile_profile_circular_image_width">99dp</dimen>
+    <dimen name="dg10_fragment_profile_profile__circular_image_height">99dp</dimen>
+    <dimen name="dg10_fragment_profile_profile__circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg10_fragment_profile_location_outside_layout_height">43dp</dimen>
+    <dimen name="dg10_fragment_profile_location_circular_image_width">33dp</dimen>
+    <dimen name="dg10_fragment_profile_location__circular_image_height">33dp</dimen>
+    <dimen name="dg10_fragment_profile_location__circular_image_civ_border_width">5dp</dimen>
+
+    <!--notification_section.xml-->
+    <dimen name="dg10_notification_section_cardview_layout_height">82dp</dimen>
+    <dimen name="dg10_notification_section_outside_linear_layout_height">80dp</dimen>
+    <dimen name="dg10_notification_section_circular_image_view_height">53dp</dimen>
+    <dimen name="dg10_notification_section_circular_image_view_weight">53dp</dimen>
+    <dimen name="dg10_notification_section_circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg10_notification_section_notification_section_heading_text_size">17dp</dimen>
+    <dimen name="dg10_notification_section_notification_section_time_stamp_text_size">17dp</dimen>
+
+    <!--activity_report_make.xml-->
+    <dimen name="dg10_activity_report_make_top_bar_create_post_text_size">17dp</dimen>
+    <dimen name="dg10_activity_report_make_top_bar_pending_post_text_size">17dp</dimen>
+    <dimen name="dg10_activity_report_make_top_bar_post_text_size">17dp</dimen>
+    <dimen name="dg10_activity_report_make_circular_image_width">53dp</dimen>
+    <dimen name="dg10_activity_report_make_circular_image_height">53dp</dimen>
+    <dimen name="dg10_activity_report_make_circular_image_boarder_width">5dp</dimen>
+    <dimen name="dg10_activity_report_make_profile_name_size">17dp</dimen>
+    <dimen name="dg10_activity_report_make_post_text_size">19dp</dimen>
+    <dimen name="dg10_activity_report_make_photo_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_report_make_video_button_text_size">17dp</dimen>
+
+    <!--activity_edit_profile.xml-->
+    <dimen name="dg10_activity_edit_profile_top_bar_cancel_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_edit_profile_top_bar_edit_profile_text_text_size">23dp</dimen>
+    <dimen name="dg10_activity_edit_profile_circular_image_width">99dp</dimen>
+    <dimen name="dg10_activity_edit_profile_circular_image_height">99dp</dimen>
+    <dimen name="dg10_activity_edit_profile_circular_image_civ_border_width">5dp</dimen>
+    <dimen name="dg10_activity_edit_profile_option_text_font_size">17dp</dimen>
+    <dimen name="dg10_activity_edit_profile_option_button_font_size">17dp</dimen>
+    <dimen name="dg10_activity_edit_profile_account_settings_font_size">17dp</dimen>
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+
+    <dimen name="dg10_activity_x_option_top_bar_cancel_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_x_option_top_bar_caption_text_size">23dp</dimen>
+    <dimen name="dg10_activity_x_option_edit_text_text_size">17dp</dimen>
+    <dimen name="dg10_activity_x_option_confirm_button_text_size">17dp</dimen>
+
+
+    <!--activity_settings.xml-->
+    <dimen name="dg10_activity_settings_cancel_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_save_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_caption_text_size">23dp</dimen>
+    <dimen name="dg10_activity_settings_change_password_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_delete_button_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_tell_a_friend_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_report_a_problem_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_feedback_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_context_support_agreement_text_size">17dp</dimen>
+    <dimen name="dg10_activity_settings_logout_button_text_size">17dp</dimen>
+
+
+
+
+</resources>

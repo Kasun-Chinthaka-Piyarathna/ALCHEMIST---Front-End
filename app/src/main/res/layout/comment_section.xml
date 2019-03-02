@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    card_view:cardCornerRadius="10dp"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:background="?attr/fragment_news_feed_bakground_color"
+    app:cardBackgroundColor="?attr/fragment_news_feed_bakground_color"
+    android:layout_alignParentBottom="true">
+
+    <ListView
+        android:id="@+id/comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="4"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:background="?attr/recyclerview_comment_layout_outside_color"
+        android:layout_marginBottom="30dp">
+
+        <EditText
+            android:id="@+id/new_comment_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Write a comment"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColorHint="?attr/fragment_profile_profile_video_button_text_color"
+            android:textColor="?attr/fragment_profile_profile_video_button_text_color"
+            android:textSize="?attr/notification_section_notification_section_heading_text_size"
+            android:background="@android:color/transparent"
+            android:inputType="text"
+            android:layout_weight="1"
+            />
+        <ImageButton
+            android:id="@+id/new_comment_submit_button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:src="@drawable/right_arrow"/>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

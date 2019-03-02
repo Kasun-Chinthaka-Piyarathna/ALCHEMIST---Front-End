@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--recyclerview-->
+    <attr name="recyclerview_circular_image_width" format="dimension" />
+    <attr name="recyclerview_circular_image_height" format="dimension" />
+    <attr name="recyclerview_circular_image_civ_border_color" format="color" />
+    <attr name="recyclerview_circular_image_civ_border_width" format="dimension" />
+    <attr name="recyclerview_user_name_text_size" format="dimension" />
+    <attr name="recyclerview_location_text_size" format="dimension" />
+    <attr name="recyclerview_post_time_stamp_text_size" format="dimension" />
+    <attr name="recyclerview_user_name_text_color" format="color" />
+    <attr name="recyclerview_location_text_color" format="color" />
+    <attr name="recyclerview_post_time_stamp_text_color" format="color" />
+    <attr name="recyclerview_post_text_color" format="color" />
+    <attr name="recyclerview_post_text_size" format="dimension" />
+    <attr name="recyclerview_comment_layout_outside_color" format="color" />
+    <attr name="recyclerview_comment_layout_inside_color" format="color" />
+    <attr name="recyclerview_comment_layout_height" format="dimension" />
+    <attr name="recyclerview_comment_layout_comment_text_size" format="dimension" />
+    <attr name="recyclerview_comment_layout_comment_text_color" format="color" />
+    <attr name="recyclerview_comment_layout_star_button_label_text_color" format="color" />
+    <attr name="recyclerview_comment_layout_star_button_label_text_size" format="dimension" />
+    <attr name="recyclerview_frame_layout_width" format="dimension" />
+    <attr name="recyclerview_frame_layout_height" format="dimension" />
+    <attr name="recyclerview_cardview_background_color" format="color" />
+
+    <!--fragment_news_feed-->
+    <attr name="fragment_news_feed_bakground_color" format="color" />
+    <!--fragment_notifications-->
+    <attr name="fragment_notifications_bakground_color" format="color" />
+    <!--fragment_profile-->
+    <attr name="fragment_profile_bakground_color" format="color" />
+    <attr name="fragment_profile_profile_name_text_color" format="color" />
+    <attr name="fragment_profile_profile_name_background_color" format="color" />
+    <attr name="fragment_profile_profile_name_text_size" format="dimension" />
+    <attr name="fragment_profile_profile_user_location_text_color" format="color" />
+    <attr name="fragment_profile_profile_mobile_number_text_color" format="color" />
+    <attr name="fragment_profile_profile_report_text_text_color" format="color" />
+    <attr name="fragment_profile_profile_user_location_text_size" format="dimension" />
+    <attr name="fragment_profile_profile_mobile_number_text_size" format="dimension" />
+    <attr name="fragment_profile_profile_report_text_text_size" format="dimension" />
+    <attr name="fragment_profile_profile_photo_button_text_color" format="color" />
+    <attr name="fragment_profile_profile_photo_button_bakground_color" format="color" />
+    <attr name="fragment_profile_profile_video_button_text_color" format="color" />
+    <attr name="fragment_profile_profile_video_button_bakground_color" format="color" />
+    <attr name="fragment_profile_profile_photo_button_text_size" format="dimension" />
+    <attr name="fragment_profile_profile_video_button_text_size" format="dimension" />
+    <attr name="fragment_profile_profile_profile_posts_button_text_color" format="color" />
+    <attr name="fragment_profile_profile_profile_posts_button_text_size" format="dimension" />
+
+
+    <attr name="fragment_profile_profile_circular_image_width" format="dimension" />
+    <attr name="fragment_profile_profile__circular_image_height" format="dimension" />
+    <attr name="fragment_profile_profile__circular_image_civ_border_color" format="color" />
+    <attr name="fragment_profile_profile__circular_image_civ_border_width" format="dimension" />
+    <attr name="fragment_profile_location_circular_image_width" format="dimension" />
+    <attr name="fragment_profile_location__circular_image_height" format="dimension" />
+    <attr name="fragment_profile_location__circular_image_civ_border_color" format="color" />
+    <attr name="fragment_profile_location__circular_image_civ_border_width" format="dimension" />
+    <attr name="fragment_profile_location_outside_layout_height" format="dimension" />
+    <attr name="fragment_profile_location__mobile_card_back_ground_color" format="color" />
+
+
+
+
+    <!--notification_section.xml-->
+    <attr name="notification_section_cardview_layout_height" format="dimension" />
+    <attr name="notification_section_cardview_layout_background_color" format="color" />
+    <attr name="notification_section_outside_linear_layout_height" format="dimension" />
+    <attr name="notification_section_circular_image_view_height" format="dimension" />
+    <attr name="notification_section_circular_image_view_weight" format="dimension" />
+    <attr name="notification_section_circular_image_civ_border_color" format="color" />
+    <attr name="notification_section_circular_image_civ_border_width" format="dimension" />
+    <attr name="notification_section_notification_section_heading_text_color" format="color" />
+    <attr name="notification_section_notification_section_heading_text_size" format="dimension" />
+    <attr name="notification_section_notification_section_time_stamp_text_color" format="color" />
+    <attr name="notification_section_notification_section_time_stamp_text_size" format="dimension" />
+
+
+    <!--activity_view_user_posts.xml-->
+    <attr name="activity_view_user_posts_background_color" format="color" />
+
+    <!--activity_report_make.xml-->
+    <attr name="activity_report_make_background_color" format="color" />
+    <attr name="activity_report_make_top_bar_background_color" format="color" />
+    <attr name="activity_report_make_top_bar_create_post_text_color" format="color" />
+    <attr name="activity_report_make_top_bar_create_post_text_size" format="dimension" />
+    <attr name="activity_report_make_top_bar_pending_post_text_color" format="color" />
+    <attr name="activity_report_make_top_bar_pending_post_text_size" format="dimension" />
+    <attr name="activity_report_make_top_bar_post_text_color" format="color" />
+    <attr name="activity_report_make_top_bar_post_text_size" format="dimension" />
+    <attr name="activity_report_make_circular_image_width" format="dimension" />
+    <attr name="activity_report_make_circular_image_height" format="dimension" />
+    <attr name="activity_report_make_circular_image_boarder_color" format="color" />
+    <attr name="activity_report_make_circular_image_boarder_width" format="dimension" />
+    <attr name="activity_report_make_profile_name_text_color" format="color" />
+    <attr name="activity_report_make_profile_name_size" format="dimension" />
+    <attr name="activity_report_make_post_text_color" format="color" />
+    <attr name="activity_report_make_post_text_hint_color" format="color" />
+    <attr name="activity_report_make_post_text_size" format="dimension" />
+    <attr name="activity_report_make_photo_button_text_color" format="color" />
+    <attr name="activity_report_make_photo_button_text_size" format="dimension" />'
+    <attr name="activity_report_make_video_button_text_color" format="color" />
+    <attr name="activity_report_make_video_button_text_size" format="dimension" />'
+    <attr name="activity_report_make_upload_buttons_background_color" format="color" />
+
+
+    <!--activity_edit_profile.xml-->
+    <attr name="activity_edit_profile_background_color" format="color" />
+    <attr name="activity_edit_profile_top_bar_background_color" format="color" />
+    <attr name="activity_edit_profile_top_bar_cancel_button_background_color" format="color" />
+    <attr name="activity_edit_profile_top_bar_cancel_button_text_size" format="dimension" />
+    <attr name="activity_edit_profile_top_bar_cancel_button_text_color" format="color" />
+    <attr name="activity_edit_profile_top_bar_edit_profile_text_background_color" format="color" />
+    <attr name="activity_edit_profile_top_bar_edit_profile_text_text_color" format="color" />
+    <attr name="activity_edit_profile_top_bar_edit_profile_text_text_size" format="dimension" />
+    <attr name="activity_edit_profile_circular_image_width" format="dimension" />
+    <attr name="activity_edit_profile_circular_image_height" format="dimension" />
+    <attr name="activity_edit_profile_circular_image_civ_border_width" format="dimension" />
+    <attr name="activity_edit_profile_circular_image_civ_border_color" format="color" />
+    <attr name="activity_edit_profile_option_outside_background_color" format="color" />
+    <attr name="activity_edit_profile_option_text_background_color" format="color" />
+    <attr name="activity_edit_profile_option_text_font_color" format="color" />
+    <attr name="activity_edit_profile_option_text_font_size" format="dimension" />
+    <attr name="activity_edit_profile_option_button_background_color" format="color" />
+    <attr name="activity_edit_profile_option_button_font_color" format="color" />
+    <attr name="activity_edit_profile_option_button_font_size" format="dimension" />
+    <attr name="activity_edit_profile_account_settings_font_color" format="color" />
+    <attr name="activity_edit_profile_account_settings_font_size" format="dimension" />
+
+    <!--activity_add_user_name.xml-->
+    <!--activity_add_user_birthday.xml-->
+    <!--activity_add_user_gender.xml-->
+    <!--activity_add_user_nearest_city.xml-->
+    <!--activity_add_user_mobile.xml-->
+    <!--activity_add_user_password.xml-->
+    <attr name="activity_x_option_background_color" format="color" />
+    <attr name="activity_x_option_top_bar_background_color" format="color" />
+    <attr name="activity_x_option_top_bar_cancel_button_background_color" format="color" />
+    <attr name="activity_x_option_top_bar_cancel_button_text_color" format="color" />
+    <attr name="activity_x_option_top_bar_cancel_button_text_size" format="dimension" />
+    <attr name="activity_x_option_top_bar_caption_background_color" format="color" />
+    <attr name="activity_x_option_top_bar_caption_text_color" format="color" />
+    <attr name="activity_x_option_top_bar_caption_text_size" format="dimension" />
+    <attr name="activity_x_option_edit_text_text_size" format="dimension" />
+    <attr name="activity_x_option_edit_text_text_color" format="color" />
+    <attr name="activity_x_option_edit_hint_text_color" format="color" />
+    <attr name="activity_x_option_edit_text_background_color" format="color" />
+    <attr name="activity_x_option_confirm_button_background_color" format="color" />
+    <attr name="activity_x_option_confirm_button_text_color" format="color" />
+    <attr name="activity_x_option_confirm_button_text_size" format="dimension" />
+
+
+    <!--activity_settings.xml-->
+    <attr name="activity_settings_background_color" format="color" />
+    <attr name="activity_settings_top_bar_background_color" format="color" />
+    <attr name="activity_settings_cancel_button_background_color" format="color" />
+    <attr name="activity_settings_cancel_button_text_color" format="color" />
+    <attr name="activity_settings_cancel_button_text_size" format="dimension" />
+    <attr name="activity_settings_save_button_background_color" format="color" />
+    <attr name="activity_settings_save_button_text_color" format="color" />
+    <attr name="activity_settings_save_button_text_size" format="dimension" />
+    <attr name="activity_settings_caption_background_color" format="color" />
+    <attr name="activity_settings_caption_text_color" format="color" />
+    <attr name="activity_settings_caption_text_size" format="dimension" />
+    <attr name="activity_settings_change_password_button_background_color" format="color" />
+    <attr name="activity_settings_change_password_button_text_color" format="color" />
+    <attr name="activity_settings_change_password_button_text_size" format="dimension" />
+    <attr name="activity_settings_delete_button_background_color" format="color" />
+    <attr name="activity_settings_delete_button_text_color" format="color" />
+    <attr name="activity_settings_delete_button_text_size" format="dimension" />
+    <attr name="activity_settings_tell_a_friend_background_color" format="color" />
+    <attr name="activity_settings_tell_a_friend_text_color" format="color" />
+    <attr name="activity_settings_tell_a_friend_text_size" format="dimension" />
+    <attr name="activity_settings_report_a_problem_text_color" format="color" />
+    <attr name="activity_settings_report_a_problem_text_size" format="dimension" />
+    <attr name="activity_settings_report_a_problem_background_color" format="color" />
+    <attr name="activity_settings_feedback_text_color" format="color" />
+    <attr name="activity_settings_feedback_text_size" format="dimension" />
+    <attr name="activity_settings_feedback_background_color" format="color" />
+    <attr name="activity_settings_context_support_agreement_text_color" format="color" />
+    <attr name="activity_settings_context_support_agreement_text_size" format="dimension" />
+    <attr name="activity_settings_context_support_agreement_background_color" format="color" />
+    <attr name="activity_settings_logout_button_text_color" format="color" />
+    <attr name="activity_settings_logout_button_text_size" format="dimension" />
+
+    <!--global_access-->
+    <attr name="bottom_navigation_background_color" format="color" />
+    <attr name="status_bar_background_color" format="color" />
+
+
+
+</resources>

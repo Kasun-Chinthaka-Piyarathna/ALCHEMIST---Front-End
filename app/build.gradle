@@ -6,8 +6,8 @@ android {
         applicationId "alchemist.fit.uom.alchemists"
         minSdkVersion 19
         targetSdkVersion 27
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -23,6 +23,10 @@ android {
         exclude 'META-INF/NOTICE'
 
     }
+}
+
+android {
+    useLibrary 'org.apache.http.legacy'
 }
 
 dependencies {
@@ -46,6 +50,7 @@ dependencies {
     compile 'com.allattentionhere:autoplayvideos:0.2.0'
     compile 'com.squareup.picasso:picasso:2.5.2'
     compile 'com.jakewharton:butterknife:8.6.0'
+    compile 'com.ramotion.circlemenu:circle-menu:0.3.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:8.6.0'
 
     // dexter runtime permissions
@@ -53,6 +58,14 @@ dependencies {
 
     compile 'com.google.android.gms:play-services-location:11.6.0'
     compile 'com.google.code.gson:gson:2.8.1'
+
+    compile 'com.androidadvance:topsnackbar:1.1.1'
+    compile 'com.github.jd-alexander:LikeButton:0.2.3'
+    compile 'com.github.orangegangsters:swipy:1.2.3@aar'
+    compile 'com.github.uin3566:AllAngleExpandableButton:v1.2.0'
+    implementation 'com.android.volley:volley:1.1.0'
+
+
 }
 
 apply plugin: 'com.google.gms.google-services'

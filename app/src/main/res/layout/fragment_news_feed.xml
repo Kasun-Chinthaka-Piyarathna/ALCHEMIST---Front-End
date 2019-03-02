@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swiperefresh"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="?attr/fragment_news_feed_bakground_color"
     android:orientation="vertical"
-    tools:context=".activities.DisplayImagesActivity">
+    android:padding="10dp">
 
-    <android.support.v7.widget.RecyclerView
-        android:id="@+id/recyclerView"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content" />
+    <com.allattentionhere.autoplayvideos.AAH_CustomRecyclerView
+        android:id="@+id/rv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
 
-</ScrollView>
+</com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+

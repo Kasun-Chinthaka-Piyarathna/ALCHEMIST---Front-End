@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/notification_section_cardview_layout_height"
+    app:cardBackgroundColor="?attr/notification_section_cardview_layout_background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/notification_section_outside_linear_layout_height"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/notification_section_profile"
+                android:layout_width="?attr/notification_section_circular_image_view_weight"
+                android:layout_height="?attr/notification_section_circular_image_view_height"
+                android:layout_gravity="center"
+                android:src="@drawable/test_image_new"
+                app:civ_border_color="?attr/notification_section_circular_image_civ_border_color"
+                app:civ_border_width="?attr/notification_section_circular_image_civ_border_width" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/notification_section_heading"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textColor="?attr/notification_section_notification_section_heading_text_color"
+                android:textSize="?attr/notification_section_notification_section_heading_text_size" />
+
+            <TextView
+                android:id="@+id/notification_section_time_stamp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center|left"
+                android:textColor="?attr/notification_section_notification_section_time_stamp_text_color"
+                android:textSize="?attr/notification_section_notification_section_time_stamp_text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

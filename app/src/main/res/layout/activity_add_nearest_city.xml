@@ -3,7 +3,7 @@
     android:id="@+id/activity_editprofile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E5E4E2">
+    android:background="?attr/activity_x_option_background_color">
 
 
     <LinearLayout
@@ -14,7 +14,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#0020C2"
+            android:background="?attr/activity_x_option_top_bar_background_color"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -22,53 +22,53 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_x_option_top_bar_cancel_button_background_color"
+                android:onClick="activityAddNearestCityCancel"
                 android:text="Cancel"
+                android:textSize="?attr/activity_x_option_top_bar_cancel_button_text_size"
                 android:textAllCaps="false"
-                android:textColor="#ffffff"
-                android:onClick="activityAddNearestCityCancel"/>
+                android:textColor="?attr/activity_x_option_top_bar_cancel_button_text_color" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_x_option_top_bar_caption_background_color"
                 android:text="Nearest City"
                 android:textAlignment="center"
-                android:textColor="#ffffff"
-                android:textSize="20dp" />
+                android:textColor="?attr/activity_x_option_top_bar_caption_text_color"
+                android:textSize="?attr/activity_x_option_top_bar_caption_text_size" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:background="#0020C2"
+                android:background="?attr/activity_x_option_top_bar_background_color"
                 android:text=""
-                android:textAllCaps="false"
-                android:textColor="#ffffff" />
+                android:textAllCaps="false" />
 
         </LinearLayout>
 
 
-
         <fragment
             android:id="@+id/place_autocomplete_fragment"
+            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAllCaps="false"
-            android:text="Confirm"
-            android:gravity="center"
             android:layout_gravity="center"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="20dp"
-            android:textColor="#ffffff"
+            android:background="@drawable/buttonshape6"
+            android:gravity="center"
             android:onClick="confirmNearestCity"
-            android:background="@drawable/buttonshape6"/>
+            android:text="Confirm"
+            android:textAllCaps="false"
+            android:textSize="?attr/activity_x_option_confirm_button_text_size"
+            android:textColor="?attr/activity_x_option_confirm_button_text_color" />
 
 
     </LinearLayout>
