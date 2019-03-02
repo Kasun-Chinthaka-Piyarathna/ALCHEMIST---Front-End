@@ -140,6 +140,34 @@
   <li>Samsung Galaxy J7 [os-Marshmallow]</li>
   <p>play store link [Beta Version] - <a href="https://play.google.com/store/apps/details?id=alchemist.fit.uom.alchemists">view APK</a> </p>
 </ul>
+  
+  <h2>Used Libraries</h2>
+<ul>
+  <li>de.hdodenhof:circleimageview:2.2.0</li>
+  <li>com.google.firebase:firebase-storage:11.6.0</li>
+  <li>com.google.firebase:firebase-auth:11.6.0</li>
+  <li>com.firebase:firebase-client-android:2.4.0</li>
+  <li>com.google.firebase:firebase-database:11.6.0</li>
+  <li>com.android.support:cardview-v7:27.0.0</li>
+  <li>com.android.support:recyclerview-v7:27.0.0</li>
+  <li>com.github.bumptech.glide:glide:3.7.0</li>
+  <li>com.google.android.gms:play-services-places:11.6.0</li>
+  <li>com.allattentionhere:autoplayvideos:0.2.0</li>
+  <li>com.squareup.picasso:picasso:2.5.2</li>
+  <li>com.jakewharton:butterknife:8.6.0</li>
+  <li>com.ramotion.circlemenu:circle-menu:0.3.1</li>
+  <li>com.jakewharton:butterknife-compiler:8.6.0</li>
+  <li>com.karumi:dexter:4.2.0</li>
+  <li>com.google.android.gms:play-services-location:11.6.0</li>
+  <li>com.google.code.gson:gson:2.8.1</li>
+  <li>com.androidadvance:topsnackbar:1.1.1</li>
+  <li>com.github.jd-alexander:LikeButton:0.2.3</li>
+  <li>com.github.orangegangsters:swipy:1.2.3@aar</li>
+  <li>com.github.uin3566:AllAngleExpandableButton:v1.2.0</li>
+  <li>com.android.volley:volley:1.1.0</li>
+  <li>org.apache.http.legacy</li>
+             
+</ul>
 <h2>Contact Details</h2>
 <ul>
   <li>Contributer: kasunchinthaka555@gmail.com</li>
