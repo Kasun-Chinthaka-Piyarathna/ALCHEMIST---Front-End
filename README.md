@@ -46,10 +46,14 @@
       </tr>
      <tr>
     <th><img src="screenshots/context/bicycle.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/context/tilting.png" alt="loading screenshot"  width="200" height="320"</th>
+    <th><img src="screenshots/context/unknown.png" alt="loading screenshot"  width="200" height="320"</th>
     <th><img src="screenshots/context/b3.png" alt="loading screenshot"  width="200" height="320"</th> 
    </tr>
      <tr>
          <td align="center">context - on a bicycle</td>
+         <td align="center">context - tilting</td>
+         <td align="center">context - unknown</td>
          <td align="center">context - battery level is critical</td>
       </tr>
      </table>
