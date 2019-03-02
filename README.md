@@ -96,7 +96,7 @@
      <td align="center">Style Theme for Senior Citizens Female</td>
      </tr>
 </table>
-   <h3>Self Adaptivenes based on user behaviour identification [changes on main interfaces]</h3>
+   <h3>Self Adaptivenes based on user behaviour identification</h3>
     <table style="width:100%">
      <tr>
     <th><img src="screenshots/behaviour.png" alt="loading screenshot"  width="200" height="320"</th>
