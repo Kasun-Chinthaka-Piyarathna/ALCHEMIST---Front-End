@@ -5,7 +5,7 @@
 <body>
   <h2>What is this repository for?</h2>
 <ul>
-  <li>This repository is for U Report android application.</li>
+  <li>This repository is for U Report android application which enables user to report a particular traffic violation to the public</li>
   <li>System Requiremnts: - Java 8, Android Studio</li>
   <li>Version 1.0</li>
 </ul>  
