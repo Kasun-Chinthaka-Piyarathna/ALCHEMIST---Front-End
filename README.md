@@ -102,10 +102,23 @@
     <th><img src="screenshots/behaviour.png" alt="loading screenshot"  width="200" height="320"</th>
       </table>
 <h2>Features</h2>
+  <h4>Research Factors</h4>
   <ul>
-<li>Dynamic Adaptability based on context awareness [user context + device context]</li>
+<li>Dynamic Adaptability based on context awareness [user context + device context] </li>
+    <ul>
+      <li>Home --> Profile Tab --> Settings --> Account Settings --> Dynamic Behaviour -- Enable Dyanamic Behaviour based on User Context       </li>
+      <li> Home --> Profile Tab --> Gesture: swipe down --> Enable Dyanamic Behaviour based on User Context </li>
+    </ul>
 <li>Dynamic Adaptability based on user behaviour </li>
 <li>Dynamic Adaptability based on user history analyzation</li>
+</ul>
+   <h4>Gustures</h4>
+  <ul>
+<li>Dynamic Adaptability based on context awareness [user context + device context]</li>
+</ul>
+     <h4>Simulation</h4>
+  <ul>
+<li>Dynamic Adaptability based on context awareness [user context + device context]</li>
 </ul>
 <h2>Tested Devices</h2>
 <ul>
