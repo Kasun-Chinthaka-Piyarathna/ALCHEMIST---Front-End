@@ -106,19 +106,32 @@
   <ul>
 <li>Dynamic Adaptability based on context awareness [user context + device context] </li>
     <ul>
-      <li>Home --> Profile Tab --> Settings --> Account Settings --> Dynamic Behaviour -- Enable Dyanamic Behaviour based on User Context       </li>
+      <li>Home --> Profile Tab --> Settings --> Account Settings --> Dynamic Behaviour --> Enable Dyanamic Behaviour based on User Context       </li>
       <li> Home --> Profile Tab --> Gesture: swipe down --> Enable Dyanamic Behaviour based on User Context </li>
     </ul>
 <li>Dynamic Adaptability based on user behaviour </li>
+      <ul>
+      <li>Home --> Profile Tab --> Settings --> Account Settings --> Dynamic Behaviour --> Enable Dyanamic Behaviour based on User Behaviour       </li>
+      <li> Home --> Profile Tab --> Gesture: swipe down --> Enable Dyanamic Behaviour based on User Behaviour </li>
+    </ul>
 <li>Dynamic Adaptability based on user history analyzation</li>
+         <ul>
+      <li>Home --> Profile Tab --> Settings --> Account Settings --> Dynamic Behaviour --> Enable Dyanamic Behaviour based on Age/Gender[User History]       </li>
+      <li> Home --> Profile Tab --> Gesture: swipe down --> Enable Dyanamic Behaviour based on Age/Gender[User History]   </li>
+    </ul>
 </ul>
    <h4>Gustures</h4>
   <ul>
-<li>Dynamic Adaptability based on context awareness [user context + device context]</li>
+<li>R icon on Home Screen   Gesture: Pick up and move [draggable]  | Double Tap [to open the Create Post Interface]</li>
+    <li> C icon on Create Post Screen  Gesture: Pick up and move [draggable]   | Double Tap [to open the camera and capture an image or a video and get it directly to the post]</li>
+    <li> C icon on Create Post Screen  Gesture: Pick up and move [draggable]   | Double Tap [to open the camera and capture an image or a video and get it directly to the post]</li>
+    <li> Notification Section  Gesture: swipe down [To refresh the Notifications]</li>
+    <li>Profile Section  Gesture: swipe down [To see the current context awareness]</li>
 </ul>
      <h4>Simulation</h4>
   <ul>
-<li>Dynamic Adaptability based on context awareness [user context + device context]</li>
+      <li>Home --> Profile Tab --> Settings --> Account Settings --> Dynamic Behaviour --> Enable Simulation      </li>
+      <li> Home --> Profile Tab --> Gesture: swipe down --> Enable Simulation  </li>
 </ul>
 <h2>Tested Devices</h2>
 <ul>
