@@ -15,6 +15,7 @@
   <li>open the project using android studio</li>
   <li>Build and Run the project</li>
 </ul> 
+  <h3>Default GUI of the application</h3>
   <table style="width:100%">
   <tr>
     <th><img src="screenshots/default/d1.png" alt="loading screenshot"  width="100" height="160"</th>
@@ -31,6 +32,8 @@
     <th><img src="screenshots/default/d10.png" alt="loading screenshot"  width="100" height="160"</th> 
    </tr>
     </table>
+  </br>
+    <h3>Self Adaptivenes based on context identification [changes on main interfaces]</h3>
   <table style="width:100%">
     <tr>
     <th><img src="screenshots/context/still.png" alt="loading screenshot"  width="200" height="320"</th>
@@ -57,6 +60,8 @@
          <td align="center">context - battery level is critical</td>
       </tr>
      </table>
+  </br>
+     <h3>Self Adaptivenes based on user history identification [age+gender]</h3>
    <table style="width:100%">
      <tr>
     <th><img src="screenshots/history/M 19.png" alt="loading screenshot"  width="200" height="320"</th>
@@ -91,6 +96,11 @@
      <td align="center">Style Theme for Senior Citizens Female</td>
      </tr>
 </table>
+   <h3>Self Adaptivenes based on user behaviour identification [changes on main interfaces]</h3>
+    <table style="width:100%">
+     <tr>
+    <th><img src="screenshots/behaviour.png" alt="loading screenshot"  width="200" height="320"</th>
+      </table>
 <h2>Features</h2>
   <ul>
 <li>Dynamic Adaptability based on context awareness [user context + device context]</li>
