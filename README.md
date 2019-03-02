@@ -33,7 +33,7 @@
    </tr>
     </table>
   </br>
-    <h3>Self Adaptivenes based on context identification [changes on main interfaces]</h3>
+    <h3>Self Adaptivenes based on context identification [changes on main interface]</h3>
   <table style="width:100%">
     <tr>
     <th><img src="screenshots/context/still.png" alt="loading screenshot"  width="200" height="320"</th>
